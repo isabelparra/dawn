@@ -1,7 +1,7 @@
 {
   "parent": "page.products.json",
   "context": {
-    "market": "chile"
+    "market": "cl"
   },
   "sections": {
     "rich_text_Rd3Anr": {
