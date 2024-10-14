@@ -130,8 +130,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: none;
 }
 
-.menu-drawer__menu-item > .svg-wrapper {
-  width: 15px;
+.menu-drawer__menu-item > .icon-arrow {
   position: absolute;
   right: 3rem;
   top: 50%;
@@ -168,10 +167,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-align: left;
 }
 
-.menu-drawer__close-button .svg-wrapper {
+.menu-drawer__close-button .icon-arrow {
   transform: rotate(180deg);
   margin-right: 1rem;
-  width: 15px;
 }
 
 .menu-drawer__utility-links {
@@ -212,7 +210,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin: 0;
 }
 
-.menu-drawer__account account-icon > .svg-wrapper {
+.menu-drawer__account .icon-account {
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
@@ -224,7 +222,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-left: -0.45rem;
 }
 
-.menu-drawer__account:hover account-icon > .svg-wrapper {
+.menu-drawer__account:hover .icon-account {
   transform: scale(1.07);
 }
 

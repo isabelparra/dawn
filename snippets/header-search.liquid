@@ -15,7 +15,6 @@
       aria-haspopup="dialog"
       aria-label="{{ 'general.search.search' | t }}"
     >
-<<<<<<< HEAD
    <span>
         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
           <use href="#icon-search">
@@ -24,16 +23,6 @@
           <use href="#icon-close">
         </svg>
       </span> 
-=======
-      <span>
-        <span class="svg-wrapper">
-          {{- 'icon-search.svg' | inline_asset_content -}}
-        </span>
-        <span class="svg-wrapper header__icon-close">
-          {{- 'icon-close.svg' | inline_asset_content -}}
-        </span>
-      </span>
->>>>>>> origin/main
     </summary>
     <div
       class="search-modal modal__content gradient"
@@ -80,14 +69,14 @@
               class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
               aria-label="{{ 'general.search.reset' | t }}"
             >
-              <span class="svg-wrapper">
-                {{- 'icon-reset.svg' | inline_asset_content -}}
-              </span>
+              <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-reset">
+              </svg>
             </button>
             <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-              <span class="svg-wrapper">
-                {{- 'icon-search.svg' | inline_asset_content -}}
-              </span>
+              <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                <use href="#icon-search">
+              </svg>
             </button>
           </div>
 
@@ -109,9 +98,9 @@
           class="search-modal__close-button modal__close-button link link--text focus-inset"
           aria-label="{{ 'accessibility.close' | t }}"
         >
-          <span class="svg-wrapper">
-            {{- 'icon-close.svg' | inline_asset_content -}}
-          </span>
+          <svg class="icon icon-close" aria-hidden="true" focusable="false">
+            <use href="#icon-close">
+          </svg>
         </button>
       </div>
     </div>

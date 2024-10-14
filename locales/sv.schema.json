@@ -2381,7 +2381,7 @@
             "text_style": {
               "label": "Textstil",
               "options__1": {
-                "label": "Undertext"
+                "label": "Underrubrik"
               },
               "options__2": {
                 "label": "Stora bokstäver"
@@ -2726,7 +2726,7 @@
                 "label": "Brödtext"
               },
               "options__2": {
-                "label": "Undertext"
+                "label": "Underrubrik"
               },
               "label": "Textstil"
             }
