@@ -83,7 +83,7 @@
       }
     },
     "main": {
-      "type": "main-page",
+      "type": "about",
       "disabled": true,
       "settings": {
         "padding_top": 28,

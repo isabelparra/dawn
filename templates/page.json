@@ -36,14 +36,14 @@
       }
     }, 
     "about": {
-      "type": "main-page",
+      "type": "about",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
     "contact": {
-      "type": "main-page",
+      "type": "contact",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
