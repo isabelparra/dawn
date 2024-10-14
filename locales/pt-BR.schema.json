@@ -760,7 +760,7 @@
             "label": "Corpo"
           },
           "options__2": {
-            "label": "Legenda"
+            "label": "Subtítulo"
           },
           "options__3": {
             "label": "Letras maiúsculas"
@@ -1118,7 +1118,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -1268,7 +1268,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               }
             }
           }
@@ -1297,7 +1297,7 @@
             "text_style": {
               "label": "Estilo de texto",
               "options__1": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__2": {
                 "label": "Letras maiúsculas"
@@ -1623,7 +1623,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -1987,7 +1987,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -2381,7 +2381,7 @@
             "text_style": {
               "label": "Estilo de texto",
               "options__1": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__2": {
                 "label": "Letras maiúsculas"
@@ -2479,7 +2479,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -2726,7 +2726,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "label": "Estilo de texto"
             }

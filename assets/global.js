@@ -570,6 +570,7 @@ class ModalDialog extends HTMLElement {
   connectedCallback() {
     if (this.moved) return;
     this.moved = true;
+    this.dataset.section = this.closest('.shopify-section').id.replace('shopify-section-', '');
     document.body.appendChild(this);
   }
 
@@ -976,6 +977,7 @@ class VariantSelects extends HTMLElement {
     this.addEventListener('change', this.onVariantChange);
   }
 
+<<<<<<< HEAD
   onVariantChange(event) {
     this.updateOptions();
     this.updateMasterId();
@@ -984,6 +986,12 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.updateVariantStatuses();
+=======
+  connectedCallback() {
+    this.addEventListener('change', (event) => {
+      const target = this.getInputForEventTarget(event.target);
+      this.updateSelectionMetadata(event);
+>>>>>>> origin/main
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -1017,10 +1025,20 @@ class VariantSelects extends HTMLElement {
     });
   }
 
+<<<<<<< HEAD
   updateSelectedSwatchValue({ target }) {
     const { name, value, tagName } = target;
+=======
+  updateSelectionMetadata({ target }) {
+    const { value, tagName } = target;
+>>>>>>> origin/main
 
     if (tagName === 'SELECT' && target.selectedOptions.length) {
+      Array.from(target.options)
+        .find((option) => option.getAttribute('selected'))
+        .removeAttribute('selected');
+      target.selectedOptions[0].setAttribute('selected', 'selected');
+
       const swatchValue = target.selectedOptions[0].dataset.optionSwatchValue;
       const selectedDropdownSwatchValue = this.querySelector(`[data-selected-dropdown-swatch="${name}"] > .swatch`);
       if (!selectedDropdownSwatchValue) return;
@@ -1047,6 +1065,7 @@ class VariantSelects extends HTMLElement {
     window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
   }
 
+<<<<<<< HEAD
   updateShareUrl() {
     const shareButton = document.getElementById(`Share-${this.dataset.section}`);
     if (!shareButton || !shareButton.updateUrl) return;
@@ -1056,6 +1075,11 @@ class VariantSelects extends HTMLElement {
   updateVariantInput() {
     const productForms = document.querySelectorAll(
       `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
+=======
+  get selectedOptionValues() {
+    return Array.from(this.querySelectorAll('select option[selected], fieldset input:checked')).map(
+      ({ dataset }) => dataset.optionValueId
+>>>>>>> origin/main
     );
     productForms.forEach((productForm) => {
       const input = productForm.querySelector('input[name="id"]');

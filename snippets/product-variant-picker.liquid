@@ -84,13 +84,21 @@
                 picker_type: picker_type
               %}
             </select>
-            {% render 'icon-caret' %}
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
           </div>
         </div>
       {%- endif -%}
     {%- endfor -%}
+<<<<<<< HEAD
     <script type="application/json">
       {{ product.variants | json }}
+=======
+
+    <script type="application/json" data-selected-variant>
+      {{ product.selected_or_first_available_variant | json }}
+>>>>>>> origin/main
     </script>
   </variant-selects>
 {%- endunless -%}

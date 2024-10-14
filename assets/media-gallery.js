@@ -40,6 +40,20 @@ if (!customElements.get('media-gallery')) {
         });
         activeMedia?.classList?.add('is-active');
 
+<<<<<<< HEAD
+=======
+        if (prepend) {
+          activeMedia.parentElement.firstChild !== activeMedia && activeMedia.parentElement.prepend(activeMedia);
+
+          if (this.elements.thumbnails) {
+            const activeThumbnail = this.elements.thumbnails.querySelector(`[data-target="${mediaId}"]`);
+            activeThumbnail.parentElement.firstChild !== activeThumbnail && activeThumbnail.parentElement.prepend(activeThumbnail);
+          }
+
+          if (this.elements.viewer.slider) this.elements.viewer.resetPages();
+        }
+
+>>>>>>> origin/main
         this.preventStickyHeader();
         window.setTimeout(() => {
           if (!this.mql.matches || this.elements.thumbnails) {

@@ -95,7 +95,11 @@
     <input
       type="radio"
       id="{{ input_id }}"
+<<<<<<< HEAD
       name="{{ option.name }}"
+=======
+      name="{{ input_name | escape }}"
+>>>>>>> origin/main
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
       {% if option.selected_value == value %}

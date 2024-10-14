@@ -261,7 +261,7 @@
                     type="button"
                     aria-label="{{ 'accessibility.close' | t }}"
                   >
-                    {%- render 'icon-close' -%}
+                    {{- 'icon-close.svg' | inline_asset_content -}}
                   </button>
                   {%- if card_product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                     <volume-pricing class="parent-display">
@@ -314,7 +314,9 @@
                 >
                   {{ 'products.product.choose_options' | t }}
                   {%- if horizontal_quick_add -%}
-                    <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                    <span class="icon-wrap">
+                      {{- 'icon-arrow.svg' | inline_asset_content -}}
+                    </span>
                   {%- endif -%}
                   {%- render 'loading-spinner' -%}
                 </button>
@@ -333,7 +335,7 @@
                     class="quick-add-modal__toggle"
                     aria-label="{{ 'accessibility.close' | t }}"
                   >
-                    {% render 'icon-close' %}
+                    {{- 'icon-close.svg' | inline_asset_content -}}
                   </button>
                   <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info"></div>
                 </div>
@@ -380,7 +382,9 @@
                       {{ 'products.product.sold_out' | t }}
                     </span>
                     {%- if horizontal_quick_add -%}
-                      <span class="icon-wrap">{% render 'icon-plus' %}</span>
+                      <span class="icon-wrap">
+                        {{- 'icon-plus.svg' | inline_asset_content -}}
+                      </span>
                     {%- endif -%}
                     {%- render 'loading-spinner' -%}
                   </button>
@@ -435,7 +439,7 @@
                     class="quick-add-modal__toggle"
                     aria-label="{{ 'accessibility.close' | t }}"
                   >
-                    {% render 'icon-close' %}
+                    {{- 'icon-close.svg' | inline_asset_content -}}
                   </button>
                   <div
                     id="QuickAddInfo-{{ card_product.id }}"
@@ -481,8 +485,13 @@
                           {% endif %}
                           class="link product__view-details animate-arrow small-hide medium-hide"
                         >
+<<<<<<< HEAD
                           {{ 'products.product.view_full_details' | t }}
                           {% render 'icon-arrow' %}
+=======
+                          {{ 'products.product.view_full_details' | t -}}
+                          {{- 'icon-arrow.svg' | inline_asset_content -}}
+>>>>>>> origin/main
                         </a>
                       </div>
                       <div class="quick-add-modal__content-info--bulk-details large-up-hide">
@@ -541,6 +550,7 @@
 {%- else -%}
   {%- liquid
     assign ratio = 1
+    assign placeholder = true
     if media_aspect_ratio == 'portrait'
       assign ratio = 0.8
     endif
@@ -584,7 +594,7 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
-            {% render 'price', show_compare_at_price: true %}
+            {% render 'price', placeholder: placeholder, show_compare_at_price: true %}
           </div>
         </div>
       </div>
