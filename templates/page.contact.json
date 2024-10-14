@@ -1,7 +1,7 @@
 {
   "sections": {
-    "about": {
-      "type": "about",
+    "contact": {
+      "type": "contact-page",
       "disabled": true,
       "settings": {
         "padding_top": 36,
@@ -126,14 +126,14 @@
       "type": "product-carousel",
       "blocks": {
         "product-rank-1": {
-          "type": "image",
+          "type": "product-rank-1",
           "settings": {
             "url": "shopify:\/\/shop_images\/IMG_0009.jpg",
             "alt": "product 1"
           }
         },
         "product-rank-2": {
-          "type": "image",
+          "type": "product-rank-2",
           "settings": {
             "url": "shopify:\/\/shop_images\/IMG_2803.jpg",
             "alt": "product 2"
@@ -149,7 +149,7 @@
     }
   },
   "order": [
-    "main",
+    "contact",
     "contact-text",
     "form",
     "featured_product_ayDCVj",

@@ -60,6 +60,7 @@
     max-width: 200px;
 }
 }
+
 {%- endstyle -%}
 
 <div class="product-carousel">
@@ -130,6 +131,40 @@ $(document).ready(function() {
 { 
     "name": "Product Carousel",
     "settings": [],
+    "blocks": [
+        { 
+            "type": "product-rank-1",
+            "name": "Product Image 1",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_1",
+                    "label": "Product Image"
+                },
+                {
+                    "type": "text",
+                    "id": "alt_1",
+                    "label": "Image Alt Text"
+                }
+            ]
+        },
+        { 
+            "type": "product-rank-2",
+            "name": "Product Image 2",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_2",
+                    "label": "Product Image"
+                },
+                {
+                    "type": "text",
+                    "id": "alt_2",
+                    "label": "Image Alt Text"
+                }
+            ]
+        }
+    ],
     "presets": [
         {
             "name": "Default",
