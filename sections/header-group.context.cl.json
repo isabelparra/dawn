@@ -5,11 +5,15 @@
   },
   "sections": {
     "header": {
+      "type": "header",
       "settings": {
-        "menu": "spanish-menu"
+        "menu": "main-menu"
       },
       "blocks": {
       }
     }
-  }
+  },
+  "order": [
+    "header"
+  ]
 }
