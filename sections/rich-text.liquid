@@ -22,7 +22,7 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               <h2
-                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                id="gb-hp__heading" class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -44,7 +44,7 @@
               </p>
             {%- when 'text' -%}
               <div
-                class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="growinbag-text rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -55,6 +55,7 @@
               </div>
             {%- when 'button' -%}
               <div
+                id="gb-text__buttons"
                 class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
@@ -69,6 +70,7 @@
                     {% else %}
                       href="{{ block.settings.button_link }}"
                     {% endif %}
+                    id ="gb-hp-button-1"
                     class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                   >
                     {{- block.settings.button_label | escape -}}
@@ -81,6 +83,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_2 }}"
                     {% endif %}
+                    id = "gb-hp-button-2"
                     class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
                   >
                     {{- block.settings.button_label_2 | escape -}}
@@ -190,7 +193,7 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.rich-text.blocks.heading.settings.heading.default",
+          "default": "Talk about your brand",
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
         },
         {
@@ -212,10 +215,6 @@
             {
               "value": "hxl",
               "label": "t:sections.all.heading_size.options__4.label"
-            },
-            {
-              "value": "hxxl",
-              "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
           "default": "h1",
@@ -231,7 +230,7 @@
         {
           "type": "text",
           "id": "caption",
-          "default": "t:sections.rich-text.blocks.caption.settings.text.default",
+          "default": "Add a tagline",
           "label": "t:sections.rich-text.blocks.caption.settings.text.label"
         },
         {
@@ -280,7 +279,7 @@
         {
           "type": "richtext",
           "id": "text",
-          "default": "t:sections.rich-text.blocks.text.settings.text.default",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
         }
       ]
@@ -293,7 +292,7 @@
         {
           "type": "text",
           "id": "button_label",
-          "default": "t:sections.rich-text.blocks.buttons.settings.button_label_1.default",
+          "default": "Button label",
           "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
           "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
         },

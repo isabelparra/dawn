@@ -23,6 +23,10 @@
 .contact__button {
   margin-top: 3rem;
 }
+.contact__button button {
+  background-color:#4E5B31;
+  --border-offset: none;
+}
 
 @media screen and (min-width: 750px) {
   .contact__button {

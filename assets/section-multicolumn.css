@@ -9,7 +9,10 @@
 .multicolumn .title-wrapper-with-link {
   margin-top: 0;
 }
-
+.multicolumn .page-width {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
     margin-bottom: 3rem;
@@ -69,13 +72,13 @@
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
-  background: rgb(var(--color-background));
+  /* background: rgb(var(--color-background)); */
   height: 100%;
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background))
-    linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+  /* background: rgb(var(--color-background))
+    linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04)); */
 }
 
 .multicolumn-list h3 {
@@ -99,13 +102,19 @@
 
 .multicolumn-list__item.center .media--adapt,
 .multicolumn-list__item .media--adapt .multicolumn-card__image {
-  width: auto;
+  width: 100%;
 }
+
 
 .multicolumn-list__item.center .media--adapt img {
   left: 50%;
   transform: translateX(-50%);
 }
+.gb-multicol-3 div {
+  /* height:382px; */
+  /* padding-top:20px; */
+}
+
 
 @media screen and (max-width: 749px) {
   .multicolumn-list {
@@ -114,15 +123,15 @@
   }
 
   .multicolumn-list:not(.slider) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
   }
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .multicolumn-list:not(.slider) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
   }
 }
 
@@ -189,8 +198,8 @@
 
 @media screen and (min-width: 750px) {
   .background-none .multicolumn-card__image-wrapper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    /* margin-left: 1.5rem;
+    margin-right: 1.5rem; */
   }
 
   .background-none .multicolumn-list .multicolumn-card__info,
@@ -230,4 +239,12 @@
   .multicolumn-list__item--empty {
     display: list-item;
   }
+}
+
+#gb-multicol-3-card__img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+
 }

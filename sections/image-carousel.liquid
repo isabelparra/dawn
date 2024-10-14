@@ -1,0 +1,201 @@
+
+    {% comment %} <script src="{{ 'slick.js' }}" defer="defer"></script>
+    <script src="{{ 'slick.min.js' }}" defer="defer"></script> {% endcomment %}
+   
+{%- style -%}
+.image-carousel {
+  /* padding-bottom: 60px; */
+  /* width: 40000px; */
+  max-width:100%;
+  overflow:hidden;
+  margin: 0 auto 20px auto;
+}
+.carousel-img-div {
+  /* width: 250%;
+  height: auto; */
+  /* width: 280px; */
+  /* height:133px; */
+  overflow:hidden;
+  padding-right: 5px;
+  box-sizing: border-box;
+
+}
+.carousel-img {
+  /* width: 100%;
+  height: auto; */
+  /* max-width: 60%; */
+  border-radius: 20px;
+  /* width: 175px; */
+
+  /* max-height: 20vh; */
+  /* overflow:hidden; */
+}
+.slick-slide {
+  display: inline-block;
+  /* padding: 0px; */
+  margin: 0px;
+  /* max-height: 20vh; */
+
+  /* max-width: 100%; */
+  /* width: 175px !important;
+  height: 130px; */
+
+}
+.slick-slide img {
+  display: block;
+  padding: 0px;
+  
+  /* max-height: 20vh; */
+  /* height: auto; */
+}
+.slick-slide:nth-child(odd) {
+  padding-top: calc(var(--padding-small)*1.5);
+
+}
+  .slick-slide:nth-child(even) {
+    
+    /* padding-top: calc(var(--padding-small)*1.5); */
+    /* padding-top: 10px;
+    padding-bottom: 20px; */
+  }
+  /* .carousel-img */
+  /* .slick-center .carousel-images {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+   */
+ @media screen and (min-width:600px) {
+  .slick-slide {
+    max-width: 90%;
+
+  }
+ }
+ @media screen and (min-width:1000px) {
+  .slick-slide {
+    max-width: 500px !important;
+  }
+  .carousel-img {
+    max-width: 500px;
+  } 
+ }
+  
+{%- endstyle -%}
+
+{% comment %}
+  <div class="image-carousel">
+      <div class="carousel-images">
+          <img src="https://cdn.shopify.com/s/files/1/0654/7701/7752/files/IMG_0009.jpg?v=1721856214" width="300" height="200">
+      </div>
+  </div>
+{% endcomment %}
+<div class="image-carousel">
+  <div class="carousel-images">
+    {% for block in section.blocks %}
+      {% if block.settings.url %}
+        {% comment %} {% assign image_url = block.settings.url | replace: 'shopify://shop_images/', 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/' %} 
+        {%- assign image_url = image_url | append: '?v=1721856214' -%} {% endcomment %}
+        {% assign image_filename = block.settings.url | split: '/' | last %}
+        {% assign image_url = 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/' | append: image_filename %}
+        {% comment %} {%- assign image_url_with_param = image_url | append: '?v=1721856214' -%} {% endcomment %}
+        <div class="carousel-img-div">
+        <img src="{{ image_url }}" alt="{{ block.settings.alt }}" class="carousel-img" width="100%" height="auto" >
+        </div> 
+        {% comment %} <img src="{{ image.url | asset_url }}" alt="{{ image.alt }}" class="carousel-img" width="300" height="200"> {% endcomment %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+   {% comment %}
+        {% capture imageUrl %}image{{ i }}.url{% endcapture %}
+        {% capture imageAlt %}image{{ i }}.alt{% endcapture %}
+      {% endcomment %}
+
+ {% javascript %}
+  $(document).ready(function () { 
+    var $carousel = $('.carousel-images');
+    var slideCount = $carousel.find('.carousel-img-div').length;
+
+    for (var i = 0; i < slideCount; i++) {
+      $carousel.find('.carousel-img-div').eq(i).clone().appendTo($carousel);
+    }
+  
+    $carousel.slick({
+        infinite: true,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerPadding: '0px',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px'
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px'
+         
+                }
+            }, 
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '10px'
+         
+                }
+            }
+        ]
+    });
+  });
+{% endjavascript %} 
+
+
+
+{% schema %}
+{
+  "name": "Image Carousel",
+  "settings": [],
+  "blocks": [    
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "url",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "alt",
+            "label": "Alt Text"
+        }
+      ]
+    }
+],
+"presets": [
+    { 
+        "name": "Default",
+        "category": "Custom"
+
+    }
+    ]
+}
+        
+{% endschema %}

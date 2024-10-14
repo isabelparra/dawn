@@ -1,0 +1,213 @@
+
+
+<style>
+    .row {
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        {% comment %} width: 100%;
+        margin: 0 auto; {% endcomment %}
+        {% comment %} margin-bottom: 20px;  {% endcomment %}
+    }
+    .col-6 {
+        width:100%;
+    }
+    .gb-inline-richtext-4 {
+        font-family: Ciutadella Regular, Arial, Helvetica, sans-serif;
+        font-size:13px;
+        color:white;
+        line-height: 100%;
+        font-weight:100;
+        margin:0;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    
+    }
+    .icons-mn-row {
+        display: block;
+        /* margin: 0 0px; */
+        {% comment %} width:100%; {% endcomment %}
+        margin: 10px auto;
+        text-align: center;
+    }
+    .icon-row {
+        height:50px;
+    }
+    @media (min-width: 400px) {
+       
+        .icons-mn-row {
+            {% comment %} margin: 0 auto;
+            width:90%; {% endcomment %}
+        }
+    }
+    @media (min-width: 500px) {
+        .gb-inline-richtext-4 {
+            font-size:18px;
+        }
+        .icons-mn-row {
+            {% comment %} padding: 0 20px;
+            margin: 0 50px; {% endcomment %}
+        }
+ 
+        .icon-img-hp-div {
+            width: 50px;
+            margin-right:10px; 
+        }
+        
+    }
+    @media (min-width:779px) {
+    .col-6 {
+        width: 350px;
+        float: left;
+    }
+    .gb-hp-header-2 {
+        margin: 0 auto 1em auto;
+    }
+    .gb-inline-richtext-4 {
+        font-size: 18px;
+    }
+    }
+    .icon-img-hp-div {
+        width: 40px;
+        {% comment %} margin-right:10px; {% endcomment %}
+        {% comment %} margin-right:3px;  {% endcomment %}
+        display: flex;
+        align-items: center;
+  
+    }
+    .icon-img-hp {
+        {% comment %} width:50px; {% endcomment %}
+        width:100%;
+        margin-right:5px;
+    }
+    
+    @media (min-width: 1000px) { 
+        .gb-inline-richtext-4 {
+        font-size: 18px;
+        }
+        .col-6 {
+        width:420px; 
+    }
+
+    }
+    @media (min-width: 1200px) {
+        .gb-hp-slider-mobile-2 {
+            padding: 75px 30px;
+        }
+        .icon-img-hp-div {
+            width: 70px;
+            
+         }
+        .icon-row {
+         height:70px;
+        }
+    }
+    @media (min-width: 1400px) {
+        .gb-multicol-p, .gb-multicol-p-3, .gb-inline-richtext-4 {
+            font-size:20px;
+        }
+    }
+
+   
+   
+   
+</style>
+
+<section id="shopify-section-template--{{ section.id }}" class="shopify-section section">
+    <div class="multicolumn background-none no-heading">
+        <div class="page-width gb-contained section-{{ section.id }}-padding isolate">
+        <div class="gb-hp-slider-mobile-2 icon-banner-div">
+            
+            <header class="row header-row">
+                <h2 class="gb-hp-header-2">{{ section.settings.title }}</h2>
+            </header>
+            <div class="row icons-mn-row">
+                {% comment %} Column 1 {% endcomment %}
+                <div class="col-6">
+                    {% for block in section.blocks -%}
+                        {% if block.type == 'column1_row' -%}
+                        <div class="row icon-row">
+                            <div class="icon-img-hp-div">
+                            <img class="icon-img-hp" src="{{ block.settings.icon | img_url: 'small' }}" alt="Icon 1">
+                            </div>
+                            <div class="gb-inline-richtext-4">{{ block.settings.text }}</div>
+                        </div>
+                        {%- endif %}
+                    {%- endfor %}
+                </div>
+                <!-- Column 2 -->
+                <div class="col-6">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'column2_row' %}
+                        <div class="row icon-row">
+                            <div class="icon-img-hp-div">
+                            <img class="icon-img-hp" src="{{ block.settings.icon | img_url: 'small' }}" alt="Icon 2">
+                            </div>
+                            <p class="gb-inline-richtext-4">{{ block.settings.text }}</p>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{ 
+    "name": "Custom Icons",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Section Title",
+            "default": "Why GrowinBag"
+        }
+    ], 
+    "blocks": [
+        { 
+        "type": "column1_row",
+        "name": "Column 1 Row",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "icon",
+                "label": "Icon"
+            }, 
+            {
+                "type": "text",
+                "id": "text",
+                "label": "Text",
+                "default": "Controlled environment agriculture"
+            }
+        ]
+    }, 
+    {
+        "type": "column2_row",
+        "name": "Column 2 Row",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "icon",
+                "label": "Icon"
+            }, 
+            {
+                "type": "text",
+                "id": "text",
+                "label": "Text", 
+                "default": "Enter text for column 2 row."
+            
+            }
+        ]
+    }
+    ], 
+    "presets": [
+        {
+            "name": "Custom Icons",
+            "category": "Custom"
+        }
+    ]
+
+}
+{% endschema %}

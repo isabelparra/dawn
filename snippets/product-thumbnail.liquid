@@ -53,10 +53,11 @@
   class="product-media-container media-type-{{ media.media_type }} media-fit-{{ media_fit }} global-media-settings gradient{% if constrain_to_viewport %} constrain-height{% endif %}"
   style="--ratio: {{ media.aspect_ratio | default: 1.0 }}; --preview-ratio: {{ media.preview_image.aspect_ratio | default: 1.0 }};"
 >
-  <modal-opener
+  {% comment %} <modal-opener
     class="product__modal-opener product__modal-opener--{{ media.media_type }}"
     data-modal="#ProductModal-{{ modal_id }}"
-  >
+  > {% endcomment %}
+  <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }}">
     <span
       class="product__media-icon motion-reduce quick-add-hidden{% if media.media_type == 'image' %} product__media-icon--{{ section.settings.image_zoom }}{% endif %}"
       aria-hidden="true"
@@ -94,8 +95,8 @@
         {{ 'products.product.media.open_media' | t: index: position }}
       </span>
     </button>
+  {% comment %} </modal-opener> {% endcomment %}
   </modal-opener>
-
   {%- if media.media_type != 'image' -%}
     {%- if media.media_type == 'model' -%}
       <product-model class="deferred-media media media--transparent" data-media-id="{{ media.id }}">

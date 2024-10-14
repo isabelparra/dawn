@@ -1,0 +1,164 @@
+.newsletter__wrapper h2 {
+    font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
+    font-size: 31px;
+}
+.newsletter__subheading {
+    font-family: CiutadellaRounded, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+div.banner__media.media {
+    background-color: transparent;
+}
+div.banner__media.media > img {
+    border-radius: 20px;
+}
+.banner--medium:not(.banner--adapt) {
+    min-height: 36rem;
+  }
+  .banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
+    min-height: 39rem;
+  }
+  #gb-banner__text {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+ 
+  
+
+
+  .shopify-section .banner__heading {
+    font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+.shopify-section:first-child .banner__heading { 
+    font-size: 45px;
+}
+.shopify-section:last-child .banner__heading {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+  .shopify-section:last-child .banner--medium:not(.banner--adapt) {
+    min-height: 27rem;
+  }
+ .banner__buttons .button--primary {
+    opacity: 1;
+  }
+  .newsletter__wrapper {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto 40px auto;
+
+  }
+ 
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main-blog {
+    margin-top: 10px;
+    
+  }
+  .main-blog .title--primary {
+    display: none;
+  }
+  .banner--medium:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
+   min-height: 10rem;
+  }
+ 
+  #sm-blog-banner  {
+    font-size: 34px;
+  }
+  /* #Banner-template--17660778021016__image_banner_papceV { */
+
+
+  
+
+
+  @media screen and (min-width: 540px) {
+    #MainContent .shopify-section {
+        padding: 0px 20px;
+    }
+    .blog-articles__article .card__content {
+        width: 54%;
+    
+    }
+    .main-blog {
+    width: 100%; 
+    }
+    .blog-articles__article .card--standard > .card__content {
+        padding-left: 16px;
+    }
+    .shopify-section:first-of-type .banner__heading {
+        font-size:55px;
+    }
+    #gb-banner__text { 
+        font-size: 18px;
+    }
+    }
+    @media screen and (min-width: 600px) {
+        .field {
+          width: 19%;
+          float: left;
+          margin: 5px 1px;
+        }
+      }
+      @media screen and (min-width:750px) {
+        .main-blog .card:not(.ratio) {
+            flex-direction: unset;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog-articles__article .article-card-wrapper .card:not(.ratio) { 
+            display: flex;
+            width: 75%;
+            margin: 0 auto;
+        }
+        .main-blog .blog-articles__article {
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        .main-blog .article-card-wrapper {
+            /* display: flex;
+            width: 100%; */
+        }
+        .main-blog .card__inner {
+            /* flex: 0 0 40%;
+            max-width: 40%; */
+        }
+        .main-blog .card__content {
+            /* flex: 0 0 60%;
+            max-width: 60%;
+            padding-left: 16px; */
+
+        }
+        .main-blog {
+       
+        }
+      }
+      @media screen and (min-width: 869px) {
+      .shopify-section:last-child .banner__heading  {
+        font-size: 34px;
+      }
+      
+      #gb-banner__text { 
+        font-size: 20px;
+    }
+    .banner--small:not(.banner--adapt) {
+        min-height: 50rem;
+    }
+      }
+
+
+  @media screen and (min-width: 1000px) { 
+    .shopify-section:first-of-type .banner__heading {
+        font-size: 100px;
+    }
+   
+  }
+  @media screen and (min-width: 1300px) { 
+    .blog-articles__article .article-card-wrapper .card:not(.ratio) {
+        width: 55%;
+    }
+  }

@@ -2,9 +2,40 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "contact-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QLj7ph": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h1"
+          }
+        },
+        "text_contact-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We designed and manufactured the original GrowinBag™ and now sell our market leading planter bag in over 20 countries. <b>If you want to find out more about our knowledgeable team or leading products, get in touch today!<\/b><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QLj7ph",
+        "text_contact-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "form": {
@@ -16,10 +47,112 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_product_ayDCVj": {
+      "type": "featured-product",
+      "blocks": {
+        "text_KKBGT3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_Qa4hW3": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_BY8eHH": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_dGhNx6": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_LEBr4V": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons_UJdxRW": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_xj6McD": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_KKBGT3",
+        "title_Qa4hW3",
+        "price_BY8eHH",
+        "variant_picker_dGhNx6",
+        "quantity_selector_LEBr4V",
+        "buy_buttons_UJdxRW",
+        "share_xj6McD"
+      ],
+      "settings": {
+        "product": "tree-cuff",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_carousel24": {
+      "type": "product-carousel",
+      "blocks": {
+        "product-rank-1": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_0009.jpg",
+            "alt": "product 1"
+          }
+        },
+        "product-rank-2": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_2803.jpg",
+            "alt": "product 2"
+          }
+        }
+      },
+      "block_order": [
+        "product-rank-1",
+        "product-rank-2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "contact-text",
+    "form",
+    "featured_product_ayDCVj",
+    "product_carousel24"
   ]
 }

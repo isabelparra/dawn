@@ -2,6 +2,12 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
+{%-  assign is_homepage = false -%}
+{%- if request.page_type == 'index' -%}
+  {%- assign is_homepage = true -%}
+  {{ 'section-home.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
@@ -26,7 +32,7 @@
 {%- endif -%}
 
 <slideshow-component
-  class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
+  class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} gb-contained page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
   aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
   aria-label="{{ section.settings.accessibility_info | escape }}"
@@ -369,7 +375,7 @@
       "id": "accessibility_info",
       "label": "t:sections.slideshow.settings.accessibility.label",
       "info": "t:sections.slideshow.settings.accessibility.info",
-      "default": "t:sections.slideshow.settings.accessibility.default"
+      "default": "Slideshow about our brand"
     }
   ],
   "blocks": [
@@ -386,7 +392,7 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.slideshow.blocks.slide.settings.heading.default",
+          "default": "Image slide",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
         },
         {
@@ -404,14 +410,6 @@
             {
               "value": "h0",
               "label": "t:sections.all.heading_size.options__3.label"
-            },
-            {
-              "value": "hxl",
-              "label": "t:sections.all.heading_size.options__4.label"
-            },
-            {
-              "value": "hxxl",
-              "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
           "default": "h1",
@@ -420,13 +418,13 @@
         {
           "type": "inline_richtext",
           "id": "subheading",
-          "default": "t:sections.slideshow.blocks.slide.settings.subheading.default",
+          "default": "Tell your brand's story through images",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
         },
         {
           "type": "text",
           "id": "button_label",
-          "default": "t:sections.slideshow.blocks.slide.settings.button_label.default",
+          "default": "Button label",
           "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
         },

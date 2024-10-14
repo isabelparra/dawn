@@ -1,7 +1,7 @@
 .list-social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 749px) {
@@ -11,8 +11,13 @@
 }
 
 .list-social__item .icon {
-  height: 2.2rem;
-  width: 2.2rem;
+  /* height: 2.2rem;
+  width: 2.2rem; */
+  height:32px;
+  width:32px;
+}
+.list-social li:nth-child(2) > a {
+  margin: 0px 30px;
 }
 
 .list-social__link {

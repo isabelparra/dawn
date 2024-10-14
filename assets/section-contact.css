@@ -1,0 +1,106 @@
+.section-featured-product section {
+    background-color: #DAEC72;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+.featured-product {
+    background-color: transparent;
+}
+.featured-product-headline {
+    font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
+    color: #4E5B31;
+    text-align: center;
+    font-size:34px;
+    margin: 30px 0px 30px 0px;
+}
+.featured-product-text {
+    font-family: "Ciutadella Regular", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.featured-product-btn {
+    background-color: #4E5B31;
+    color: #fff;
+
+}
+.product__text {
+    display: none;
+}
+.product__title {
+    text-align: center;
+    font-family: "Ciutadella Regular", Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+    font-size: 34px;
+    margin-top: 0px;
+}  
+.price {
+    text-align: center;
+}
+.contact__button {
+    text-align: center;
+}
+.featured-product .product-media-container {
+    background-color: transparent;
+}
+.product__media-list li:first-child {
+    padding: 20px 20px 0px 20px;
+}
+.product__media-wrapper {
+    /* height: 375px; */
+}
+.featured-product .share-button:nth-last-child(2){
+    display: none !important;
+}
+modal-opener > div.product__media.media.media--transparent > img {
+border-radius: 20px;
+}
+.product-form__quantity {
+display: none;
+}
+.product-form__buttons .shopify-payment-button .shopify-payment-button__button {
+    border-radius: 60px;
+
+}
+.shopify-payment-button__button--unbranded:after {
+    /* box-shadow:none; */
+    border-radius: 60px;
+    background-color: #4E5B31;
+    color: #fff;
+    
+
+}
+
+.shopify-payment-button__button {
+    text-transform: uppercase;
+    color: white;
+
+
+}
+.product-form__submit {
+    width: 90%;
+    margin: 0 auto;
+}
+.button-primary {
+    
+}
+.product-form__input .product-form__buttons {
+    max-width: none;
+}
+
+.product-form__buttons {
+    max-width: 100% !important;
+  }
+.featured-product {
+    /* padding: 30px 50px; */
+}
+@media screen and (max-width: 749px) {
+    .grid--peek.slider .grid__item:first-of-type {
+        margin-left: 0px !important;
+    }
+    /* .featured-product {
+    
+        width: 80%;
+        margin: 30px auto !important;
+    } */
+    }

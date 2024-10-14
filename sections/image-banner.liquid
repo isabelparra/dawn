@@ -1,5 +1,22 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
+{%- assign is_about_page = false -%}
+
+{%- if request.page_type == 'page' and request.path contains '/pages/about' -%}
+  {%- assign is_about_page = true -%}
+  {{ 'section-about.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- assign is_blog_page = false -%}
+
+{%- if request.path contains '/blog/news' or request.path contains '/blogs/' -%}
+  {%- assign is_blog_page = true -%}
+{%- endif -%}
+
+{%- if is_blog_page -%}
+  {{ 'section-blog.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
@@ -50,10 +67,13 @@
     assign fetch_priority = 'high'
   endif
 -%}
-
+{% comment %} {%- assign banner_id = "Banner-" | append: section.id -%}
+{% if request.page_type == 'about' -%} 
+{%- assign banner_id = "About-Banner-" | append: section.id -%}
+{%- endif -%} {% endcomment %}
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner {% if is_about_page %}banner--about-page {% endif %}{% if is_blog_page %} gb-blog-banner {% endif %}banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -121,13 +141,13 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}" id="gb-banner__heading"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="banner__text rte {{ block.settings.text_style }}" id="gb-banner__text" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
@@ -165,6 +185,7 @@
     </div>
   </div>
 </div>
+
 
 {% schema %}
 {
@@ -370,7 +391,7 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.image-banner.blocks.heading.settings.heading.default",
+          "default": "Image banner",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
         },
         {
@@ -388,14 +409,6 @@
             {
               "value": "h0",
               "label": "t:sections.all.heading_size.options__3.label"
-            },
-            {
-              "value": "hxl",
-              "label": "t:sections.all.heading_size.options__4.label"
-            },
-            {
-              "value": "hxxl",
-              "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
           "default": "h1",
@@ -411,7 +424,7 @@
         {
           "type": "inline_richtext",
           "id": "text",
-          "default": "t:sections.image-banner.blocks.text.settings.text.default",
+          "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
         },
         {
@@ -444,7 +457,7 @@
         {
           "type": "text",
           "id": "button_label_1",
-          "default": "t:sections.image-banner.blocks.buttons.settings.button_label_1.default",
+          "default": "Button label",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
           "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
         },
@@ -462,7 +475,7 @@
         {
           "type": "text",
           "id": "button_label_2",
-          "default": "t:sections.image-banner.blocks.buttons.settings.button_label_2.default",
+          "default": "Button label",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
           "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
         },

@@ -3,6 +3,8 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+  /* display: inline-block; */
+  overflow: hidden;
 }
 
 .card {
@@ -15,6 +17,7 @@
   flex-direction: column;
   height: 100%;
 }
+
 
 .card.card--horizontal {
   --text-alignment: left;
@@ -115,6 +118,7 @@
 
 .card__inner {
   width: 100%;
+  border-radius: 20px !important;
 }
 
 .card--media .card__inner .card__content {
@@ -128,6 +132,7 @@
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
+  position: relative;
 }
 
 .card__content--auto-margins {
@@ -271,6 +276,7 @@
 }
 
 .card__badge {
+  display: none;
   align-self: flex-end;
   grid-row-start: 3;
   justify-self: flex-start;
@@ -294,6 +300,9 @@
   object-fit: cover;
   object-position: center center;
   width: 100%;
+
+  border-radius: 20px;
+  
 }
 
 .card__inner:not(.ratio) > .card__content {
@@ -383,12 +392,12 @@
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
   .card-wrapper .media.media--hover-effect > img:only-child {
-    transition: transform var(--duration-long) ease;
+    /* transition: transform var(--duration-long) ease; */
   }
 
   .card:hover .media.media--hover-effect > img:first-child:only-child,
   .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
   }
 
   .card-wrapper:hover .media.media--hover-effect > img:first-child:not(:only-child) {
@@ -593,3 +602,53 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+/* .article--main > div > div > div.card__inner {
+  width: 100%;
+    } */
+    @media (min-width: 540px) {
+      
+    
+
+    div.blog-articles__article.article--main>div>div>div.card__inner {
+      height: 400px;
+    width: 45%;
+    float:left;
+    display: inline;
+    }
+    div.blog-articles__article.article--main.scroll-trigger.animate--slide-in > div > div > div.card__content {
+      float:left;
+      width: 50%;
+      padding: 0 0 0 20px;
+    }
+    .blog-articles__article .article-card-wrapper .card:not(.ratio) {
+      display: inline;
+    }
+  }
+  @media (min-width: 700px) {
+    div.blog-articles__article.article--main.scroll-trigger.animate--slide-in > div > div > div.card__content {
+    padding: 20px;
+    }
+  }
+  @media (min-width: 800px) {
+    div.blog-articles__article.article--main>div>div>div.card__inner {
+      width: 300px;
+      height: 450px;
+
+      }
+      .blog-articles__article .card-wrapper {
+        /* padding: 0 40px; */
+      }
+  }
+
+  @media (min-width: 900px) {
+  
+      .blog-articles__article .card-wrapper {
+        /* width: 68%; */
+ 
+      }
+  }     
+  
+  .blog-articles__article .card-wrapper {
+    margin: 0 auto;
+  }

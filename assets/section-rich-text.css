@@ -5,7 +5,9 @@
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
-  width: calc(100% - 4rem / var(--font-body-scale));
+  /* width: calc(100% - 4rem / var(--font-body-scale)); */
+  width:100%;
+  padding:0 20px;
 }
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
@@ -70,7 +72,7 @@
 
 .rich-text__buttons--multiple > * {
   flex-grow: 1;
-  min-width: 22rem;
+  /* min-width: 22rem; */
 }
 
 .rich-text__buttons + .rich-text__buttons {

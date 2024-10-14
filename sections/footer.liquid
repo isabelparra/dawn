@@ -9,10 +9,42 @@
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
+ 
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  .wrap {
+    max-width: var(--wrap-regular);
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  footer .wrap {
+    position: relative;
+    display: flex;
+  }
+  footer a {
+    /* color: #fff; */
+    text-decoration: none;
+  }
+  footer .gb-dk-footer-logo {
+    position: relative;
+    z-index: 2;
+    bottom: 15px;
+    padding: 3.125rem 5rem 3.125rem 0;
+
+  }
+  
+  footer .wrap:before {
+    content: "";
+    display: none;
+    position: absolute;
+    left:-99999%;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
   }
 
   @media screen and (min-width: 750px) {
@@ -25,12 +57,72 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-{%- endstyle -%}
+  @media screen and (min-width: 870px) {
+    .gb-footer-h2 {
+      margin-top: 0px;
+    }
+    .footer-block--newsletter {
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+      float: right;
+    }
+    .gb-footer {
+         padding: 50px 20px 50px 20px;
+    }
+  }
+ @media (max-width: 959px) {
+    footer {
+        padding-left: var(--padding-mobile);
+        padding-right: var(--padding-mobile);
+        
+    }
+    footer .wrap {
+        display: block;
+    }
+    footer {
+      margin-top: 3.125rem;
+    }
+}
+@media screen and (min-width: 960px) {
+ 
+footer .wrap:before { 
+      display: block;
+    }
+    .gb-footer {
+    /* display: flex; */
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    background-color: var(--primary);
+  }
+  }
+{%- endstyle -%}
+<footer class="main-footer">
+<div class="wrap">
+<a class="gb-dk-footer-logo" href="https://www.growinnovate.com.au/" aria-label="Home">
+  <svg width="220" height="100%" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134.12 443.16"> 
+  <path class="cls-1" d="m89.09,304.19h9.75c1.92,0,3.22,1.23,3.22,3.15v6.75c0,9.9-6.75,16.04-16.8,16.04s-17.12-6.37-17.12-16.5v-18.96c0-10.13,6.6-16.5,17.27-16.5,9.05,0,15.35,4.76,16.42,12.89.31,2.15-1.07,4.3-3.68,4.3-1.84,0-3.38-1.07-3.69-2.76-.92-4.68-3.6-7.29-9.13-7.29-5.91,0-9.29,3.84-9.29,9.36v18.96c0,5.53,3.37,9.36,9.21,9.36s9.36-3.61,9.36-8.83v-3.68h-5.52c-1.84,0-3.15-1.38-3.15-3.23s1.31-3.07,3.15-3.07"/>
+    <path class="cls-1" d="m120.02,285.92v17.42h8.06c5.99,0,9.83-3.45,9.83-8.9s-3.84-8.52-9.83-8.52h-8.06Zm24.48,38.45c.15.38.31.92.31,1.38,0,2.15-1.92,3.99-4.07,3.99-1.61,0-3.07-1.08-3.68-2.54l-7.6-17.04c-.38.08-.77.08-1.23.08h-8.21v15.65c0,2.3-1.69,3.84-3.99,3.84s-3.92-1.54-3.92-3.84v-43.13c0-2.3,1.46-3.84,3.84-3.84h12.82c9.98,0,17.19,6.06,17.19,15.42,0,6.53-3.38,11.51-8.67,13.97l7.22,16.04Z"/>
+    <path class="cls-1" d="m162.07,313.63c0,5.53,3.37,9.36,9.29,9.36s9.29-3.84,9.29-9.36v-18.96c0-5.52-3.38-9.36-9.29-9.36s-9.29,3.84-9.29,9.36v18.96Zm26.56,0c0,10.13-6.98,16.5-17.27,16.5s-17.19-6.37-17.19-16.5v-18.96c0-10.13,6.37-16.5,17.19-16.5s17.27,6.37,17.27,16.5v18.96Z"/>
+    <path class="cls-1" d="m236.44,326.22c-.46,2.15-2.07,3.53-4.3,3.53s-3.84-1.38-4.22-3.53l-6.98-33.54-6.98,33.54c-.39,2.15-2.07,3.53-4.22,3.53s-3.84-1.38-4.3-3.53l-9.9-42.98c-.07-.3-.07-.61-.07-.84,0-2.15,1.69-3.84,3.76-3.84,1.92,0,3.45,1.38,3.84,3.23l6.98,33.92,6.83-33.38c.39-2.15,2-3.53,4.22-3.53s3.84,1.38,4.22,3.53l6.83,33.16,7.06-33.85c.3-1.84,1.76-3.07,3.61-3.07,2.07,0,3.61,1.53,3.61,3.68,0,.23,0,.54-.08.85l-9.9,43.13Z"/>
+    <path class="cls-2" d="m77.42,387.61c0,2.3-1.69,3.84-3.99,3.84s-3.92-1.53-3.92-3.84v-43.52c0-2.3,1.54-3.84,3.92-3.84s3.99,1.53,3.99,3.84v43.52Z"/>
+    <path class="cls-2" d="m122.7,387.61c0,2.3-1.46,3.84-3.84,3.84-1.84,0-3.07-1-3.84-2.46l-18.5-32.92v31.85c0,2.07-1.54,3.53-3.61,3.53s-3.61-1.45-3.61-3.53v-43.83c0-2.3,1.61-3.84,3.99-3.84,1.92,0,3.07.69,4.14,2.69l17.96,32v-31.16c0-2.07,1.53-3.53,3.61-3.53s3.68,1.46,3.68,3.53v43.82Z"/>
+    <path class="cls-2" d="m167.98,387.61c0,2.3-1.46,3.84-3.84,3.84-1.84,0-3.07-1-3.84-2.46l-18.5-32.92v31.85c0,2.07-1.53,3.53-3.6,3.53s-3.61-1.45-3.61-3.53v-43.83c0-2.3,1.61-3.84,3.99-3.84,1.92,0,3.07.69,4.14,2.69l17.96,32v-31.16c0-2.07,1.53-3.53,3.61-3.53s3.68,1.46,3.68,3.53v43.82Z"/>
+    <path class="cls-2" d="m186.4,375.33c0,5.53,3.37,9.36,9.29,9.36s9.29-3.84,9.29-9.36v-18.96c0-5.52-3.37-9.36-9.29-9.36s-9.29,3.84-9.29,9.36v18.96Zm26.56,0c0,10.13-6.98,16.5-17.27,16.5s-17.19-6.37-17.19-16.5v-18.96c0-10.13,6.37-16.5,17.19-16.5s17.27,6.37,17.27,16.5v18.96Z"/>
+    <path class="cls-2" d="m241.73,387.46c-.69,2.38-2.69,3.99-5.22,3.99s-4.45-1.61-5.14-3.99l-12.28-41.67c-.15-.62-.23-1.15-.23-1.46,0-2.23,1.84-4.07,3.99-4.07,1.92,0,3.45,1.31,3.91,2.99l9.98,36.07,10.05-36.15c.46-1.61,1.84-2.92,3.6-2.92,2.15,0,3.92,1.69,3.92,3.84,0,.23-.07.69-.23,1.23l-12.36,42.13Z"/>
+    <path class="cls-2" d="m267.83,373.49h13.89l-6.99-22.79-6.9,22.79Zm26.02,13.97c0,2.22-1.46,3.99-3.76,3.99-2,0-3.3-1.23-3.91-3.07l-2.54-8.21h-17.81l-2.53,8.44c-.46,1.61-1.84,2.84-3.84,2.84-2.23,0-3.45-1.69-3.45-3.76,0-.23.07-.69.23-1.15l13.58-42.29c.77-2.38,2.69-3.99,5.15-3.99s4.37,1.61,5.14,3.99l13.51,41.75c.15.62.23,1.08.23,1.46"/>
+    <path class="cls-2" d="m297.3,340.64h26.94c2.07,0,3.45,1.53,3.45,3.61s-1.38,3.53-3.45,3.53h-9.52v39.83c0,2.3-1.61,3.84-3.99,3.84s-3.91-1.54-3.91-3.84v-39.83h-9.52c-2.07,0-3.45-1.53-3.45-3.61s1.38-3.53,3.45-3.53"/>
+    <path class="cls-2" d="m342.65,368.88v15.04h19.49c2.07,0,3.45,1.53,3.45,3.61s-1.38,3.53-3.45,3.53h-23.56c-2.38,0-3.84-1.53-3.84-3.84v-42.75c0-2.3,1.46-3.84,3.84-3.84h22.79c2.15,0,3.53,1.46,3.53,3.53s-1.38,3.61-3.53,3.61h-18.72v14.12h16.81c2.07,0,3.45,1.46,3.45,3.53s-1.38,3.45-3.45,3.45h-16.81Z"/>
+    <path class="cls-2" d="m1021.7,75.65h17.34c1.34,0,2.22.99,2.22,2.32s-.89,2.27-2.22,2.27h-6.12v25.63c0,1.49-1.04,2.47-2.57,2.47s-2.52-.98-2.52-2.47v-25.63h-6.13c-1.33,0-2.22-.99-2.22-2.32s.89-2.27,2.22-2.27"/>
+    <path class="cls-2" d="m1057.76,91.01l7.21-13.88c.64-1.19,1.38-1.73,2.77-1.73s2.42.99,2.42,2.47v28.11c0,1.43-1.09,2.37-2.52,2.37s-2.42-.94-2.42-2.37v-20.05l-5.38,10.47c-.44.74-1.04,1.28-2.17,1.28s-1.73-.54-2.13-1.28l-5.53-10.57v20.25c0,1.34-1.04,2.27-2.37,2.27s-2.32-.94-2.32-2.27v-28.2c0-1.48.94-2.47,2.42-2.47s2.13.54,2.77,1.73l7.26,13.88Z"/>
+    <path class="cls-2" d="m532.58,76.9c-7.51,0-13.59,6.08-13.59,13.59s6.08,13.59,13.59,13.59,13.59-6.09,13.59-13.59-6.09-13.59-13.59-13.59m208.27,137.01h-29.91v-49.13h30.38c16.14,0,25.87,9.73,25.87,24.69s-9.73,24.45-26.35,24.45m-29.91-115.59h26.59c15.9,0,26.11,8.31,26.11,22.55s-9.97,23.5-25.4,23.5h-27.3v-46.04Zm54.83,55.54v-.24c14.48-5.94,22.79-17.56,22.79-34.89,0-24.45-19.94-40.59-48.19-40.59h-41.77c-7.36,0-11.87,4.75-11.87,11.87v132.21c0,7.12,4.51,11.87,11.87,11.87h45.81c28.01,0,47.95-16.62,47.95-42.96,0-19.23-9.73-32.04-26.58-37.26m-143.12-38.21c-13.29,0-23.73,5.7-30.38,14.72l-.95-5.94c-.95-5.7-5.7-7.59-10.21-7.59-6.88,0-10.68,4.27-10.68,11.16v95.65c0,6.88,4.75,11.63,11.87,11.63s11.86-4.75,11.86-11.63v-63.38c0-13.53,8.55-23.97,22.55-23.97s21.6,9.97,21.6,23.02v64.33c0,6.88,4.75,11.63,11.86,11.63s11.63-4.75,11.63-11.63v-65.27c0-25.4-13.29-42.72-39.16-42.72m362.43,71.68c0,13.53-8.78,23.97-22.79,23.97s-21.36-9.97-21.36-23.02v-28.96c0-13.06,7.36-23.02,21.36-23.02s22.79,10.44,22.79,23.97v27.06Zm12.82-70.5c-4.51,0-9.25,2.14-10.2,7.83l-.95,5.22c-6.41-8.78-16.61-14.24-29.67-14.24-25.87,0-39.88,17.8-39.88,44.15v28.01c0,26.34,14,44.15,39.88,44.15,11.87,0,21.6-4.51,28.01-12.11v20.18c0,13.05-7.59,21.6-22.55,21.6-13.77,0-18.28-7.36-21.6-12.82-2.61-4.27-4.98-6.64-9.97-6.64-9.25,0-12.34,9.25-9.25,16.14,5.93,13.29,19.7,22.55,41.77,22.55,27.06,0,45.1-15.67,45.1-41.78v-111.08c0-6.89-3.8-11.16-10.68-11.16m-123.66,74.77c0,13.76-8.78,24.21-22.79,24.21s-21.37-9.97-21.37-23.02v-33.47c0-13.06,7.36-23.02,21.37-23.02s22.79,10.44,22.79,23.97v31.33Zm12.82-74.77c-4.51,0-8.31,2.14-10.21,7.59l-.95,5.46c-6.41-8.78-16.62-14.24-29.67-14.24-25.87,0-39.88,17.8-39.88,44.15v32.52c0,26.34,14.01,44.15,39.88,44.15,13.06,0,23.26-5.46,29.67-14.48l.95,5.7c.95,5.7,5.7,7.6,10.21,7.6,6.88,0,10.68-4.51,10.68-11.16v-96.13c0-6.89-3.8-11.16-10.68-11.16m-646.31-.47c-10.68,0-19.94,5.93-25.87,15.43l-1.19-7.36c-.95-5.93-5.7-7.59-10.21-7.59-6.88,0-10.68,4.27-10.68,11.16v95.65c0,6.88,4.98,11.63,11.87,11.63s11.86-4.75,11.86-11.63v-61.48c0-15.19,10.68-23.73,24.45-24.45,5.93-.24,10.44-4.27,10.44-10.92,0-6.17-4.75-10.44-10.68-10.44m291.71-.95c-7.36,0-12.11,4.75-12.11,11.86v96.13c0,7.12,4.75,11.87,12.11,11.87s12.34-4.75,12.34-11.87v-96.13c0-7.12-4.98-11.86-12.34-11.86m-207.21,76.9c0,13.77-8.07,23.97-22.31,23.97s-22.31-10.2-22.31-23.97v-32.52c0-13.76,8.07-23.97,22.31-23.97s22.31,10.21,22.31,23.97v32.52Zm-22.31-76.67c-27.29,0-46.04,17.8-46.04,46.04v28.72c0,28.24,18.75,46.05,46.04,46.05s46.05-17.81,46.05-46.05v-28.72c0-28.24-18.75-46.04-46.05-46.04m-140.04,40.59h-30.15c-5.7,0-9.73,3.8-9.73,9.49s4.03,9.97,9.73,9.97h17.09v11.39c0,16.14-10.2,27.29-28.95,27.29s-28.48-11.86-28.48-28.96v-58.63c0-17.09,10.45-28.95,28.72-28.95,17.09,0,25.4,8.07,28.24,22.55.95,5.22,5.7,8.54,11.39,8.54,8.07,0,12.34-6.64,11.39-13.29-3.33-25.16-22.79-39.88-50.8-39.88-32.99,0-53.41,19.7-53.41,51.03v58.63c0,31.33,21.6,51.04,52.93,51.04s51.98-18.99,51.98-49.61v-20.89c0-5.94-4.04-9.73-9.97-9.73m328.26-39.4c-6.17,0-9.97,3.8-11.39,9.02l-18.51,74.53-18.28-74.06c-1.42-5.7-6.17-9.49-12.1-9.49s-10.45,3.8-12.11,9.49l-18.28,74.29-18.28-73.58c-1.19-5.46-4.98-10.2-11.87-10.2-6.41,0-11.63,5.22-11.63,12.1,0,.95.24,2.14.71,3.56l26.82,92.57c1.66,6.17,6.89,10.21,13.29,10.21s11.39-4.04,13.06-10.21l18.04-68.6,18.28,68.6c1.42,6.17,6.41,10.21,12.81,10.21s11.39-4.04,13.06-10.21l26.82-91.86c.95-3.09.95-5.22.47-7.12-1.19-5.46-5.46-9.25-10.92-9.25"/>
+</svg>            
+</a>
+
+<div class="gb-footer footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+
   {%- liquid
     assign has_social_icons = true
-    if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
+    if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank and settings.social_linkedin_link == blank 
       assign has_social_icons = false
     endif
 
@@ -75,8 +167,13 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
+                
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="gb-footer-h2 footer-block__heading inline-richtext ">
+                    {{- block.settings.heading -}}
+                 
+                    {% comment %} Growing <br> a greener <br> tomorrow {% endcomment %}
+                </h2>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -232,7 +329,10 @@
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
+              {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
+              {% # theme-check-disable %}
               {{ shop | login_button: action: 'follow' }}
+              {% # theme-check-enable %}
             </div>
           {%- endif -%}
 
@@ -296,7 +396,7 @@
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
+        {% comment %} <small class="copyright__content">{{ powered_by_link }}</small> {% endcomment %}
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
@@ -313,8 +413,16 @@
       </div>
     </div>
   </div>
-</footer>
+  {% comment %} <div>
+    <select id="country-selector">
+      <option value="USA">USA</option>
+      <option value="Spain">Spain</option>
+      <option value="Chile">Chile</option>
+    </select></div> {% endcomment %}
+  </div>
+</div>
 
+</footer>
 {% schema %}
 {
   "name": "t:sections.footer.name",
@@ -329,7 +437,7 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.footer.blocks.link_list.settings.heading.default",
+          "default": "Growing a greener tomorrow",
           "label": "t:sections.footer.blocks.link_list.settings.heading.label"
         },
         {
@@ -369,13 +477,13 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.footer.blocks.text.settings.heading.default",
+          "default": "Heading",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
         },
         {
           "type": "richtext",
           "id": "subtext",
-          "default": "t:sections.footer.blocks.text.settings.subtext.default",
+          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         }
       ]
@@ -443,7 +551,7 @@
     {
       "type": "inline_richtext",
       "id": "newsletter_heading",
-      "default": "t:sections.footer.settings.newsletter_heading.default",
+      "default": "Subscribe to our emails",
       "label": "t:sections.footer.settings.newsletter_heading.label"
     },
     {
@@ -508,7 +616,7 @@
     {
       "type": "checkbox",
       "id": "show_policy",
-      "default": true,
+      "default": false,
       "label": "t:sections.footer.settings.show_policy.label"
     },
     {

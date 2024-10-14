@@ -1,0 +1,394 @@
+{
+  "sections": {
+    "rich_text_XfXCx9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_36Xj9j": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet our dedicated team of horticulture specialists",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_36Xj9j"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_banner_XPdwbT": {
+      "type": "image-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/team-photo1_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "slideshow_zFxVQX": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_BfRjdT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/team-photo1_1.jpg",
+            "heading": "Meet our dedicated team of horticulture specialists",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BfRjdT"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_7zyFnT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_iRPLBJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When you choose Growinnovate you’re choosing to partner with a reputable, trusted brand that’s family owned and operated. Whilst our head office is based in Perth, Australia, we partner with horticulturists around the world, from the Middle East to North and South America as well as Europe, creating exceptional eco-friendly planting solutions that enhance plant health and increase productivity.<br\/><br\/>The friendly, knowledgeable team behind Growinnovate are Rick, Geoff and Lina. Our directors have deep roots in farming and have expertise and experience working in agriculture and horticulture. They share a collective passion for the land, sustainable eco-friendly growing and providing helpful advice to clients.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_iRPLBJ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_2_MGcwKU": {
+      "type": "multicolumn-2",
+      "blocks": {
+        "column_tHGPhz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.svg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tHGPhz"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_UmBiM3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_c3Pdgp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Employee Spotlight",
+            "heading_size": "h1"
+          }
+        },
+        "text_gFJH7K": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet Francisco, our dedicated Business Development Manager at Growinnovate. With a wealth of experience in the horticultural industry, he plays a pivotal role in fostering partnerships with growers around the globe.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_AKeyit": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "caption_Wdk99J": {
+          "type": "caption",
+          "settings": {
+            "caption": "Nurturing the Future",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c3Pdgp",
+        "text_gFJH7K",
+        "button_AKeyit",
+        "caption_Wdk99J"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2.svg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "marquee_section_gttrxe": {
+      "type": "marquee-section",
+      "settings": {
+        "marquee_text": "Growing a greener tomorrow"
+      }
+    },
+    "rich_text_FDXhbU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9KzFa9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While our company name and brand has changed, our exceptional management team has not. You receive the same unrivalled knowledge, passion, and business acumen, built on a foundation of unwavering values and unrivalled commitment to customer service.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9KzFa9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_2_Q6HgYn": {
+      "type": "multicolumn-2",
+      "blocks": {
+        "column_CQamcD": {
+          "type": "column",
+          "settings": {
+            "title": "GrowinBag™ – The number one choice for growers in Australia, the Middle East and globally",
+            "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p>To find out more about our market leading GrowinBag™, get in touch with us today!<\/p>",
+            "link_label": "Products",
+            "link": "shopify:\/\/pages\/products"
+          }
+        },
+        "column_EpBrCJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/photo2_1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CQamcD",
+        "column_EpBrCJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_kCcRYw": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/photo3_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "marquee_section_dfehpi": {
+      "type": "marquee-section",
+      "settings": {
+        "marquee_text": "The number one choice for quality eco-friendly grow bags in the industry"
+      }
+    },
+    "rich_text_Vb9bWh": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ATBweJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We don’t just design, manufacture and supply the world’s leading GrowinBag™ – we also offer a comprehensive range of quality horticultural products.<br\/><br\/>Our product range includes plant pouches, wall gardens and hedge bags, seedling trays, weed mat and shade cloth, bamboo sticks, garden stakes and tree accessories, including tree collars, tree ties and tree guards.<br\/><br\/>To find out more about our great product range, get in touch today.<\/p>"
+          }
+        },
+        "button_jdnB4j": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get in touch",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_ATBweJ",
+        "button_jdnB4j"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_carousel_BGRiej": {
+      "type": "image-carousel",
+      "blocks": {
+        "image_xPCGRG": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_0009.jpg",
+            "alt": ""
+          }
+        },
+        "image_fnkkJe": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/c067216d-265a-4bf6-be45-49f5ff335504.jpg",
+            "alt": ""
+          }
+        },
+        "image_aJmQTe": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_1845.jpg",
+            "alt": ""
+          }
+        },
+        "image_hE4fdj": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/NG63-tray-Nov163.jpg",
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xPCGRG",
+        "image_fnkkJe",
+        "image_aJmQTe",
+        "image_hE4fdj"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "rich_text_XfXCx9",
+    "image_banner_XPdwbT",
+    "slideshow_zFxVQX",
+    "main",
+    "rich_text_7zyFnT",
+    "multicolumn_2_MGcwKU",
+    "image_with_text_UmBiM3",
+    "marquee_section_gttrxe",
+    "rich_text_FDXhbU",
+    "multicolumn_2_Q6HgYn",
+    "image_banner_kCcRYw",
+    "marquee_section_dfehpi",
+    "rich_text_Vb9bWh",
+    "image_carousel_BGRiej"
+  ]
+}

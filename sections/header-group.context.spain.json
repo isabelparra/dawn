@@ -1,0 +1,15 @@
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "spain"
+  },
+  "sections": {
+    "header": {
+      "settings": {
+        "menu": "spanish-menu"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

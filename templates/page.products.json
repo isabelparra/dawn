@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_Rd3Anr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ADUgRa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Products",
+            "heading_size": "h1"
+          }
+        },
+        "text_nVJkA6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You may know us as GrowinBag the trusted supplier of high - quality planters to the US for over 25 years. We designed and manufactured the original GrowinBag™ and now sell our market leading planter bag in over 20 countries.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ADUgRa",
+        "text_nVJkA6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_8VzzYn": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "main-collection",
+        "products_to_show": 25,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_2_eePXBT": {
+      "type": "multicolumn-2",
+      "blocks": {
+        "column_6CVMmh": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>“We have been very pleased with the GrowinBags we have put in service. They provide the benefits of root-pruning more economically than plastic pots. The handles make them easy to move and there is no damage to the trunks of other trees when loading\/stacking.”<\/p><p><em><strong>- Brian Keller Oak Hill Tree Farm, LLC<\/strong><\/em><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wjzDFi": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>“Bick Tropical farms is very pleased with the quality trees GrowinBag has helped us produce. The roots are a lot healthier because of their air and light pruning system. The bags have heavy duty handles that have helped our employees handle the trees when it is time to load the trees. The bags stay very clean and presentable out in the elements of our nursery. We are very happy to continuing our business with GROWinBAG.”<br\/><em><strong>- Felix Rivero Sr Bick Tropical Farms<\/strong><\/em><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LL4nft": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>“High quality products, will do business again.”<br\/><em><strong>- Juan Villa<\/strong><\/em><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6CVMmh",
+        "column_wjzDFi",
+        "column_LL4nft"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Rd3Anr",
+    "featured_collection_8VzzYn",
+    "multicolumn_2_eePXBT"
+  ]
+}

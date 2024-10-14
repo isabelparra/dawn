@@ -9,6 +9,7 @@
   width: 100%;
 }
 
+
 @media screen and (min-width: 750px) {
   .blog-articles {
     grid-template-columns: 1fr 1fr;
@@ -59,3 +60,56 @@
     padding-bottom: 82.5rem;
   }
 }
+/* #Banner-template--17660778021016__image_banner_YpcwpD > div.banner__media.media.scroll-trigger.animate--fade-in > img  */
+div.banner__media.media.scroll-trigger.animate--fade-in > img{
+ border-radius: 20px;
+
+}
+div.banner__media.media.scroll-trigger.animate--fade-in {
+  background-color: transparent;
+
+}
+#MainContent .shopify-section {
+  padding: 0 20px;
+}
+
+.field {
+  width: 100%;
+  margin: 5px auto;
+  height: 50px;
+}
+
+.newsletter__wrapper .newsletter-form__field-wrapper {
+  max-width: 100%;
+}
+.field__label {
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact_form > div.newsletter-form__field-wrapper > div:nth-child(4) > label {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .field-button {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+} */
+#Subscribe {
+width: 100%;
+background-color: #4E5B31;
+
+}
+#Subscribe > label {
+  color: #fff;
+}
+
+div.newsletter__subheading.rte.scroll-trigger.animate--slide-in {
+
+margin: 10px auto;
+}
+

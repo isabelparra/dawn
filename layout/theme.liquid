@@ -7,6 +7,84 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
+    <script src="{{ 'jquery-3.7.1.min.js' | asset_url }}"></script>
+  <!-- slick css -->
+  {% comment %} <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/> {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{{ 'slick.css' | asset_url }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ 'slick-theme.css' | asset_url }}"/>
+
+ 
+
+    <style>
+      @font-face{font-family:Ciutadella Medium;src:url('https://cdn.shopify.com/s/files/1/0654/7701/7752/files/CiutadellaRounded-Md.ttf?v=1725978204');}
+      @font-face{font-family:Ciutadella SemiBold;src:url('https://cdn.shopify.com/s/files/1/0654/7701/7752/files/CiutadellaRounded-SmBd.otf?v=1721257453');}
+      @font-face{font-family:CiutadellaRounded;src:url('https://cdn.shopify.com/s/files/1/0654/7701/7752/files/CiutadellaRounded-Rg.otf?v=1721257441');}
+      @font-face{font-family:Ciutadella Bold;src:url('https://cdn.shopify.com/s/files/1/0654/7701/7752/files/CiutadellaRounded-Bd.otf?v=1721225493');}
+    
+      @font-face{font-family:Ciutadella Regular;src:url('https://cdn.shopify.com/s/files/1/0654/7701/7752/files/font.woff?v=1724040420');}
+    </style>
+<script>
+   // Utility functions for cookie management
+   function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getParameterByName(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const localizationParam = getParameterByName('localization');
+      if (localizationParam) {
+        setCookie('localization', localizationParam, 7);
+        console.log('Setting localization to:', localizationParam);
+      }
+    
+      var localization = getCookie('localization');
+      console.log('Current localization:', localization);
+    
+      // Load the appropriate JavaScript file based on localization
+      if (localization === 'ES') {
+        console.log('Loading Spain-specific JavaScript...');
+
+      } else if (localization === 'CL') {
+        console.log('Loading Chile-specific JavaScript...');
+
+      } else if (localization === 'US') {
+        console.log('Loading US-specific JavaScript...');
+    
+      } else {
+        console.log('Loading default JavaScript...');
+   
+      }
+    });
+    
+    // Utility function to load JavaScript files dynamically
+    function loadScript(src) {
+      var script = document.createElement('script');
+      script.src = src + '?v=' + new Date().getTime();
+      document.head.appendChild(script);
+    }
+  </script>    
+
+  
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -267,6 +345,7 @@
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
+      
     {%- endif -%}
 
     {%- if settings.predictive_search_enabled -%}
@@ -296,6 +375,7 @@
 
     {% sections 'header-group' %}
 
+    
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -306,7 +386,7 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
-
+   
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
@@ -355,5 +435,24 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+  
+     <script src="{{ 'slick.js' | asset_url }}"  defer="defer"></script>
+  
+    
+
+
+
+
+    {% comment %} <script type="text/javascript">
+      $(document).ready(function() {
+        $('.carousel-images').slick({
+          setting-name: setting-value;
+        });
+      });
+    
+    </script> {% endcomment %}
+    
+
   </body>
+  
 </html>

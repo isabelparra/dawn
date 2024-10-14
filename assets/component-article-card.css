@@ -20,6 +20,9 @@
 .article-card__image-wrapper > a {
   display: block;
 }
+.article-card__image {
+  background-color: transparent;
+}
 
 .article-card__title {
   text-decoration: none;
@@ -48,6 +51,10 @@
 
 .article-card .card__heading {
   margin-bottom: 0.6rem;
+  font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
+  color:#4E5B31;
+  font-size: 22px;
+
 }
 
 .blog-articles .article-card .card__information,
@@ -139,4 +146,17 @@
       margin-bottom: 7rem;
     }
   }
+}
+
+.article-read-more {
+  background-color: #4E5B31;
+  height: 45px;
+  /* border-radius: 10px; */
+
+
+}
+.article-read-more-text {
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
 }

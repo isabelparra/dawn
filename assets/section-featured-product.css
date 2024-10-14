@@ -28,10 +28,11 @@
 }
 
 .share-button + .product__view-details {
-  display: inline-flex;
+  /* display: inline-flex; */
   float: right;
   align-items: center;
   min-height: 4.4rem;
+  display: none;
 }
 
 .share-button + .product__view-details::after {

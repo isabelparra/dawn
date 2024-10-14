@@ -9,6 +9,12 @@
     padding-left: 9rem;
   }
 }
+@media screen and (min-width: 870px) {
+  /* .phone__wrapper  */
+  /* .gb-footer-headline, .gb-footer__subheading  */
+  
+  
+}
 
 .newsletter__wrapper > * {
   margin-top: 0;
@@ -25,12 +31,12 @@
 
 .newsletter__subheading {
   max-width: 70rem;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .newsletter__wrapper .newsletter-form__field-wrapper {
-  max-width: 36rem;
+  /* max-width: 36rem; */
 }
 
 .newsletter-form__field-wrapper .newsletter-form__message {

@@ -1,210 +1,371 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow_AJJ8wR": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide_kYRpLN": {
+          "type": "slide",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "image": "shopify:\/\/shop_images\/6_D6166.jpg",
+            "heading": "Growing a greener tomorrow",
+            "heading_size": "h1",
+            "subheading": "The highest quality heavy duty growbags available",
+            "button_label": "View GrowinBag Range",
+            "link": "shopify:\/\/pages\/products",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
           }
         },
-        "text": {
-          "type": "text",
+        "slide_BDiRWe": {
+          "type": "slide",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/slide_1-hp.webp",
+            "heading": "Growing a greener tomorrow",
+            "heading_size": "h1",
+            "subheading": "The highest quality heavy duty growbags available",
+            "button_label": "About Us",
+            "link": "shopify:\/\/pages\/about",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "slide_kYRpLN",
+        "slide_BDiRWe"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text": {
+    "rich_text_RmKrdd": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
+        "heading_MLxQbM": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Growing a greener tomorrow",
             "heading_size": "h1"
           }
         },
-        "text": {
+        "text_wQFBz8": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>We empower growers and nurseries worldwide with exceptional, innovative planting solutions that enhance plant health and increase productivity. <br><br>Welcome to Growinnovate where our sustainable horticultural products contribute to a greener tomorrow by reducing landfill waste, minimising environmental impact and increasing carbon capture.<\/p>"
+          }
+        },
+        "button_xxUeti": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Products",
+            "button_link": "shopify:\/\/pages\/products",
+            "button_style_secondary": false,
+            "button_label_2": "More Info",
+            "button_link_2": "shopify:\/\/pages\/about",
+            "button_style_secondary_2": true
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading_MLxQbM",
+        "text_wQFBz8",
+        "button_xxUeti"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "#gb-hp__heading {margin-bottom: 40px;}"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 52
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
+    "multicolumn_LYfnHn": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "column_dmFUy4": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "#1 choice for quality, eco-friendly grow bags in the industry!",
+            "text": "<p>Growinnovate designs, manufactures, and distributes our market leading GrowinBag™ throughout the US. <\/p><\/br><p>Discover the innovative design that enhances plant health from the roots up with a durable, environmentally friendly solution to boost the efficiency of your plant stock - no matter what climate or region you grow in.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column2": {
+        "column_h4xQHj": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/section1.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "column_dmFUy4",
+        "column_h4xQHj"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
+        "columns_desktop": 2,
+        "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "custom-icons-hp1": {
+      "type": "custom-icons",
+      "blocks": {
+        "column1_row_1": {
+          "type": "column1_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Controlled_Environment-_Agriculture_RGB_White_3x_a6ea8d10-f196-444e-bcf5-8206ebb37e12.png",
+            "text": "Controlled environment agriculture"
+          }
+        },
+        "column1_row_2": {
+          "type": "column1_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Healthy_Roots_-Without_Spiraling_RGB_White_3x_c3d1cd77-a64a-4004-b6c6-9e7d00f21854.png",
+            "text": "Healthy roots without spiraling"
+          }
+        },
+        "column1_row_3": {
+          "type": "column1_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Direct_control_-of_soil_and_-plant_health_RGB_White_3x_d7ea93a8-ef2c-430b-86cb-8565ca1f4624.png",
+            "text": "Direct control of soil and plant healthy"
+          }
+        },
+        "column1_row_4": {
+          "type": "column1_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Save_Water_White_3x_df9f3feb-2b27-469a-bb00-1c4c7b3ef9dc.png",
+            "text": "Save water"
+          }
+        },
+        "column1_row_5": {
+          "type": "column1_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Increased_Return-on_Investment_RGB_White_3x_86eca375-bff4-48ab-b68f-52646e866c71.png",
+            "text": "Increased return on investment"
+          }
+        },
+        "column2_row_1": {
+          "type": "column2_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Climate-Smart_Product_White_3x_6ada06a2-149d-4e6f-90e1-fa682f4fadc0.png",
+            "text": "Climate smart product"
+          }
+        },
+        "column2_row_2": {
+          "type": "column2_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_UV_Stabilized_Including_-Handle_Stitching_RGB_White_3x_6ce64f76-f137-4306-b3eb-bc5bc2c90334.png",
+            "text": "UV stabilized including handle stitching"
+          }
+        },
+        "column2_row_3": {
+          "type": "column2_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Easy_To_Move_And_Relocate_Plants_RGB_White_3x_01d037bd-8d5c-4288-979c-d99b1faccbb8.png",
+            "text": "Easy to move and relocate plant"
+          }
+        },
+        "column2_row_4": {
+          "type": "column2_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Heavy_Duty_And_-Long_Lasting_RGB_White_3x_48a36dae-f6dc-4559-9a7e-806f2113ad28.png",
+            "text": "Heavy duty and long lasting"
+          }
+        },
+        "column2_row_5": {
+          "type": "column2_row",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_Organic_Friendly-_Agriculture_RGB_White_3x_546177ee-d25f-4af5-b1ce-12a5db67989d.png",
+            "text": "Organic friendly agriculture"
+          }
+        }
+      },
+      "block_order": [
+        "column1_row_1",
+        "column1_row_2",
+        "column1_row_3",
+        "column1_row_4",
+        "column1_row_5",
+        "column2_row_1",
+        "column2_row_2",
+        "column2_row_3",
+        "column2_row_4",
+        "column2_row_5"
+      ],
+      "settings": {
+        "title": "Why GrowinBag™ by Growinnovate"
+      }
+    },
+    "multicolumn_heQWhz": {
+      "type": "multicolumn-3",
+      "blocks": {
+        "column_bGQPnt": {
+          "type": "column",
+          "settings": {
+            "title": "Driving the industry forward",
+            "text": "<p>Standing alone as leaders in the field, Growinnovate remains the #1 choice for quality. Our eco-friendly GrowinBags™ deliver innovative horticultural solutions that are designed to enhance plant health and boost growth, year-round. Growinnovate will continue offering solutions to growers’ challenges as well as developing custom options based on geolocation and conditions.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yeVpB3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/section3.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bGQPnt",
+        "column_yeVpB3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "marquee-growin24": {
+      "type": "marquee-section",
+      "settings": {
+        "marquee_text": "The number one choice for quality eco-friendly grow bags in the industry"
+      }
+    },
+    "image_carousel24": {
+      "type": "image-carousel",
+      "blocks": {
+        "img-car-1": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_0009.jpg",
+            "alt": "image 1"
+          }
+        },
+        "img-car-2": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_2803.jpg",
+            "alt": "image 2"
+          }
+        },
+        "img-car-3": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/c067216d-265a-4bf6-be45-49f5ff335504.jpg",
+            "alt": "image 3"
+          }
+        },
+        "img-car-4": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/Copy-of-Hedge-Bag-Picture-Web-Brochure.jpg",
+            "alt": "image 4"
+          }
+        },
+        "img-car-5": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/IMG_1845.jpg",
+            "alt": "image 5"
+          }
+        },
+        "img-car-6": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/NG63-tray-Nov163.jpg",
+            "alt": "image 6"
+          }
+        },
+        "img-car-7": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/Weedmat-Samples.jpg",
+            "alt": "image 7"
+          }
+        },
+        "img-car-8": {
+          "type": "image",
+          "settings": {
+            "url": "shopify:\/\/shop_images\/DSC_0030v.jpg",
+            "alt": "image 8"
+          }
+        }
+      },
+      "block_order": [
+        "img-car-1",
+        "img-car-2",
+        "img-car-3",
+        "img-car-4",
+        "img-car-5",
+        "img-car-6",
+        "img-car-7",
+        "img-car-8"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "slideshow_AJJ8wR",
+    "rich_text_RmKrdd",
+    "multicolumn_LYfnHn",
+    "custom-icons-hp1",
+    "multicolumn_heQWhz",
+    "marquee-growin24",
+    "image_carousel24"
   ]
 }

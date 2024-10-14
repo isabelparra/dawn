@@ -16,22 +16,42 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ blog.title | escape }}
-    </h1>
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-      {%- for article in blog.articles -%}
-        <div
-          class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
-        >
-          {%- render 'article-card',
+{%- assign first_article = blog.articles.first -%}
+{%- assign remaining_articles = blog.articles | slice: 1, blog.articles.size -%}
+
+<div class="main-blog page-width section-{{ section.id }}-padding">
+  <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    {% comment %} {{ blog.title | escape }} {% endcomment %}
+  </h1>
+    <!-- Main Blog -->
+    <div class="blog-articles__article article--main{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      {%- render 'article-card',
+        article: first_article,
+        media_height: section.settings.image_height,
+        media_aspect_ratio: first_article.image.aspect_ratio,
+        show_image: section.settings.show_image,
+        show_date: section.settings.show_date,
+        show_author: section.settings.show_author,
+        show_excerpt: true
+      
+      -%}
+      </div>
+      
+      <!-- Featured Blog Articles -->
+
+        <div class="featured-articles">
+          {% comment %} <h2>Featured Blog Articles</h2> {% endcomment %}
+         {% comment %} <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+          {%- for article in remaining_articles offset:1 -%}
+            <div 
+              class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}
+            >
+              {%- render 'article-card',
             article: article,
             media_height: section.settings.image_height,
             media_aspect_ratio: article.image.aspect_ratio,
@@ -41,14 +61,19 @@
             show_excerpt: true
           -%}
         </div>
-      {%- endfor -%}
+      {%- endfor -%}  {% endcomment %}
     </div>
 
-    {%- if paginate.pages > 1 -%}
+</div>
+
+
+{%- if paginate.pages > 1 -%}
+
+    
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
-  </div>
-{%- endpaginate -%}
+
+
 
 {% schema %}
 {

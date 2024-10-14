@@ -1,0 +1,117 @@
+{%- style -%}
+.marquee-section {
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    padding-bottom: 20px;
+}
+.marquee-wrapper {
+    display: flex;
+    white-space: nowrap;
+
+    animation: marquee 10s linear infinite;
+  
+}
+.marquee-text {
+    font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
+    color: #4e5b31;
+    display: inline-block;
+    font-size:50px;
+    margin-right: 10px;
+}
+
+.marquee-text-1 {
+    padding: 0px 10px;
+    font-size: 50px; 
+}
+
+
+.marquee-gb-break {
+    display: inline-block;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 999px;
+    background-color: var(--secondary);
+    vertical-align: middle;
+}
+@media (max-width: 1219px) {
+    .marquee-gb-break {
+        width: 2.625rem;
+        height: 2.625rem;
+    }
+}
+@media (max-width: 869px) {
+    .marquee-gb-break {
+        width: 1.5625rem;
+        height: 1.5625rem;
+    }
+}
+@media screen and (min-width:870px) {
+    .marquee-text {
+        font-size: 75px;
+    }
+    .marquee-text-1 {
+        font-size: 75px;
+    }
+}
+@media screen and (min-width: 1220px) { 
+    .marquee-text-1 {
+        font-size: 120px;
+    }
+}
+@keyframes marquee {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+}
+
+{%- endstyle -%}
+
+<div class="marquee-section">
+    <div class="marquee-wrapper">
+ {% comment %} <marquee behavior="scroll" direction="left">  {% endcomment %}
+        {% comment %} {{ section.settings.marquee_text }} {% endcomment %}
+    {% for i in (1..10) %}   
+        <h1 class="marquee-text"> 
+        <span class="marquee-gb-break"></span>
+        <span class="marquee-text-1">
+        {% comment %} Number one choice for quality eco-friendly grow bags in the industry 
+        <span class="marquee-gb-break"></span>
+        Number one choice for quality eco-friendly grow bags in the industry  {% endcomment %}
+        {{ section.settings.marquee_text }}
+        </span>
+        </h1>
+    {%  endfor %}
+   {% comment %} </marquee>   {% endcomment %}
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        {% comment %} var marqueeText = document.querySelector('.marquee-wrapper');
+        var marqueeWidth = marqueeText.scrollWidth;
+        var containerWidth = marqueeText.parentElement.offsetWidth;
+        var speedFactor = 100;
+        var duration = (marqueeWidth + containerWidth) / speedFactor;
+        duration = Math.max(duration, 1);
+        marqueeText.style.animation = `marquee ${duration}s linear infinite`;
+      {% endcomment %}
+    });
+</script>   
+
+{%  schema %} 
+{
+    "name": "Marquee Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "marquee_text",
+            "label": "Marquee Text"
+        },
+        ],
+        "presets": [
+            {
+                "name": "Marquee Section",
+                "category": "Custom Sections"
+            }
+        ]   
+}
+{% endschema %}

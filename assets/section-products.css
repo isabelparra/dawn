@@ -1,0 +1,53 @@
+.card__heading {
+    text-align: center;
+    font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.card-information {
+    font-family: "Ciutadella Regular", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#gb-hp__heading {
+    font-size: 45px;
+}
+#shopify-section-template--17800402895000__rich_text_Rd3Anr > div > div {
+    padding-bottom: 0px;
+}
+.gb-multicol-p {
+    color: #FFFFFF;
+}
+.multicolumn .page-width .title-wrapper-with-link {
+    /* background-color: #4E5B31;
+    margin-bottom: 0px;
+    width: 95%;
+    padding: 55px 30px;
+    margin: 0 auto;
+    border-top-right-radius: 20px; */
+}
+.headline-slider-reviews {
+    color: #fff;
+    font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    
+}
+#gb-card__info > div > p > em > strong{
+    color: #DAEC72;
+   
+}
+#gb-card__info > div > p > em > strong  {
+    margin-top:10px;
+}
+.rte > *:first-child {
+    padding-bottom:10px;
+}
+@media screen and (min-width: 900px) { 
+.headline-slider-reviews {
+    font-size: 35px;
+    width: 80%;
+}
+}
+@media screen and (min-width: 1000px) { 
+    #gb-hp__heading {
+        font-size: 64px;
+    }
+}

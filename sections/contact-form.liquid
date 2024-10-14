@@ -13,6 +13,11 @@
     }
   }
 {%- endstyle -%}
+{%- assign is_contact_page = false -%}
+{%- if request.page_type == 'page' and request.path contains '/pages/contact' -%}
+  {%- assign is_contact_page = true -%}
+  {{ 'section-contact.css' | asset_url | stylesheet_tag }} 
+{%- endif %}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
@@ -145,8 +150,8 @@
     {
       "type": "inline_richtext",
       "id": "heading",
-      "default": "t:sections.contact-form.settings.title.default",
-      "label": "t:sections.contact-form.settings.title.label"
+      "default": "Contact form",
+      "label": "Heading"
     },
     {
       "type": "select",
@@ -163,14 +168,6 @@
         {
           "value": "h0",
           "label": "t:sections.all.heading_size.options__3.label"
-        },
-        {
-          "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
-        },
-        {
-          "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
       "default": "h1",
