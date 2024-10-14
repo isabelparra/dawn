@@ -38,6 +38,9 @@
   },
   "order": [
     "main",
-    "featured_collection_8VzzYn"
+    "featured_collection_8VzzYn",
+    "about",
+    "contact",
+    "products"
   ]
 }
