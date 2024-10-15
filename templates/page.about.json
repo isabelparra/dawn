@@ -32,7 +32,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/team-photo1_1.jpg",
+        "image": "shopify:\/\/shop_images\/team-photo.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
@@ -51,7 +51,7 @@
         "slide_BfRjdT": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/team-photo1_1.jpg",
+            "image": "shopify:\/\/shop_images\/team-photo.jpg",
             "heading": "Meet our dedicated team of horticulture specialists",
             "heading_size": "h1",
             "subheading": "",
