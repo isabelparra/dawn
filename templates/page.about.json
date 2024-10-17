@@ -45,43 +45,6 @@
         "show_text_below": true
       }
     },
-    "slideshow_zFxVQX": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_BfRjdT": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/team-photo.jpg",
-            "heading": "Meet our dedicated team of horticulture specialists",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_BfRjdT"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "about": {
       "type": "about-page",
       "disabled": true,
@@ -110,41 +73,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "multicolumn_2_MGcwKU": {
-      "type": "multicolumn-2",
-      "blocks": {
-        "column_tHGPhz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.svg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_tHGPhz"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "image_with_text_UmBiM3": {
@@ -239,7 +167,7 @@
           "type": "column",
           "settings": {
             "title": "GrowinBag™ – The number one choice for growers in Australia, the Middle East and globally",
-            "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p>To find out more about our market leading GrowinBag™, get in touch with us today!<\/p>",
+            "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p><strong>To find out more about our market leading GrowinBag™, get in touch with us today!</strong><\/p>",
             "link_label": "Products",
             "link": "shopify:\/\/pages\/products"
           }
@@ -259,7 +187,6 @@
         "column_CQamcD",
         "column_EpBrCJ"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -378,10 +305,8 @@
   "order": [
     "rich_text_XfXCx9",
     "image_banner_XPdwbT",
-    "slideshow_zFxVQX",
     "about",
     "rich_text_7zyFnT",
-    "multicolumn_2_MGcwKU",
     "image_with_text_UmBiM3",
     "marquee_section_gttrxe",
     "rich_text_FDXhbU",

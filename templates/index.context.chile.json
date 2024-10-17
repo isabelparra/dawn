@@ -1,7 +1,7 @@
 {
   "parent": "index.json",
   "context": {
-    "market": "cl"
+    "market": "chile"
   },
   "sections": {
     "rich_text_RmKrdd": {

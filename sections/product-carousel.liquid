@@ -1,33 +1,24 @@
 
 {%- style -%}
 .product-carousel {
-    max-width: 100%;
+    display: flex; 
     overflow: hidden; 
+    white-space: nowrap;
     padding: 3rem 0px;
-}
-.carousel-img-div {
-    width: 200px;
     position: relative;
-    /* max-width: 100%;
-    overflow: hidden; */
 }
 
-.slick-slide {
-  display: inline-block;
- 
-}
-.slick-slide img  {
-    width: 100%;
-    height: auto;
+.product-carousel-imgs {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 200s linear infinite;
 }
 .quick-buy {
-    /* display: none; */
     display: none;
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #000;
     color: #fff;
     padding: 10px;
     border: none;
@@ -39,131 +30,169 @@
 .carousel-img-div:hover .quick-buy {
     display: block;
 }
-.main-prods-image {
+.carousel-img-div {
+    display: inline-block;
+    height: 250px;
+    margin-right: 10px;
+    position: relative;
     border-radius: 20px;
+    overflow: hidden;
+
 }
-.product-link {
+.carousel-img-div img {
     width: auto;
-    /* width: auto;
-    max-height: 250px; */
+    height: 250px;
+    max-width: 200px;
+}
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+   
+@media screen and (max-width: 480px) {
+    .carousel-img-div img {
+        /* max-height: 150px; */
+    }
+    .main-prods-image {
+        /* max-height: 150px; */
+    }
 }
 
 @media screen and (min-width: 1000px) {
-.main-prods-image {
+.carousel-img-div {
     /* max-height: 200px; */
     max-width: 200px;
 }
-.slick-slide {
-    max-width: 200px;
+.slick-slide img {
+    /* width: 200px; */
+    /* max-width: 200px; */
 }
 .carousel-img-div {
-    max-width: 200px;
+    
+    /* max-width: 200px; */
 }
 }
+
 
 {%- endstyle -%}
 
 <div class="product-carousel">
     <div class="product-carousel-imgs">
-        {% assign main_collection = 'main-collection' %}
-        {% assign products = collections[main_collection].products %}
+        {% comment %} {% assign main_collection = 'main-collection' %} {% endcomment %}
+        {% assign products = collections[section.settings.selected_collection].products %}
+        <!-- First Loop -->
         {% for product in products %}
             {% if product.images.size > 0 %}
-                <div class="carousel-img-div">
+                <div class="carousel-img-div" >
                     <a href="{{ product.url }}" class="product-link">
                         <img src="{{ product.images.first | img_url: 'medium' }}" alt="{{ product.title }}" class="main-prods-image" width="100%" height="auto">            
                     </a>
-                <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">Buy Now</button>
+                    <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">Buy Now</button>
                 </div>
-        {% endif %}
-    {% endfor %}
+            {% endif %}
+        {% endfor %}
+        <!-- Duplicate -->
+        {% for product in products %}
+            {% if product.images.size > 0 %}
+                <div class="carousel-img-div" >
+                    <a href="{{ product.url }}" class="product-link">
+                        <img src="{{ product.images.first | img_url: 'medium' }}" alt="{{ product.title }}" class="main-prods-image" width="100%" height="auto">            
+                    </a>
+                    <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">Buy Now</button>
+                </div>
+            {% endif %}
+        {% endfor %}
+
     
     </div>
 </div>
 
 {% javascript %}
-$(document).ready(function() {
-    var $carousel = $('.product-carousel-imgs');
+// $(document).ready(function() {
+    // var $carousel = $('.product-carousel-imgs');
     // var slideCount = $carousel.find('.carousel-img-div');
     // for (var i = 0; i < slideCount; i++) {
     //     $carousel.find('.carousel-img-div').eq(i).clone().appendTo($carousel);     
     // }
-    $carousel.slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '0px', 
-        responsive: [ 
-            {   
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    arrows: false
-                  
-                }
-            }, 
-            {   
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false                  
-                }
-            }, 
-            {   
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: false
 
-                }
-            }
-        ]
-    });
-});
+
+    // start here
+    // $carousel.slick({
+    //     infinite: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //     centerMode: false,
+    //     centerPadding: '0px', 
+    //     responsive: [ 
+    //         {   
+    //             breakpoint: 1200,
+    //             settings: {
+    //                 slidesToShow: 5,
+    //                 slidesToScroll: 1,
+    //                 arrows: false,
+    //                 centerMode: false
+                  
+    //             }
+    //         }, 
+    //         {   
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 4,
+    //                 slidesToScroll: 1,
+    //                 arrows: false             
+    //             }
+    //         }, 
+    //         {   
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 3,
+    //                 slidesToScroll: 1,
+    //                 arrows: false                  
+    //             }
+    //         }, 
+    //         {   
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 1,
+    //                 arrows: false
+
+    //             }
+    //         }
+    //     ]
+    // });
+
+
+// });
 {% endjavascript %} 
 
 {% schema %}
 { 
     "name": "Product Carousel",
-    "settings": [],
+    "settings": [
+        {
+            "type": "collection",
+            "id": "selected_collection",
+            "label": "Select Collection"
+        }
+    ],  
     "blocks": [
-        { 
+            {
             "type": "product-rank-1",
             "name": "Product Image 1",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image_1",
-                    "label": "Product Image"
-                },
-                {
-                    "type": "text",
-                    "id": "alt_1",
-                    "label": "Image Alt Text"
-                }
-            ]
-        },
-        { 
+            "settings": []
+            },
+            { 
             "type": "product-rank-2",
             "name": "Product Image 2",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image_2",
-                    "label": "Product Image"
-                },
-                {
-                    "type": "text",
-                    "id": "alt_2",
-                    "label": "Image Alt Text"
-                }
-            ]
-        }
+            "settings": []
+            }
     ],
     "presets": [
         {

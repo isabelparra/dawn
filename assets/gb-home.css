@@ -104,14 +104,7 @@
 }
 
 
-#gb-inline-richtext-2 {
-    font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
-    font-size:30px;
-    /* font-size: 1.75rem; */
-    color:#4E5B31;
-    line-height: 120%;
-    margin-bottom: 1em;
-}
+
 #gb-inline-richtext-3 {
     font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
     font-size:30px;
@@ -130,6 +123,17 @@
     margin-left: auto;
     margin-top:0px;
     line-height:120%;
+}
+.gb-hp-slider-mobile-2 {
+    background-color: #4E5B31;
+    max-width:100%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height:100%;
+    text-align: center;
 }
 
 
@@ -157,19 +161,7 @@
     border-radius: 20px;
     padding:50px 40px;
 }
-.gb-hp-slider-mobile-2 {
-    background-color: #4E5B31;
-    max-width:100%;
-    margin:0 20px;
-    border-radius: 20px;
-    padding:55px 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    height:100%;
-    text-align: center;
-}
+
 .gb-hp-slider-mobile-3 {
     background-color: #CF4521;
     max-width:100%;
@@ -214,11 +206,20 @@
 .gb-pgs-about .marquee-section {
     padding-bottom: 0px;
 }
+#menu-drawer{
+     background-color: var(--primary);
+}
+#menu-drawer:checked ~ .header {
+    background-color: var(--primary);
+}
 
 #menu-drawer > div > div > nav > div.menu-drawer__utility-links > ul > li:nth-child(1) > a > svg {
     transform: scale(1.15);
     position: relative;
     bottom: 3px;
+}
+.menu-open {
+    background-color: var(--primary);
 }
 .main-footer {
     position: relative;
@@ -274,12 +275,7 @@
       }
   
   }
-  @media (min-width: 800px) {
-      .gb-hp-slider-mobile-2 {
-          /* width: 96%; */
-          padding: 55px 30px;
-      }
-  }
+  
   @media screen and (min-width: 870px) {
       .gb-hp-slider-mobile, .gb-hp-slider-mobile-3 {
           /* max-width:97% */
@@ -339,11 +335,7 @@
 
   
 }
-  @media (min-width: 1300px) {
-      .gb-hp-slider-mobile-2 {
-          padding: 100px 30px;
-      }
-  }
+ 
   @media (min-width: 1400px) {
   
       .col-1-li-1:first   {

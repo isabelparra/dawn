@@ -16,6 +16,10 @@
 .gb-multicol-p {
     color: #FFFFFF;
 }
+.gb-hp-slider-mobile-2 { 
+    margin: 0 20px;
+    padding:55px 20px;
+}
 .multicolumn .page-width .title-wrapper-with-link {
     /* background-color: #4E5B31;
     margin-bottom: 0px;

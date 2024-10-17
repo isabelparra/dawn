@@ -18,6 +18,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+
+  // $(document).ready(function () { 
+    // {% comment %} document.getElementById('menu-drawer').addEventListener('click', function() {
+    //   document.querySelector('.header').classList.toggle('menu-open'); {% endcomment %}
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuDrawer = document.getElementById('Details-menu-drawer-container');
+      const header = document.querySelector('.header');
+      if (menuDrawer && header) {
+        menuDrawer.addEventListener('toggle', function() {
+          if (menuDrawer.open) {
+            header.classList.add('menu-open');
+          } else {
+            header.classList.remove('menu-open');
+          }
+          });
+        }
+      });
+
+  // });
+
+
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));

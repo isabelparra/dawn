@@ -1,7 +1,7 @@
 {
   "parent": "footer-group.json",
   "context": {
-    "market": "cl"
+    "market": "chile"
   },
   "sections": {
     "footer": {

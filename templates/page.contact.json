@@ -124,28 +124,23 @@
     },
     "product_carousel24": {
       "type": "product-carousel",
+      "settings": {
+        "selected_collection": "main-collection"
+      },
       "blocks": {
         "product-rank-1": {
           "type": "product-rank-1",
-          "settings": {
-            "url": "shopify:\/\/shop_images\/IMG_0009.jpg",
-            "alt": "product 1"
-          }
+          "settings": {}
         },
         "product-rank-2": {
           "type": "product-rank-2",
-          "settings": {
-            "url": "shopify:\/\/shop_images\/IMG_2803.jpg",
-            "alt": "product 2"
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "product-rank-1",
         "product-rank-2"
-      ],
-      "settings": {
-      }
+      ]
     }
   },
   "order": [
