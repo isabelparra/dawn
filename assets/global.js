@@ -26,25 +26,30 @@ document.addEventListener("DOMContentLoaded", function() {
       const menuDrawer = document.getElementById('Details-menu-drawer-container');
       const header = document.querySelector('.header');
       const logo = document.querySelector('.header__heading-logo');
-      if (menuDrawer && header) {
+      var mobileScreen = window.matchMedia('max-width: 780px');
+      if (menuDrawer && header && mobileScreen) {
         menuDrawer.addEventListener('toggle', function() {
           if (menuDrawer.open) {
             header.classList.add('menu-open');
             logo.classList.add('logo-menu-open');
             // {%- if settings.logo != blank -%}
-            logo.src = 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/GrowinBag_Logo_RGB_Reversed.svg';
-            logo.srcset = 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/GrowinBag_Logo_RGB_Reversed.svg';
+
+
+            // logo.src = 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/GrowinBag_Logo_RGB_Reversed.svg';
+            // logo.srcset = 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/GrowinBag_Logo_RGB_Reversed.svg';
+
+
             // logo.srcset = settings.logo_rev;
             // {%- endif -%}
           } else {
             header.classList.remove('menu-open');
             logo.classList.remove('logo-menu-open');
-            logo.srcset = 'https://cdn.shopify.com/s/files/1/0654/7701/7752/files/GrowinBag_Logo_RGB.svg';
+            
             // logo.src = 'shopify://shop_images/GrowinBag_Logo_RGB.svg';
             // logo.srcset = 'shopify://shop_images/GrowinBag_Logo_RGB.svg';
           }
           });
-        }
+        } 
       });
 
   // });

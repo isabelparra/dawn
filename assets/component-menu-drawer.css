@@ -116,7 +116,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-size: 2.4rem;
   font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
   /* color: var(--text-color); */
-  color: #fff;
+
   
 }
 
@@ -260,10 +260,10 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 
-#HeaderDrawer-about, #HeaderDrawer-products, #HeaderDrawer-blog, #HeaderDrawer-contact {
+.list-menu__item {
   display: block;
   text-align: center;
-  
+  color: #fff;
  
 }
 
@@ -299,6 +299,7 @@ background-color: var(--primary);
     color: #FFFFFF;
   }
   .menu-open .logo-menu-open {
+    content:url('https://cdn.shopify.com/s/files/1/0654/7701/7752/files/GrowinBag_Logo_RGB_Reversed.svg');
 
   }
 }
