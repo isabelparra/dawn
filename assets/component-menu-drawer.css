@@ -257,15 +257,18 @@ details[open].menu-opening > .menu-drawer__submenu {
     filter: none !important;
     transition: none !important;
   }
+  
+}
+@media screen and (max-width: 869px) {
+  .list-menu__item {
+    display: block;
+    text-align: center;
+    color: #fff;
+   
+  }
 }
 
 
-.list-menu__item {
-  display: block;
-  text-align: center;
-  color: #fff;
- 
-}
 
 .menu-drawer__navigation {
   margin-top:70px;
