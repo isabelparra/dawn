@@ -10,6 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/GrowinBag_Logo_RGB.svg",
+    "logo_rev": "shopify://shop_images/GrowinBag_Logo_RGB_Reversed.svg",
     "logo_width": 100,
     "favicon": "shopify://shop_images/Symbol_RGB_PEAR.png",
     "type_header_font": "assistant_n4",

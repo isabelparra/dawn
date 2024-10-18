@@ -90,9 +90,7 @@
 #Details-menu-drawer-container {
     /* background-color: #C0DF16; */
 }
-#Details-menu-drawer-container > summary > span > svg.icon.icon-hamburger > path {
-    color: #4E5B31;
-}
+
 #Details-menu-drawer-container > summary > span {
     /* position: absolute;
     right: 33px;
@@ -100,7 +98,7 @@
 }
 
 #Details-menu-drawer-container > summary > span > svg.icon.icon-close > path {
-    color: #4E5B31;
+    color: #FFFFFF;
 }
 
 
@@ -207,19 +205,39 @@
     padding-bottom: 0px;
 }
 #menu-drawer{
-     background-color: var(--primary);
-}
-#menu-drawer:checked ~ .header {
-    background-color: var(--primary);
+     /* background-color: var(--primary); */
 }
 
+/* #menu-drawer:checked ~ .header {
+    background-color: var(--primary);
+} */
+.header {
+    /* background-color: #fff; */
+    /* background-color: var(--primary);  */
+    /* transition: background-color 0.3s ease; */
+    background-size: 200% 100%;
+}
 #menu-drawer > div > div > nav > div.menu-drawer__utility-links > ul > li:nth-child(1) > a > svg {
     transform: scale(1.15);
     position: relative;
     bottom: 3px;
 }
-.menu-open {
-    background-color: var(--primary);
+.header .menu-open {
+    background-image: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    background-position: 100% 0;
+    animation: slideInBackground 0.6s forwards ease-in-out;
+    /* background-color: var(--primary); */
+    /* transform: translateX(0);
+    visibility: visible; */
+    /* transition: transform var(--duration-default) ease, visibility var(--duration-default) ease; */
+}
+
+@keyframes slideInBackground {
+    from {
+        background-position: 0% 0;
+    } to {
+        background-position: 100% 0;
+    }
 }
 .main-footer {
     position: relative;

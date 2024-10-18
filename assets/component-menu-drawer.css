@@ -45,6 +45,17 @@ menu-drawer > details[open] > summary::before {
 .js .menu-drawer {
   height: calc(100vh - 100%);
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
+  /* background-color: var(--primary); */
+}
+
+/* .menu-open {
+  background-color: var(--primary);
+  transform: translateX(0);
+} */
+
+.menu-drawer {
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .js details[open] > .menu-drawer,
@@ -104,8 +115,8 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-decoration: none;
   font-size: 2.4rem;
   font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
-  color: var(--text-color);
-  
+  /* color: var(--text-color); */
+  color: #fff;
   
 }
 
@@ -271,7 +282,27 @@ height: 40px;
 }
 #menu-drawer {
 width: 100%;
+background-color: var(--primary);
 }
+@media (max-width: 870px) {
+  .menu-open {
+    background-color: var(--primary);
+  }
+  .menu-open .header__icon {
+    color: white;
+  }
+  .menu-open .icon-close {
+    /* color: #4E5B31; */
+    color: #FFFFFF;
+  } 
+  #Details-menu-drawer-container > summary > span > svg.icon.icon-close > path {
+    color: #FFFFFF;
+  }
+  .menu-open .logo-menu-open {
+
+  }
+}
+
 .menu-drawer-social-icon > a > svg > path {
   fill: #4e5b31;
   width: 40px;
