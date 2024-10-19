@@ -114,6 +114,30 @@
           }
         }
       }
+    },
+    "multicolumn_heQWhz": {
+      "blocks": {
+        "column_bGQPnt": {
+          "settings": {
+            "title": "Growinnovate, un lider mundial en innovación en horticultura",
+            "text": "<p>Nuestro nuevo nombre comercial, Growinnovate, en conjunto con la dirección de nuestra marca, alínea nuestra posición en el mercado como el líder establecido de sustentabilidad y productos de calidad, que entregan un conocimiento y pasión inigualables. Las numerosas cualidades que han contribuido a nuestra fuerte reputación a nivel mundial, están ahora representadas en nuestra nueva identidad de marca y nombre.<\/p>",
+          }
+        },
+        "column_yeVpB3": {
+          "settings": {
+            "image": "shopify:\/\/shop_images\/section3.png"
+          }
+        }
+      },
+      "block_order": [
+        "column_bGQPnt",
+        "column_yeVpB3"
+      ]
+    },
+    "marquee-growin24": {
+      "settings": {
+        "marquee_text": "GrowinBag™ es la bolsa de cultivo elegida por los Agricultores y Viveristas de todo el mundo."
+      }
     }
     
   },
