@@ -272,7 +272,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 
 .menu-drawer__navigation {
-  margin-top:70px;
+  /* margin-top:70px; */
+  margin: auto;
 
 }
 .menu-drawer__navigation  ul {
@@ -309,7 +310,7 @@ background-color: var(--primary);
 }
 
 .menu-drawer-social-icon > a > svg > path {
-  fill: #4e5b31;
+  fill: white;
   width: 40px;
   /* color: green !important; */
 }
