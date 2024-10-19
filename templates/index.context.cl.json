@@ -4,6 +4,26 @@
     "market": "cl"
   },
   "sections": {
+    "slideshow_AJJ8wR": {
+      "settings": {
+      },
+      "blocks": {
+        "slide_kYRpLN": {
+          "settings": {
+            "heading": "Cultivando un futuro más verde",
+            "subheading": "Más de 25 millones de bolsas de cultivo GrowinBag™ vendidas en todo el mundo",
+            "button_label": "Visita Nuestra Tienda"
+          }
+        },
+        "slide_BDiRWe": {
+          "settings": {
+            "heading": "Cultivando un futuro más verde",
+            "subheading": "Más de 25 millones de bolsas de cultivo GrowinBag™ vendidas en todo el mundo",
+            "button_label": "Empresa"
+          }
+        }
+      }
+    },
     "rich_text_RmKrdd": {
       "settings": {
       },
@@ -40,34 +60,70 @@
     },
     "custom-icons-hp1": {
       "settings": {
+        "title": "Por qué elegir Bolsas de Cultivo GrowinBag™"
       },
       "blocks": {
         "column1_row_1": {
           "settings": {
-            "text": "Agricultura En Ambiente Controlado"
-          }
-        }
-      }
-    },
-    "slideshow_AJJ8wR": {
-      "settings": {
-      },
-      "blocks": {
-        "slide_kYRpLN": {
-          "settings": {
-            "heading": "Cultivando un futuro más verde",
-            "subheading": "Más de 25 millones de bolsas de cultivo GrowinBag™ vendidas en todo el mundo",
-            "button_label": "Visita Nuestra Tienda"
+            "text": "Agricultura en ambiente controlado"
           }
         },
-        "slide_BDiRWe": {
+        "column1_row_2": {
           "settings": {
-            "heading": "Cultivando un futuro más verde",
-            "subheading": "Más de 25 millones de bolsas de cultivo GrowinBag™ vendidas en todo el mundo",
-            "button_label": "Empresa"
+            "text": "Raices sanas sin enroscamiento"
+          }
+        },
+        "column1_row_3": {
+          "settings": {
+            "text": "Control sanitario directo de sustrato"
+          }
+        },
+        "column1_row_4": {
+          "settings": {
+            "text": "Ahorro de agua"
+          }
+        },
+        "column1_row_5": {
+          "settings": {
+            "text": "Aumento del retorno a las inversiones"
+          }
+        },
+        "column2_row_1": {
+          "settings": {
+            "text": "Resiste a todos los climas"
+          }
+        },
+        "column2_row_2": {
+          "settings": {
+            "text": "100% proteccion UV, incluso en asas y costuras"
+          }
+        },
+        "column2_row_3": {
+          "settings": {
+            "text": "Fácil de mover y reubicar plantas"
+          }
+        },
+        "column2_row_4": {
+          "settings": {
+            "text": "Alta resistencia y durabilidad"
+          }
+        },
+        "column2_row_5": {
+          "settings": {
+            "text": "Agricultura organica"
           }
         }
       }
     }
-  }
+    
+  },
+  "order": [
+    "slideshow_AJJ8wR",
+    "rich_text_RmKrdd",
+    "multicolumn_LYfnHn",
+    "custom-icons-hp1",
+    "multicolumn_heQWhz",
+    "marquee-growin24",
+    "image_carousel24"
+  ]
 }
