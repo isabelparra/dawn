@@ -1,7 +1,7 @@
 {
   "parent": "index.json",
   "context": {
-    "market": "chile"
+    "market": "cl"
   },
   "sections": {
     "slideshow_AJJ8wR": {
@@ -140,14 +140,5 @@
       }
     }
     
-  },
-  "order": [
-    "slideshow_AJJ8wR",
-    "rich_text_RmKrdd",
-    "multicolumn_LYfnHn",
-    "custom-icons-hp1",
-    "multicolumn_heQWhz",
-    "marquee-growin24",
-    "image_carousel24"
-  ]
+  }
 }

@@ -1,5 +1,13 @@
 {
   "sections": {
+    "about": {
+      "type": "about-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
     "rich_text_XfXCx9": {
       "type": "rich-text",
       "blocks": {
@@ -43,14 +51,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "about": {
-      "type": "about-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     },
     "rich_text_7zyFnT": {
