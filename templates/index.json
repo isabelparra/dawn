@@ -151,70 +151,70 @@
         "column1_row_1": {
           "type": "column1_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Controlled_Environment-_Agriculture_RGB_White_3x_a6ea8d10-f196-444e-bcf5-8206ebb37e12.png",
+            "icon": "shopify:\/\/shop_images\/Icon_ControlledEnvironmentAgriculture_RGB_White.png",
             "text": "Controlled environment agriculture"
           }
         },
         "column1_row_2": {
           "type": "column1_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Healthy_Roots_-Without_Spiraling_RGB_White_3x_c3d1cd77-a64a-4004-b6c6-9e7d00f21854.png",
+            "icon": "shopify:\/\/shop_images\/Icon_HealthyRoots-WithoutSpiraling_RGB_White.png",
             "text": "Healthy roots without spiraling"
           }
         },
         "column1_row_3": {
           "type": "column1_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Direct_control_-of_soil_and_-plant_health_RGB_White_3x_d7ea93a8-ef2c-430b-86cb-8565ca1f4624.png",
+            "icon": "shopify:\/\/shop_images\/Icon_DirectControlOfSoilAndPlantHealth_RGB_White.png",
             "text": "Direct control of soil and plant healthy"
           }
         },
         "column1_row_4": {
           "type": "column1_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Save_Water_White_3x_df9f3feb-2b27-469a-bb00-1c4c7b3ef9dc.png",
+            "icon": "shopify:\/\/shop_images\/Icon_Save_Water_White.png",
             "text": "Save water"
           }
         },
         "column1_row_5": {
           "type": "column1_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Increased_Return-on_Investment_RGB_White_3x_86eca375-bff4-48ab-b68f-52646e866c71.png",
+            "icon": "shopify:\/\/shop_images\/Icon_IncreasedReturn-onInvestment_RGB_White.png",
             "text": "Increased return on investment"
           }
         },
         "column2_row_1": {
           "type": "column2_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Climate-Smart_Product_White_3x_6ada06a2-149d-4e6f-90e1-fa682f4fadc0.png",
+            "icon": "shopify:\/\/shop_images\/Icon_Climate-SmartProduct_White.png",
             "text": "Climate smart product"
           }
         },
         "column2_row_2": {
           "type": "column2_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_UV_Stabilized_Including_-Handle_Stitching_RGB_White_3x_6ce64f76-f137-4306-b3eb-bc5bc2c90334.png",
+            "icon": "shopify:\/\/shop_images\/Icon_UV-Stabilized_RGB_White.png",
             "text": "UV stabilized including handle stitching"
           }
         },
         "column2_row_3": {
           "type": "column2_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Easy_To_Move_And_Relocate_Plants_RGB_White_3x_01d037bd-8d5c-4288-979c-d99b1faccbb8.png",
+            "icon": "shopify:\/\/shop_images\/Icon_EasyToMoveAndRelocatePlants_RGB_White.png",
             "text": "Easy to move and relocate plant"
           }
         },
         "column2_row_4": {
           "type": "column2_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Heavy_Duty_And_-Long_Lasting_RGB_White_3x_48a36dae-f6dc-4559-9a7e-806f2113ad28.png",
+            "icon": "shopify:\/\/shop_images\/Icon_HeavyDutyAnd-LongLasting_RGB_White.png",
             "text": "Heavy duty and long lasting"
           }
         },
         "column2_row_5": {
           "type": "column2_row",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_Organic_Friendly-_Agriculture_RGB_White_3x_546177ee-d25f-4af5-b1ce-12a5db67989d.png",
+            "icon": "shopify:\/\/shop_images\/Icon_OrganicFriendly-Agriculture_RGB_White.png",
             "text": "Organic friendly agriculture"
           }
         }
