@@ -17,6 +17,7 @@ div.banner__media.media > img {
 }
 .multicolumn-card .content-container {
     background: transparent;
+
 }
 
 #gb-card__info .gb-multicol-p p {
@@ -40,6 +41,14 @@ div.banner__media.media > img {
     display: none;
 
 }
+.gb-hp-slider-mobile-2 {
+
+  
+    margin:0 20px 20px 20px;
+
+    /* padding: 40px 50px; */
+    
+}
 #gb-inline-richtext-2 {
     font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
     font-size:28px;
@@ -52,20 +61,26 @@ div.banner__media.media > img {
     text-align: left;
 }
 
-.gb-hp-slider-mobile-2 {
 
-  
-    margin:0 20px 20px 20px;
+#Slide-template--17660778119320__multicolumn_2_Q6HgYn-3 {
 
-    /* padding: 40px 50px; */
-    
-}
+} 
+
 @media (max-width: 869px) {
     .gb-hp-slider-mobile-2 ul li:nth-child(1){
         padding-left: calc(var(--padding-mobile) + 20px);
         padding-right: calc(var(--padding-mobile) + 20px);
 
         padding-top: calc(var(--section-space) - 70px);
+        padding-bottom: calc(var(--section-space) - 70px);
+    }
+    .gb-hp-slider-mobile-2 ul li:nth-child(3){ 
+        display: none;
+        padding-left: calc(var(--padding-mobile) + 20px);
+        padding-right: calc(var(--padding-mobile) + 20px);
+
+    }
+    .gb-hp-slider-mobile-2  {
         padding-bottom: calc(var(--section-space) - 70px);
     }
 }
@@ -132,7 +147,7 @@ div.banner__media.media > img {
     font-size: 45px ;
 } */
 #gb-hp__heading {
-    font-size: 45px !important;
+    font-size: 45px;
 }
 .product__title {
     /* margin-bottom: 0px !important; */
@@ -166,7 +181,25 @@ div.banner__media.media > img {
         /* padding: 90px 50px 90px 40px; */
     }
 }
+/* @media (max-width: 959px) {
+    h2, .h2 {
+        font-size: 2.1875rem;
+    }
+} */
 @media screen and (min-width: 870px) { 
+    #gb-inline-richtext-2 {
+        font-size: 35px;
+    }
+    .gb-multicol-p {
+        font-size: 20px;
+    }
+    .gb-hp-slider-mobile-2 ul li:nth-child(0) {
+        padding-top: calc(var(--section-space) - 70px);
+        padding-bottom: calc(var(--section-space) - 70px);
+    }
+    .gb-hp-slider-mobile-2 ul li:nth-child(3) {
+        display: none;
+    }
     .gb-hp-slider-mobile-2 ul li:nth-child(2) {
         display: inline;
         border-top-right-radius: 20px;
@@ -175,9 +208,43 @@ div.banner__media.media > img {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-    .media--transparent {
-        padding-bottom: 200%;
+    /* .gb-hp-slider-mobile-2 ul li:nth-child(1) {
+        padding-top: calc(var(--section-space) - 70px);
+        padding-bottom: calc(var(--section-space) - 70px);
+      
+    } */
+    #gb-card__info {
+
+        padding-left: var(--padding-mobile);
+        padding-right: var(--padding-mobile);
+       
     }
+    .gb-hp-slider-mobile-2 ul li:nth-child(1) .multicolumn-card{
+        
+        display: flex;
+        align-items: center;
+    }
+     
+    .multicolumn-list__item:nth-child(1) {
+        padding-top: calc(var(--section-space) - 70px);
+        padding-bottom: calc(var(--section-space) - 70px);
+    }
+    .media--transparent {
+        height: 100%;
+    }
+    .multicolumn-list__item.center .media--adapt, .multicolumn-list__item .media--adapt .multicolumn-card__image {
+        display: block;
+        object-fit: cover;
+        position: relative;
+    }
+    .multicolumn-card {
+        height: 100%;
+
+    }
+    .background-none .multicolumn-card__image-wrapper {
+        height: 100%;
+    }
+
    
     .growinbag-text p {
         font-size: 20px;
@@ -209,6 +276,9 @@ div.banner__media.media > img {
   
 }
 @media screen and (min-width: 960px) { 
+    #gb-inline-richtext-2 {
+        font-size: 48px;
+    }
 .image-with-text__heading {
     font-size: 48px;
 
@@ -252,6 +322,15 @@ div.banner__media.media > img {
     }
     .image-with-text__text {
         max-width: 85%;
+    }
+    
+ }
+ @media screen and (min-width: 1300px) {
+    .multicolumn-list__item:nth-child(1) {
+        padding-left: var(--padding);
+        padding-right: var(--padding);
+        padding-top: var(--section-space);
+        padding-bottom: var(--section-space);
     }
  }
  @media screen and (min-width: 1400px) { 

@@ -1,0 +1,24 @@
+{
+  "parent": "page.contact.json",
+  "context": {
+    "market": "chile"
+  },
+  "sections": {
+    "contact-text": {
+      "settings": {
+      },
+      "blocks": {
+        "heading_QLj7ph": {
+          "settings": {
+            "heading": "Contacto"
+          }
+        },
+        "text_contact-1": {
+          "settings": {
+            "text": "<p>Diseñamos y fabricamos el GrowinBag™ original y ahora vendemos nuestra bolsa para macetas líder en el mercado en más de 20 países. <strong>Si desea obtener más información sobre nuestro equipo experto o productos líderes, ¡póngase en contacto hoy!<\/strong><\/p>"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,8 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "logo": "shopify://shop_images/GrowinBag_Logo_RGB.svg",
-    "logo_rev": "shopify://shop_images/GrowinBag_Logo_RGB_Reversed.svg",
+    "logo": "shopify:\/\/shop_images\/GrowinBag_Logo_RGB.svg",
     "logo_width": 100,
-    "favicon": "shopify://shop_images/Symbol_RGB_PEAR.png",
+    "favicon": "shopify:\/\/shop_images\/Symbol_RGB_PEAR.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -109,10 +99,10 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p></p>",
+    "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https://www.facebook.com/Wangarahorticultural/",
-    "social_instagram_link": "https://www.instagram.com/grow_innovate/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/Wangarahorticultural\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/grow_innovate\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -129,7 +119,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
-    "social_linkedin_link": "https://www.linkedin.com/company/grow-innovate/",
+    "logo_rev": "shopify:\/\/shop_images\/GrowinBag_Logo_RGB_Reversed.svg",
+    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/grow-innovate\/",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -361,7 +352,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_linkedin_link": "",
       "social_twitter_link": "",

@@ -1,13 +1,5 @@
 {
   "sections": {
-    "about": {
-      "type": "about-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "rich_text_XfXCx9": {
       "type": "rich-text",
       "blocks": {
@@ -51,6 +43,14 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "about": {
+      "type": "about-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "rich_text_7zyFnT": {
@@ -167,7 +167,7 @@
           "type": "column",
           "settings": {
             "title": "GrowinBag™ – The number one choice for growers in Australia, the Middle East and globally",
-            "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p><strong>To find out more about our market leading GrowinBag™, get in touch with us today!</strong><\/p>",
+            "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p><strong>To find out more about our market leading GrowinBag™, get in touch with us today!<\/strong><\/p>",
             "link_label": "Products",
             "link": "shopify:\/\/pages\/products"
           }
@@ -181,11 +181,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_C8LVQ4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/section2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_CQamcD",
-        "column_EpBrCJ"
+        "column_EpBrCJ",
+        "column_C8LVQ4"
       ],
       "settings": {
         "title": "",

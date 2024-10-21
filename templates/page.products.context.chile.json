@@ -1,0 +1,45 @@
+{
+  "parent": "page.products.json",
+  "context": {
+    "market": "chile"
+  },
+  "sections": {
+    "rich_text_Rd3Anr": {
+      "settings": {
+      },
+      "blocks": {
+        "heading_ADUgRa": {
+          "settings": {
+            "heading": "Nuestros Productos"
+          }
+        },
+        "text_nVJkA6": {
+          "settings": {
+            "text": "<p>Usted debe conocernos como GrowinBag, las bolsas de cultivo de alta calidad y confiables en Chile, España y Estados Unidos por casi 25 años. Diseñamos y fabricamos las GrowinBags originales hace 25 años atrás y ahora vendemos nuestra bolsa líder del mercado de plantas en alrededor de 20 países.<\/p>"
+          }
+        }
+      }
+    },
+    "multicolumn_2_eePXBT": {
+      "settings": {
+      },
+      "blocks": {
+        "column_6CVMmh": {
+          "settings": {
+            "text": "<p>\"En PuntoBerry hemos probado las bolsas GrowinBag para nuestros ensayo en árboles frutales, lo cual en 2 años hemos visto buenos resultados con un buen manejo de riego y fertilización, la oxigenación de raíces ha sido un punto clave en la producción, lo cual con una posición de la bolsa adecuada se llega a conseguir.<strong>”<\/strong><\/p><p><em><strong>- PuntoBerry (Chile). Estefani Aguilera, Ingenierio de Producción<\/strong><\/em><\/p>"
+          }
+        },
+        "column_wjzDFi": {
+          "settings": {
+            "text": "<p>“Bick Tropical Farms está muy satisfecho con la calidad de los árboles que GrowinBag nos ha ayudado a producir. Las raíces son mucho más sanas debido a su sistema de poda de aire y luz. Las bolsas tienen manijas resistentes que han ayudado a nuestros empleados a manejar los árboles cuando es el momento de cargarlos. Las bolsas se mantienen muy limpias y presentables en los elementos de nuestro vivero. Estamos muy contentos de continuar nuestro negocio con GROWinBAG.”<br\/><em><strong>- Bick Tropical Farms (EE. UU). Felix Rivero, Propietario y Gerente.<\/strong><\/em><\/p>"
+          }
+        },
+        "column_LL4nft": {
+          "settings": {
+            "text": "<p>“Hace cuatro años que hemos dejado el cultivo en contenedores de polietileno. Ahora nuestros arboles son cultivados en bolsas de cultivo GROWinBAG por las ventajas que este producto nos aporta 1º La manipulación es mucho más cómoda gracias a sus asas 2º La garantía que nos aporta la producción de raíces en el Easy-Fill™ es mayor que la producida en otros sistemas 3º El enraizamiento después de la plantación en su ubicación definitiva es mucho más rápida con más garantías debido a la multitud de raíces finas, anclando el árbol de forma más eficiente y segura. 4º Con el aporte de agua de dos riegos después de la plantación conseguimos que las raíces exploren en el nuevo espacio de plantación, asegurando así el enraizamiento. 5º El almacenaje de los Sacos GROWinBAG es mucho más económico por el poco espacio que necesita.”<br\/><em><strong>- Viveros Jara (España). Pepe Valera, Propietario y Gerente<\/strong><\/em><\/p>"
+          }
+        }
+      }
+    }
+  }
+}

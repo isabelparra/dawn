@@ -20,28 +20,27 @@
           }
         }
       }
-    }, 
+    },
     "image_banner_XPdwbT": {
       "settings": {
-
       }
     },
-    "rich_text_7zyFnT": { 
+    "rich_text_7zyFnT": {
       "blocks": {
         "text_iRPLBJ": {
           "settings": {
-              "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.<\/p>"
+            "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.<\/p>"
           }
         }
       }
     },
     "image_with_text_UmBiM3": {
       "blocks": {
-        "heading_c3Pdgp": { 
+        "heading_c3Pdgp": {
           "settings": {
             "heading": "Destacado del Empleado"
           }
-        }, 
+        },
         "text_gFJH7K": {
           "settings": {
             "text": "<p>Conoce a Francisco, nuestro dedicado Gerente de Desarrollo de Negocios en Growinnovate. Con una gran experiencia en la industria hortícola, desempeña un papel clave en la creación de alianzas con cultivadores de todo el mundo.<\/p>"
@@ -80,7 +79,6 @@
         },
         "column_EpBrCJ": {
           "settings": {
-
           }
         }
       }

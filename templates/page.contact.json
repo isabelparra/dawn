@@ -130,11 +130,13 @@
       "blocks": {
         "product-rank-1": {
           "type": "product-rank-1",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-rank-2": {
           "type": "product-rank-2",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
