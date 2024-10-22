@@ -9,8 +9,6 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
-      },
-      "blocks": {
       }
     },
     "contact-text": {
@@ -45,6 +43,10 @@
       }
     },
     "product_carousel24": {
+      "settings": {
+        "selected_collection": "main-collection",
+        "button_label": "Compra"
+      }
 
     }
   },

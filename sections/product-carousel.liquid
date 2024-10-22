@@ -91,7 +91,9 @@
                     <a href="{{ product.url }}" class="product-link">
                         <img src="{{ product.images.first | img_url: 'medium' }}" alt="{{ product.title }}" class="main-prods-image" width="100%" height="auto">            
                     </a>
-                    <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">Buy Now</button>
+                    <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">
+                        {{  section.settings.button_label }}
+                    </button>
                 </div>
             {% endif %}
         {% endfor %}
@@ -102,7 +104,9 @@
                     <a href="{{ product.url }}" class="product-link">
                         <img src="{{ product.images.first | img_url: 'medium' }}" alt="{{ product.title }}" class="main-prods-image" width="100%" height="auto">            
                     </a>
-                    <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">Buy Now</button>
+                    <button class="quick-buy" onclick="window.location.href='{{ product.url }}'">
+                        {{  section.settings.button_label }}
+                    </button>
                 </div>
             {% endif %}
         {% endfor %}
@@ -180,20 +184,15 @@
             "type": "collection",
             "id": "selected_collection",
             "label": "Select Collection"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Buy Now"
         }
     ],  
-    "blocks": [
-            {
-            "type": "product-rank-1",
-            "name": "Product Image 1",
-            "settings": []
-            },
-            { 
-            "type": "product-rank-2",
-            "name": "Product Image 2",
-            "settings": []
-            }
-    ],
+    
     "presets": [
         {
             "name": "Default",

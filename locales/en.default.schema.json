@@ -371,6 +371,9 @@
     }
   },
   "sections": {
+    "about-page": {
+      "name": "About Page"
+    },
     "all": {
       "animation": {
         "content": "Animations",
@@ -666,6 +669,9 @@
       "presets": {
         "name": "Contact form"
       }
+    },
+    "contact-page": {
+      "name": "Contact Page"
     },
     "custom-liquid": {
       "name": "Custom Liquid",
