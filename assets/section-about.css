@@ -152,7 +152,13 @@ div.banner__media.media > img {
 .product__title {
     /* margin-bottom: 0px !important; */
 }
-
+.gb-pgs-about .marquee-section {
+    padding-bottom: 0px;
+}
+.shopify-section:nth-child(9) {
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
 
 @media screen and (min-width: 750px) {
     .image-with-text__media-item {
