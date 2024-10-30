@@ -1,0 +1,24 @@
+{
+  "parent": "page.products.json",
+  "context": {
+    "market": "es"
+  },
+  "sections": {
+    "rich_text_Rd3Anr": {
+      "settings": {
+      },
+      "blocks": {
+        "heading_ADUgRa": {
+          "settings": {
+            "heading": "Nuestros Productos"
+          }
+        },
+        "text_nVJkA6": {
+          "settings": {
+            "text": "<p>Tal vez nos conozcas como GrowinBag, el proveedor de confianza de macetas de alta calidad en los Estados Unidos durante más de 25 años. Diseñamos y fabricamos la original GrowinBag™ y ahora vendemos nuestra bolsa para macetas, líder en el mercado, en más de 20 países.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}
