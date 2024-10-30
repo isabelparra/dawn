@@ -45,6 +45,7 @@
 .headline-slider-reviews {
     font-size: 35px;
     width: 80%;
+    margin: 0 auto;
 }
 }
 @media screen and (min-width: 1000px) { 

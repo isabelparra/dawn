@@ -51,13 +51,14 @@
           
         </h1>
         {% endif %} {% endcomment %}
-        {% comment %} {%- if section.settings.headline != blank -%}   
+        {%- if section.settings.headline != blank -%}
+          {% comment %} {%- unless section.settings.title == blank -%} {% endcomment %}
             <div class="headline-wrapper multicolumn__headline">
               <h2 class="headline headline-slider-reviews">
                 {{ section.settings.headline }}
               </h2>
             </div>
-            {%- endif -%} {% endcomment %}
+            {%- endif -%}
       <ul
         class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}"
         id="Slider-{{ section.id }} gb-hp-slider"
@@ -214,9 +215,15 @@
   },
   "settings": [
     {
+      "type": "text",
+      "id": "headline",
+      "default": "Section Headline",
+      "label": "Section Headline"
+    },
+    {
       "type": "inline_richtext",
       "id": "title",
-      "default": "Multicolumn-2",
+      "default": "Reviews",
       "label": "t:sections.multicolumn.settings.title.label"
     },
     {

@@ -66,8 +66,8 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_2_eePXBT": {
-      "type": "multicolumn-2",
+    "reviews_10302024": {
+      "type": "reviews",
       "blocks": {
         "column_6CVMmh": {
           "type": "column",
@@ -104,6 +104,7 @@
       ],
       "settings": {
         "title": "",
+        "headline": "Don’t Take Our Word For it! Here’s What Our Customers Think:",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -124,6 +125,6 @@
     "main",
     "rich_text_Rd3Anr",
     "featured_collection_8VzzYn",
-    "multicolumn_2_eePXBT"
+    "reviews_10302024"
   ]
 }

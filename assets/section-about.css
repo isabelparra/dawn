@@ -157,7 +157,7 @@ div.banner__media.media > img {
 }
 .shopify-section:nth-child(9) {
     padding-bottom: 0px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 @media screen and (min-width: 750px) {
