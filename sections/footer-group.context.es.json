@@ -1,0 +1,51 @@
+{
+  "parent": "footer-group.json",
+  "context": {
+    "market": "es"
+  },
+  "sections": {
+    "newsletter_Fph9FE": {
+      "settings": {
+      },
+      "blocks": {
+        "heading_mKrHJJ": {
+          "settings": {
+            "heading": "Quiere saber más?"
+          }
+        },
+        "paragraph_P7FzwL": {
+          "settings": {
+            "text": "<p>Contáctenos ahora al WhatsApp + 34 682 391 431<\/p>"
+          }
+        },
+        "phone_74LVJD": {
+          "settings": {
+            "label": "WhatsApp",
+            "phone": "+ 34 682 391 431"
+          }
+        },
+        "email_3Hk76a": {
+          "settings": {
+            "email": "info@growinnovate.com.es"
+          }
+        }
+      }
+    },
+    "footer": {
+      "settings": {
+      },
+      "blocks": {
+        "brand_information_h6yzeU": {
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "link_list_VcprGc": {
+          "settings": {
+            "heading": "Cultivando un futuro más verde"
+          }
+        }
+      }
+    }
+  }
+}

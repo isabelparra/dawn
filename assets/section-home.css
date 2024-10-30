@@ -42,7 +42,7 @@ slideshow-component > div.slideshow__controls.slider-buttons {
 .banner__text {
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 135%;
     width: 80%;
     text-shadow: 2px 1px 3px hsl(79, 23%, 21%);
@@ -94,7 +94,7 @@ slideshow-component > div.slideshow__controls.slider-buttons {
 
     }
     .banner__text {
-        font-size: 18px;
+        font-size: 20px;
   
     }
     .gb-hp-slider-mobile, .gb-hp-slider-mobile-2, .gb-hp-slider-mobile-3 {
@@ -120,7 +120,7 @@ slideshow-component > div.slideshow__controls.slider-buttons {
      
     }
     .banner__text {
-        font-size:20px;
+        font-size:22px;
     }
     .button--primary  {
         height:63px;

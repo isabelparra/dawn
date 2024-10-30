@@ -19,7 +19,7 @@ div.banner__media.media > img {
     min-height: 39rem;
   }
   #gb-banner__text {
-    font-size: 16px;
+    /* font-size: 16px; */
     text-transform: uppercase;
   }
  
@@ -93,7 +93,7 @@ div.banner__media.media > img {
         font-size:55px;
     }
     #gb-banner__text { 
-        font-size: 18px;
+        /* font-size: 18px; */
     }
     }
     @media screen and (min-width: 600px) {
@@ -143,8 +143,8 @@ div.banner__media.media > img {
       }
       
       #gb-banner__text { 
-        font-size: 20px;
-    }
+        font-size: 24px;
+     }
     .banner--small:not(.banner--adapt) {
         min-height: 50rem;
     }
