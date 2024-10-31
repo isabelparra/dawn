@@ -102,7 +102,7 @@ display: none;
 .product-link {
     /* display: block; */
 }
-.product__tax caption {
+.product__tax {
     text-align: center;
 }
 
