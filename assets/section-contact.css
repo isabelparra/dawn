@@ -102,6 +102,9 @@ display: none;
 .product-link {
     /* display: block; */
 }
+.product__tax caption {
+    text-align: center;
+}
 
 .price__badge-sold-out {
     display: none !important;
