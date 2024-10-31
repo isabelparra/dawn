@@ -102,9 +102,7 @@ display: none;
 .product-link {
     /* display: block; */
 }
-.product__tax {
-    text-align: center;
-}
+
 
 .price__badge-sold-out {
     display: none !important;
