@@ -229,7 +229,17 @@
     visibility: visible; */
     /* transition: transform var(--duration-default) ease, visibility var(--duration-default) ease; */
 }
+.product__media img {
+    border-radius: 20px;
+}
+.product__title {
+    font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
+}
+.button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {
+    text-transform: uppercase;
+    border-radius: 60px;
 
+}
 @keyframes slideInBackground {
     from {
         background-position: 0% 0;
