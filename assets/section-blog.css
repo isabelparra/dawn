@@ -97,7 +97,7 @@ div.banner__media.media > img {
     }
     }
     @media screen and (min-width: 600px) {
-        .field {
+        .newsletter-form__field-wrapper .field {
           width: 19%;
           float: left;
           margin: 5px 1px;
