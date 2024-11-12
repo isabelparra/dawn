@@ -235,50 +235,50 @@
         "title": "Why GrowinBag™ by Growinnovate"
       }
     },
-    "multicolumn_heQWhz": {
-      "type": "multicolumn-3",
-      "blocks": {
-        "column_bGQPnt": {
-          "type": "column",
-          "settings": {
-            "title": "Driving the industry forward",
-            "text": "<p>Standing alone as leaders in the field, Growinnovate remains the #1 choice for quality. Our eco-friendly GrowinBags™ deliver innovative horticultural solutions that are designed to enhance plant health and boost growth, year-round. Growinnovate will continue offering solutions to growers’ challenges as well as developing custom options based on geolocation and conditions.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_yeVpB3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/section3.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_bGQPnt",
-        "column_yeVpB3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
+    // "multicolumn_heQWhz": {
+    //   "type": "multicolumn-3",
+    //   "blocks": {
+    //     "column_bGQPnt": {
+    //       "type": "column",
+    //       "settings": {
+    //         "title": "Driving the industry forward",
+    //         "text": "<p>Standing alone as leaders in the field, Growinnovate remains the #1 choice for quality. Our eco-friendly GrowinBags™ deliver innovative horticultural solutions that are designed to enhance plant health and boost growth, year-round. Growinnovate will continue offering solutions to growers’ challenges as well as developing custom options based on geolocation and conditions.<\/p>",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     },
+    //     "column_yeVpB3": {
+    //       "type": "column",
+    //       "settings": {
+    //         "image": "shopify:\/\/shop_images\/section3.png",
+    //         "title": "",
+    //         "text": "",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "column_bGQPnt",
+    //     "column_yeVpB3"
+    //   ],
+    //   "settings": {
+    //     "title": "",
+    //     "heading_size": "h1",
+    //     "image_width": "full",
+    //     "image_ratio": "adapt",
+    //     "columns_desktop": 2,
+    //     "column_alignment": "left",
+    //     "background_style": "none",
+    //     "button_label": "",
+    //     "button_link": "",
+    //     "color_scheme": "",
+    //     "columns_mobile": "1",
+    //     "swipe_on_mobile": false,
+    //     "padding_top": 36,
+    //     "padding_bottom": 36
+    //   }
+    // },
     "marquee-growin24": {
       "type": "marquee-section",
       "settings": {
@@ -364,7 +364,7 @@
     "rich_text_RmKrdd",
     "multicolumn_LYfnHn",
     "custom-icons-hp1",
-    "multicolumn_heQWhz",
+    // "multicolumn_heQWhz",
     "marquee-growin24",
     "image_carousel24"
   ]

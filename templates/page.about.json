@@ -34,25 +34,25 @@
         "padding_bottom": 40
       }
     },
-    "image_banner_XPdwbT": {
-      "type": "image-banner",
-      "custom_css": [
+    // "image_banner_XPdwbT": {
+    //   "type": "image-banner",
+    //   "custom_css": [
 
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/team-photo.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
+    //   ],
+    //   "settings": {
+    //     "image": "shopify:\/\/shop_images\/team-photo.jpg",
+    //     "image_overlay_opacity": 0,
+    //     "image_height": "small",
+    //     "desktop_content_position": "middle-center",
+    //     "show_text_box": true,
+    //     "desktop_content_alignment": "center",
+    //     "color_scheme": "",
+    //     "image_behavior": "none",
+    //     "mobile_content_alignment": "center",
+    //     "stack_images_on_mobile": true,
+    //     "show_text_below": true
+    //   }
+    // },
     "rich_text_7zyFnT": {
       "type": "rich-text",
       "blocks": {
@@ -73,6 +73,63 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "image_meet-the-team": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_c3Pdgp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet the Team",
+            "heading_size": "h1"
+          }
+        },
+        "text_gFJH7K": {
+          "type": "text",
+          "settings": {
+            "text": "<p><\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_AKeyit": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "caption_Wdk99J": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c3Pdgp",
+        "text_gFJH7K",
+        "button_AKeyit",
+        "caption_Wdk99J"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Meet-Team.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_UmBiM3": {
@@ -138,83 +195,83 @@
         "marquee_text": "Growing a greener tomorrow"
       }
     },
-    "rich_text_FDXhbU": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9KzFa9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>While our company name and brand has changed, our exceptional management team has not. You receive the same unrivalled knowledge, passion, and business acumen, built on a foundation of unwavering values and unrivalled commitment to customer service.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9KzFa9"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multicolumn_2_Q6HgYn": {
-      "type": "multicolumn-2",
-      "blocks": {
-        "column_CQamcD": {
-          "type": "column",
-          "settings": {
-            "title": "GrowinBag™ – The number one choice for growers in Australia, the Middle East and globally",
-            "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p><strong>To find out more about our market leading GrowinBag™, get in touch with us today!<\/strong><\/p>",
-            "link_label": "Products",
-            "link": "shopify:\/\/pages\/products"
-          }
-        },
-        "column_EpBrCJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/about-photo-2.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_C8LVQ4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/section2.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_CQamcD",
-        "column_EpBrCJ",
-        "column_C8LVQ4"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
+    // "rich_text_FDXhbU": {
+    //   "type": "rich-text",
+    //   "blocks": {
+    //     "text_9KzFa9": {
+    //       "type": "text",
+    //       "settings": {
+    //         "text": "<p>While our company name and brand has changed, our exceptional management team has not. You receive the same unrivalled knowledge, passion, and business acumen, built on a foundation of unwavering values and unrivalled commitment to customer service.<\/p>"
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "text_9KzFa9"
+    //   ],
+    //   "settings": {
+    //     "desktop_content_position": "center",
+    //     "content_alignment": "center",
+    //     "color_scheme": "",
+    //     "full_width": true,
+    //     "padding_top": 40,
+    //     "padding_bottom": 52
+    //   }
+    // },
+    // "multicolumn_2_Q6HgYn": {
+    //   "type": "multicolumn-2",
+    //   "blocks": {
+    //     "column_CQamcD": {
+    //       "type": "column",
+    //       "settings": {
+    //         "title": "GrowinBag™ – The number one choice for growers in Australia, the Middle East and globally",
+    //         "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p><strong>To find out more about our market leading GrowinBag™, get in touch with us today!<\/strong><\/p>",
+    //         "link_label": "Products",
+    //         "link": "shopify:\/\/pages\/products"
+    //       }
+    //     },
+    //     "column_EpBrCJ": {
+    //       "type": "column",
+    //       "settings": {
+    //         "image": "shopify:\/\/shop_images\/about-photo-2.jpg",
+    //         "title": "",
+    //         "text": "",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     },
+    //     "column_C8LVQ4": {
+    //       "type": "column",
+    //       "settings": {
+    //         "image": "shopify:\/\/shop_images\/section2.png",
+    //         "title": "",
+    //         "text": "",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "column_CQamcD",
+    //     "column_EpBrCJ",
+    //     "column_C8LVQ4"
+    //   ],
+    //   "settings": {
+    //     "title": "",
+    //     "heading_size": "h1",
+    //     "image_width": "full",
+    //     "image_ratio": "adapt",
+    //     "columns_desktop": 2,
+    //     "column_alignment": "left",
+    //     "background_style": "none",
+    //     "button_label": "",
+    //     "button_link": "",
+    //     "color_scheme": "",
+    //     "columns_mobile": "1",
+    //     "swipe_on_mobile": false,
+    //     "padding_top": 36,
+    //     "padding_bottom": 36
+    //   }
+    // },
     "image_banner_kCcRYw": {
       "type": "image-banner",
       "settings": {
@@ -316,12 +373,13 @@
   "order": [
     "about",
     "rich_text_XfXCx9",
-    "image_banner_XPdwbT",
+    // "image_banner_XPdwbT",
     "rich_text_7zyFnT",
+    "image_meet-the-team",
     "image_with_text_UmBiM3",
     "marquee_section_gttrxe",
-    "rich_text_FDXhbU",
-    "multicolumn_2_Q6HgYn",
+    // "rich_text_FDXhbU",
+    // "multicolumn_2_Q6HgYn",
     "image_banner_kCcRYw",
     "marquee_section_dfehpi",
     "rich_text_Vb9bWh",

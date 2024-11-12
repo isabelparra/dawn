@@ -94,8 +94,12 @@
   font-family: inherit;
   min-height: 4.6rem;
 
-}
 
+}
+button.shopify-payment-button__button--unbranded {
+  color: #4E5B31;
+ font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
+}
 .shopify-payment-button__button [role='button'].focused {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5) !important;
   outline-offset: 0.3rem;
