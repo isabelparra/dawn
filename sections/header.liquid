@@ -325,9 +325,30 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
-          <a href="tel:+3057109628" class="nav-phone-btn">
-            (305) 710-9628
-          </a>
+          {% if section.settings.enable_country_selector %}
+            {%  case country %}
+            {% when "US" %}
+              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_us }}
+              </a>
+            {% when "Chile" %}
+              <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_chile }}
+              </a>
+            {% when "Spain" %}
+              <a href="tel:{{ section.settings.phone_label_spain | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_spain }}
+              </a>
+            {% else %}
+              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_us }}
+              </a>
+            {% endcase %}
+          {% else %}
+            <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+              {{ section.settings.phone_label_us }}
+            </a>
+          {% endif %}
         </div>
       </div>
       
@@ -502,6 +523,24 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
+    {
+      "type": "text",
+      "id": "phone_label_us",
+      "default": "(305) 710-9628",
+      "label": "Phone Number"
+    },
+    {
+      "type": "text",
+      "id": "phone_label_chile",
+      "default": "+56 9 5713 2204",
+      "label": "Phone Number"
+    },
+    {
+      "type": "text",
+      "id": "phone_label_spain",
+      "default": "+ 34 682 391 431",
+      "label": "Phone Number"
+    },
     {
       "type": "select",
       "id": "logo_position",

@@ -123,8 +123,8 @@
               {%- endfor -%}
             </ul>
             <div class="mob-header-phone">
-              <a href="tel:+61438834379" class="nav-phone-btn">
-                +61 438 834 379 
+              <a href="tel:{{ section.settings.phone_label | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label }}
               </a>
             </div>
             <div class="menu-drawer__utility-links">
@@ -274,3 +274,17 @@
 </header-drawer>
 
 
+{% comment %} {%  schema %}
+{ 
+  "name": "Header Drawer",
+  "class": "section-header-drawer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "phone_label",
+      "default": "(305) 710-9628",
+      "label": "Phone Number"
+    }
+  ]
+}
+{% endschema %} {% endcomment %}

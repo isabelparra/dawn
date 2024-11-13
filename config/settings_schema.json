@@ -1147,6 +1147,7 @@
   {
     "name": "t:settings_schema.drawers.name",
     "settings": [
+    
       {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__border.content"
@@ -1214,6 +1215,23 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
         "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Header Drawer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "phone_label_us",
+        "default": "(305) 710-9628",
+        "label": "Phone Number"
+      },
+      {
+        "type": "text",
+        "id": "phone_label_chile",
+        "default": "(305) 710-9628",
+        "label": "Phone Number"
       }
     ]
   },
