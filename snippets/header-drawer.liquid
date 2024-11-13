@@ -123,9 +123,30 @@
               {%- endfor -%}
             </ul>
             <div class="mob-header-phone">
-              <a href="tel:{{ section.settings.phone_label | remove: ' ' }}" class="nav-phone-btn">
-                {{ section.settings.phone_label }}
+              {% if section.settings.enable_country_selector %}
+                {%  case country %}
+                {% when "US" %}
+              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_us }}
               </a>
+            {% when "Chile" %}
+              <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_chile }}
+              </a>
+            {% when "ES" %}
+              <a href="tel:{{ section.settings.phone_label_spain | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_spain }}
+              </a>
+            {% else %}
+              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+                {{ section.settings.phone_label_us }}
+              </a>
+            {% endcase %}
+          {% else %}
+            <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+              {{ section.settings.phone_label_us }}
+            </a>
+          {% endif %}
             </div>
             <div class="menu-drawer__utility-links">
               {%- if shop.customer_accounts_enabled -%}
