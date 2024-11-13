@@ -1219,7 +1219,7 @@
     ]
   },
   {
-    "name": "Header Drawer",
+    "name": "header",
     "settings": [
       {
         "type": "text",
@@ -1238,6 +1238,12 @@
         "id": "phone_label_spain",
         "default": "+ 34 682 391 431",
         "label": "Phone Number"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Default",
+        "category": "Header"
       }
     ]
   },
