@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "parent": "index.json",
   "context": {
@@ -5,8 +14,7 @@
   },
   "sections": {
     "slideshow_AJJ8wR": {
-      "settings": {
-      },
+      "settings": {},
       "blocks": {
         "slide_kYRpLN": {
           "settings": {
@@ -25,8 +33,7 @@
       }
     },
     "rich_text_RmKrdd": {
-      "settings": {
-      },
+      "settings": {},
       "blocks": {
         "heading_MLxQbM": {
           "settings": {
@@ -35,7 +42,7 @@
         },
         "text_wQFBz8": {
           "settings": {
-            "text": "<p>Una empresa familiar, líder a nivel global en suministros de horticultura.<br\/>Empoderamos a cultivos y huertos alrededor del mundo y sin excepción, innovando en soluciones para el manejo de plantas, que permiten mejorar la salud de las plantas y aumentar su productividad.<br\/>Nuestros productos hortícolas amigables con el medio ambiente y sustentables, contribuyen a un futuro más verde, al disminuir los residuos, minimizando el impacto ambiental e incrementando la captura de carbono.<\/p>"
+            "text": "<p>Una empresa familiar, líder a nivel global en suministros de horticultura.<br/>Empoderamos a cultivos y huertos alrededor del mundo y sin excepción, innovando en soluciones para el manejo de plantas, que permiten mejorar la salud de las plantas y aumentar su productividad.<br/>Nuestros productos hortícolas amigables con el medio ambiente y sustentables, contribuyen a un futuro más verde, al disminuir los residuos, minimizando el impacto ambiental e incrementando la captura de carbono.</p>"
           }
         },
         "button_xxUeti": {
@@ -47,13 +54,12 @@
       }
     },
     "multicolumn_LYfnHn": {
-      "settings": {
-      },
+      "settings": {},
       "blocks": {
         "column_dmFUy4": {
           "settings": {
             "title": "¡La opción #1 para bolsas de cultivo ecológicas y de alta calidad airededor del mundo!",
-            "text": "<p>Growinnovate se mantiene como la opción #1 para bolsas de cultivo ecológicas, de alta calidad, entregando soluciones innovadoras para la horticultura, que están diseñadas para mejorar la salud de las plantas, y aumentar su crecimiento durante todo el año.<br\/><br\/>Nuestros productos original GrowinBags™ están diseñadas y fabricadas en Australia, para mejorar la salud de las plantas, aumentar la eficiencia del stock de plantas y minimizar el impacto en el medio ambiente. Estas son perfectas para climas adversos, y son 100% reciclables, haciéndolas perfectas para agricultura orgánica, y además pueden ser hechas completamente a medida en cualquier forma y tamaño.<\/p>"
+            "text": "<p>Growinnovate se mantiene como la opción #1 para bolsas de cultivo ecológicas, de alta calidad, entregando soluciones innovadoras para la horticultura, que están diseñadas para mejorar la salud de las plantas, y aumentar su crecimiento durante todo el año.<br/><br/>Nuestros productos original GrowinBags™ están diseñadas y fabricadas en Australia, para mejorar la salud de las plantas, aumentar la eficiencia del stock de plantas y minimizar el impacto en el medio ambiente. Estas son perfectas para climas adversos, y son 100% reciclables, haciéndolas perfectas para agricultura orgánica, y además pueden ser hechas completamente a medida en cualquier forma y tamaño.</p>"
           }
         }
       }
@@ -139,6 +145,5 @@
         "marquee_text": "GrowinBag™ es la bolsa de cultivo elegida por los Agricultores y Viveristas de todo el mundo."
       }
     }
-    
   }
 }
