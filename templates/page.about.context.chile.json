@@ -63,35 +63,35 @@
       "blocks": {
       }
     },
-    "rich_text_FDXhbU": {
-      "settings": {
-      },
-      "blocks": {
-        "text_9KzFa9": {
-          "settings": {
-            "text": "<p>Nuestro nuevo nombre comercial, Growinnovate, en conjunto con la dirección de nuestra marca, alínea nuestra posición en el mercado como el líder establecido de sustentabilidad y productos de calidad, que entregan un conocimiento y pasión inigualables. Las numerosas cualidades que han contribuido a nuestra fuerte reputación a nivel mundial, están ahora representadas en nuestra nueva identidad de marca y nombre.<\/p>"
-          }
-        }
-      }
-    },
-    "multicolumn_2_Q6HgYn": {
-      "settings": {
-      },
-      "blocks": {
-        "column_CQamcD": {
-          "settings": {
-            "title": "Las bolsas de cultivo de alta calidad y confiables en Chile, España, y Estados Unidos por casi 25 años",
-            "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.<\/p>",
-            "link_label": "Productos",
-            "link": "shopify:\/\/pages\/products"
-          }
-        },
-        "column_EpBrCJ": {
-          "settings": {
-          }
-        }
-      }
-    },
+    // "rich_text_FDXhbU": {
+    //   "settings": {
+    //   },
+    //   "blocks": {
+    //     "text_9KzFa9": {
+    //       "settings": {
+    //         "text": "<p>Nuestro nuevo nombre comercial, Growinnovate, en conjunto con la dirección de nuestra marca, alínea nuestra posición en el mercado como el líder establecido de sustentabilidad y productos de calidad, que entregan un conocimiento y pasión inigualables. Las numerosas cualidades que han contribuido a nuestra fuerte reputación a nivel mundial, están ahora representadas en nuestra nueva identidad de marca y nombre.<\/p>"
+    //       }
+    //     }
+    //   }
+    // },
+    // "multicolumn_2_Q6HgYn": {
+    //   "settings": {
+    //   },
+    //   "blocks": {
+    //     "column_CQamcD": {
+    //       "settings": {
+    //         "title": "Las bolsas de cultivo de alta calidad y confiables en Chile, España, y Estados Unidos por casi 25 años",
+    //         "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.<\/p>",
+    //         "link_label": "Productos",
+    //         "link": "shopify:\/\/pages\/products"
+    //       }
+    //     },
+    //     "column_EpBrCJ": {
+    //       "settings": {
+    //       }
+    //     }
+    //   }
+    // },
     "marquee_section_dfehpi": {
       "settings": {
         "marquee_text": "Cultivando un futuro más verde"
