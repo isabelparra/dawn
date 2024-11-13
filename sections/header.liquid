@@ -325,13 +325,14 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
-          {% if section.settings.enable_country_selector %}
-            {%  case country %}
+          {% assign user_country = request.locale %}
+          {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
+            {%  case user_country %}
             {% when "US" %}
               <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
                 {{ section.settings.phone_label_us }}
               </a>
-            {% when "Chile" %}
+            {% when "CL" %}
               <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
                 {{ section.settings.phone_label_chile }}
               </a>
@@ -345,11 +346,7 @@
                 {{ section.settings.phone_label_us }}
               </a>
             {% endcase %}
-          {% else %}
-            <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
-              {{ section.settings.phone_label_us }}
-            </a>
-          {% endif %}
+      
         </div>
       </div>
       

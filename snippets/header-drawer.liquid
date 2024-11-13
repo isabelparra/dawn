@@ -123,7 +123,7 @@
               {%- endfor -%}
             </ul>
             <div class="mob-header-phone">
-              {% assign user_country = request.country %}
+              {% assign user_country = request.locale %}
                 {%  case user_country %}
                 {% when "US" %}
               <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
