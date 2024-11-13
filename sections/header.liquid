@@ -325,7 +325,7 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
-          {% assign user_country = request.locale %}
+          {% assign user_country = request.country %}
           {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
             {%  case user_country %}
             {% when "US" %}
