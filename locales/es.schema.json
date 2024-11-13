@@ -1006,13 +1006,8 @@
         },
         "menu_color_scheme": {
           "label": "Esquema de colores del menú"
-        },
-        "phone_label_chile": {
-          "label": "+56 9 5713 2204"
-        },
-        "phone_label_spain": {
-          "label": "+ 34 682 391 431"
         }
+       
        
       }
     },

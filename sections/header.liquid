@@ -328,15 +328,16 @@
           {% assign user_country = request.country %}
           {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
             {%  case user_country %}
-            {% when "US" %}
+            {% when "United States" %}
               <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
                 {{ section.settings.phone_label_us }}
               </a>
-            {% when "CL" %}
+         
+            {% when "Chile" %}
               <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
                 {{ section.settings.phone_label_chile }}
               </a>
-            {% when "ES" %}
+            {% when "Spain" %}
               <a href="tel:{{ section.settings.phone_label_spain | remove: ' ' }}" class="nav-phone-btn">
                 {{ section.settings.phone_label_spain }}
               </a>
