@@ -325,34 +325,21 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
+          {% assign phone_label_key = "phone_label_" | append: user_country | downcase | replace: ' ', '_' %}
+          {{ section.settings[phone_label_key] | default: section.settings.phone_label_us }}
+{% comment %}           
           {% assign user_country = request.country %}
+          {% assign phone_label = section.settings["phone_label_" | append: user_country | downcase | replace: ' ', '_'] | default: section.settings.phone_label_us %}
+   {% endcomment %}
           {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
-            {%  case user_country %}
-            {% when "United States" %}
-              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
-                {{ section.settings.phone_label_us }}
+          {% comment %} <a href="tel:{{ section.settings.phone_label_us }}">Call Us: {{ section.settings.phone_label_us }}</a> {% endcomment %}
+              <a href="tel:{{ phone_label | remove: ' ' }}" class="nav-phone-btn">
+                {{ phone_label }}
               </a>
-         
-            {% when "Chile" %}
-              <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
-                {{ section.settings.phone_label_chile }}
-              </a>
-            {% when "Spain" %}
-              <a href="tel:{{ section.settings.phone_label_spain | remove: ' ' }}" class="nav-phone-btn">
-                {{ section.settings.phone_label_spain }}
-              </a>
-         
-            {% else %}
-              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
-                {{ section.settings.phone_label_us }}
-              </a>
-            {% endcase %}
-      
-        </div>
+              
 
+        </div>
       </div>
-    
-      
     </div>  
   
   
@@ -518,6 +505,7 @@
   </script>
 {%- endif -%}
 
+
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -528,21 +516,19 @@
         "type": "text",
           "id": "phone_label_us",
           "default": "(305) 710-9628",
-          "label": "Phone Number"
+          "label": "Phone Number (US)"
       },
         {
           "type": "text",
           "id": "phone_label_chile",
           "default": "+56 9 5713 2204",
-          "label": "Phone Number"
+          "label": "Phone Number (Chile)"
         },
         {
           "type": "text",
           "id": "phone_label_spain",
           "default": "+ 34 682 391 431",
-          "label": "Phone Number"
-        
-      
+          "label": "Phone Number (Spain)"
     },
     {
       "type": "select",
