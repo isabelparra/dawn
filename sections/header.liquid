@@ -325,8 +325,10 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
-          {% assign user_country = shop.locale.active_country %}
+          {% assign user_country = shop.locale.active_country | default: 'US' %}
           {% assign phone_label_key = "phone_label_" | append: user_country | downcase | replace: ' ', '_' %}
+          {% assign phone_number = section.settings[phone_label_key] | default: section.settings.phone_label_us %}
+
           <p>Country: {{ user_country }}</p>
 
 
@@ -337,8 +339,8 @@
    {% endcomment %}
           {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
           {% comment %} <a href="tel:{{ section.settings.phone_label_us }}">Call Us: {{ section.settings.phone_label_us }}</a> {% endcomment %}
-              <a href="tel:{{ section.settings[phone_label_key] | default: section.settings.phone_label_us }}" class="nav-phone-btn">
-                {{ section.settings[phone_label_key] | default: section.settings.phone_label_us }}
+              <a href="tel:{{ phone_number | remove: ' ' }}" class="nav-phone-btn">
+                {{ phone_number }}
 
               </a>
        
