@@ -325,7 +325,11 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
+          {% assign user_country = shop.locale.active_country | default: 'US' %}
           {% assign phone_label_key = "phone_label_" | append: user_country | downcase | replace: ' ', '_' %}
+          <p>Country: {{ user_country }}</p>
+
+
           {% comment %} {{ section.settings[phone_label_key] | default: section.settings.phone_label_us }} {% endcomment %}
 {% comment %}           
           {% assign user_country = request.country %}
