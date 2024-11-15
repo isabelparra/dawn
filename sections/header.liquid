@@ -326,16 +326,18 @@
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
           {% assign phone_label_key = "phone_label_" | append: user_country | downcase | replace: ' ', '_' %}
-          {{ section.settings[phone_label_key] | default: section.settings.phone_label_us }}
+          {% comment %} {{ section.settings[phone_label_key] | default: section.settings.phone_label_us }} {% endcomment %}
 {% comment %}           
           {% assign user_country = request.country %}
           {% assign phone_label = section.settings["phone_label_" | append: user_country | downcase | replace: ' ', '_'] | default: section.settings.phone_label_us %}
    {% endcomment %}
           {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
           {% comment %} <a href="tel:{{ section.settings.phone_label_us }}">Call Us: {{ section.settings.phone_label_us }}</a> {% endcomment %}
-              <a href="tel:{{ phone_label | remove: ' ' }}" class="nav-phone-btn">
-                {{ phone_label }}
+              <a href="tel:{{ section.settings[phone_label_key] | default: section.settings.phone_label_us }}" class="nav-phone-btn">
+                {{ section.settings[phone_label_key] | default: section.settings.phone_label_us }}
+
               </a>
+       
               
 
         </div>
