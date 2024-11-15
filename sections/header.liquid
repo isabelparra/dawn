@@ -325,7 +325,7 @@
       -%}
       <div class="desk-header-phone-div">
         <div class="desk-header-phone">
-          {% assign user_country = shop.locale.active_country | default: 'US' %}
+          {% assign user_country = shop.locale.active_country %}
           {% assign phone_label_key = "phone_label_" | append: user_country | downcase | replace: ' ', '_' %}
           <p>Country: {{ user_country }}</p>
 
