@@ -110,8 +110,8 @@
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https://www.facebook.com/growinbag/",
-    "social_instagram_link": "https://www.instagram.com/growinbag/",
+    "social_facebook_link": "https://www.facebook.com/growinbagchile/",
+    "social_instagram_link": "https://www.instagram.com/growinbag_chile/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -144,9 +144,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
