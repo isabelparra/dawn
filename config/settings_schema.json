@@ -1391,6 +1391,59 @@
     ]
   },
   {
+    "name": "Social Links",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_links_facebook_es",
+        "label": "Facebook (Spain)",
+        "default": "https://www.facebook.com/growinbageslatam/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_facebook_cl",
+        "label": "Facebook (Chile)",
+        "default": "https://www.facebook.com/growinbagchile/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_facebook_us",
+        "label": "Facebook (US)",
+        "default": "https://www.facebook.com/growinbag/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_instagram_es",
+        "label": "Instagram (Spain)",
+        "default": "https://www.instagram.com/growinbag_espana/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_instagram_cl",
+        "label": "Instagram (Chile)",
+        "default": "https://www.instagram.com/growinbag_chile/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_linkedin_es",
+        "label": "LinkedIn (Spain)",
+        "default": "https://www.linkedin.com/company/growinbag-espa%C3%B1a/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_linkedin_cl",
+        "label": "LinkedIn (Chile)",
+        "default": "https://www.linkedin.com/company/growinbag-chile/"
+      },
+      {
+        "type": "text",
+        "id": "social_links_instagram_us",
+        "label": "Instagram (US)",
+        "default": "https://www.linkedin.com/company/growinbag/"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.search_input.name",
     "settings": [
       {
