@@ -10,10 +10,10 @@
 {% endcomment %}
 
 <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
-{%- assign country = localization.country %}
-{%- assign linkedin_link = settings.social_links.linkedin[country] %}
-{%- assign facebook_link = settings.social_links.facebook[country]  %}
-{%- assign instagram_link = settings.social_links.instagram[country] %}
+{%- assign country = localization.country | default: 'us' %}
+{%- assign linkedin_link = settings.social_links.linkedin[country] | default: settings.social_linkedin_link %}
+{%- assign facebook_link = settings.social_links.facebook[country] | default: settings.social_facebook_link %}
+{%- assign instagram_link = settings.social_links.instagram[country] | default: settings.social_instagram_link %}
 
   {%- if linkedin_link != blank -%}
     <li class="list-social__item">
