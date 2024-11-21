@@ -19,7 +19,9 @@
   {%- if settings.social_links.linkedin != blank -%}
     <li class="list-social__item">
       {%- assign country = localization.country %}
+      {% assign user_country = request.locale %}
       <p>Country: {{ country }}</p>
+      <p>User Country: {{ user_country }}</p>
       {% case country %}
       {% when "United States" %}
         {%- assign linkedin_link = settings.social_links.linkedin.us %}
