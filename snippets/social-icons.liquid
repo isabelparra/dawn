@@ -20,8 +20,8 @@
     <li class="list-social__item">
       {%- assign country = localization.country %}
       {% assign user_country = request.locale %}
-      <p>Country: {{ country }}</p>
-      <p>User Country: {{ user_country }}</p>
+      {% comment %} <p>Country: {{ country }}</p>
+      <p>User Country: {{ user_country }}</p> {% endcomment %}
       {% case country %}
       {% when "United States" %}
         {%- assign linkedin_link = settings.social_links.linkedin.us %}
@@ -38,7 +38,7 @@
           <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
         </a>
 
-      {% when "Spain" %}
+      {% when "Spain" or "España" %}
       {%- assign linkedin_link = settings.social_links.linkedin.es %}
       <a href="{{ linkedin_link }}" class="link list-social__link">
         {%- render 'icon-linkedin' -%}
@@ -64,7 +64,7 @@
         {%- assign facebook_link = settings.social_links.facebook.us %}
       {% when "Chile" %}
         {%- assign facebook_link = settings.social_links.facebook.cl %}
-      {% when "Spain" %}
+      {% when "Spain" or "España" %}
         {%- assign facebook_link = settings.social_links.facebook.es %}
       {% else %}
         {%- assign facebook_link = settings.social_links.facebook.us %}
@@ -83,7 +83,7 @@
       {%- assign instagram_link = settings.social_links.instagram.us %}
     {% when "Chile" %}
       {%- assign instagram_link = settings.social_links.instagram.cl %}
-    {% when "Spain" or "ES" %}
+    {% when "Spain" or "España" %}
       {%- assign instagram_link = settings.social_links.instagram.es %}
     {% else %}
       {%- assign instagram_link = settings.social_links.instagram.us %}
