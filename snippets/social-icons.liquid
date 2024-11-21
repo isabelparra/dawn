@@ -10,22 +10,49 @@
 {% endcomment %}
 
 <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
-{%- assign country = localization.country | default: 'us' %}
-{%- assign linkedin_link = settings.social_links.linkedin[country] | default: settings.social_linkedin_link %}
-{%- assign facebook_link = settings.social_links.facebook[country] | default: settings.social_facebook_link %}
-{%- assign instagram_link = settings.social_links.instagram[country] | default: settings.social_instagram_link %}
 
-  {%- if linkedin_link != blank -%}
+{% comment %} {%- assign linkedin_link = settings.social_links.linkedin[country] | default: settings.social_linkedin_link %}
+{%- assign facebook_link = settings.social_links.facebook[country] | default: settings.social_facebook_link %}
+{%- assign instagram_link = settings.social_links.instagram[country] | default: settings.social_instagram_link %} {% endcomment %}
+
+{% comment %} <p>Country: {{ country }}</p> {% endcomment %}
+  {% comment %} {%- if linkedin_link != blank -%} {% endcomment %}
     <li class="list-social__item">
+      {%- assign country = localization.country %}
+      {% case country %}
+      {% when "United States" %}
+        {%- assign linkedin_link = settings.social_links.linkedin.us %}
+     
+        <a href="{{ linkedin_link }}" class="link list-social__link">
+          {%- render 'icon-linkedin' -%}
+          <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
+        </a>
+        
+      {% when "Chile" %}
+        {%- assign linkedin_link = settings.social_links.linkedin.cl %}
+        <a href="{{ linkedin_link }}" class="link list-social__link">
+          {%- render 'icon-linkedin' -%}
+          <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
+        </a>
+
+      {% when "Spain" %}
+      {%- assign linkedin_link = settings.social_links.linkedin.es %}
       <a href="{{ linkedin_link }}" class="link list-social__link">
         {%- render 'icon-linkedin' -%}
         <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
       </a>
+      {% comment %} {% else %}
+        <a href="{{ linkedin_link }}" class="link list-social__link">
+          {%- render 'icon-linkedin' -%}
+          <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
+        </a> {% endcomment %}
+      {% endcase %}
+      
    
     </li>
 
 
-  {%- endif -%}
+  {% comment %} {%- endif -%} {% endcomment %}
   {%- if facebook_link != blank -%}
     <li class="list-social__item">
       <a href="{{ facebook_link }}" class="link list-social__link">

@@ -123,11 +123,13 @@
               {%- endfor -%}
             </ul>
             <div class="mob-header-phone">
+              {% comment %} {% assign user_country = request.locale %} {% endcomment %}
               {% assign user_country = request.locale %}
                 {% case user_country %}
                 {% when "US" %}
               <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
                 {{ section.settings.phone_label_us }}
+                {% comment %} {% request.locale %} {% endcomment %}
               </a>
             {% when "CL" %}
               <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
@@ -138,7 +140,7 @@
                 {{ section.settings.phone_label_spain }}
               </a>
             {% else %}
-              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+              <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn default-phone">
                 {{ section.settings.phone_label_us }}
               </a>
             {% endcase %}

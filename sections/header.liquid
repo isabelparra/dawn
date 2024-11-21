@@ -336,10 +336,32 @@
    {% endcomment %}
           {% comment %} {% if section.settings.enable_country_selector %} {% endcomment %}
           {% comment %} <a href="tel:{{ section.settings.phone_label_us }}">Call Us: {{ section.settings.phone_label_us }}</a> {% endcomment %}
-              <a href="tel:{{ section.settings[phone_key] | default: section.settings.phone_label_us }}" class="nav-phone-btn">
+             
+          {% comment %} works {% endcomment %}
+          {% comment %} <a href="tel:{{ section.settings[phone_key] | default: section.settings.phone_label_us }}" class="nav-phone-btn">
                 {{ section.settings[phone_key] | default: section.settings.phone_label_us }}
 
-              </a>
+              </a> {% endcomment %}
+
+              {% case country %}
+              {% when "US" %}
+            <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn">
+              {{ section.settings.phone_label_us }}
+              {% comment %} {% request.locale %} {% endcomment %}
+            </a>
+          {% when "CL" %}
+            <a href="tel:{{ section.settings.phone_label_chile | remove: ' ' }}" class="nav-phone-btn">
+              {{ section.settings.phone_label_chile }}
+            </a>
+          {% when "ES" %}
+            <a href="tel:{{ section.settings.phone_label_spain | remove: ' ' }}" class="nav-phone-btn">
+              {{ section.settings.phone_label_spain }}
+            </a>
+          {% else %}
+            <a href="tel:{{ section.settings.phone_label_us | remove: ' ' }}" class="nav-phone-btn default-phone">
+              {{ section.settings.phone_label_us }}
+            </a>
+          {% endcase %}
        
               
 
