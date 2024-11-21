@@ -15,10 +15,11 @@
 {%- assign facebook_link = settings.social_links.facebook[country] | default: settings.social_facebook_link %}
 {%- assign instagram_link = settings.social_links.instagram[country] | default: settings.social_instagram_link %} {% endcomment %}
 
-<p>Country: {{ country }}</p>
+
   {%- if settings.social_links.linkedin != blank -%}
     <li class="list-social__item">
       {%- assign country = localization.country %}
+      <p>Country: {{ country }}</p>
       {% case country %}
       {% when "United States" %}
         {%- assign linkedin_link = settings.social_links.linkedin.us %}
