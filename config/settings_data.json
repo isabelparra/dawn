@@ -110,16 +110,6 @@
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_linkedin_link": "https://www.linkedin.com/company/growinbag/",
-    "social_facebook_link": "https://www.facebook.com/growinbagchile/",
-    "social_instagram_link": "https://www.instagram.com/growinbag_chile/",
-    "social_youtube_link": "",
-    "social_tiktok_link": "",
-    "social_twitter_link": "",
-    "social_snapchat_link": "",
-    "social_pinterest_link": "",
-    "social_tumblr_link": "",
-    "social_vimeo_link": "",
     "social_links": {
       "facebook": {
         "es": "https://www.facebook.com/growinbageslatam/",
@@ -136,8 +126,17 @@
         "cl": "https://www.linkedin.com/company/growinbag-chile/",
         "us": "https://www.linkedin.com/company/growinbag/"
       }
-  
     },
+    "social_linkedin_link": "https://www.linkedin.com/company/growinbag/",
+    "social_facebook_link": "https://www.facebook.com/growinbag/",
+    "social_instagram_link": "https://www.instagram.com/growinbag/",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
