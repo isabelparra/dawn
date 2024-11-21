@@ -16,7 +16,7 @@
 {%- assign instagram_link = settings.social_links.instagram[country] | default: settings.social_instagram_link %} {% endcomment %}
 
 {% comment %} <p>Country: {{ country }}</p> {% endcomment %}
-  {% comment %} {%- if linkedin_link != blank -%} {% endcomment %}
+  {%- if settings.social_links.linkedin != blank -%}
     <li class="list-social__item">
       {%- assign country = localization.country %}
       {% case country %}
@@ -41,19 +41,31 @@
         {%- render 'icon-linkedin' -%}
         <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
       </a>
-      {% comment %} {% else %}
+      {% else %}
+        {%- assign linkedin_link = settings.social_links.linkedin.us %}
         <a href="{{ linkedin_link }}" class="link list-social__link">
           {%- render 'icon-linkedin' -%}
           <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
-        </a> {% endcomment %}
+        </a> 
       {% endcase %}
       
-   
+
     </li>
 
+  {% endif %}
 
-  {% comment %} {%- endif -%} {% endcomment %}
-  {%- if facebook_link != blank -%}
+  {%- if settings.social_links.facebook != blank -%}
+    {%- assign country = localization.country %}
+      {% case country %}
+      {% when "United States" %}
+        {%- assign facebook_link = settings.social_links.facebook.us %}
+      {% when "Chile" %}
+        {%- assign facebook_link = settings.social_links.facebook.cl %}
+      {% when "Spain" %}
+        {%- assign facebook_link = settings.social_links.facebook.es %}
+      {% else %}
+        {%- assign facebook_link = settings.social_links.facebook.us %}
+      {% endcase %}
     <li class="list-social__item">
       <a href="{{ facebook_link }}" class="link list-social__link">
         {%- render 'icon-facebook' -%}
@@ -61,7 +73,18 @@
       </a>
     </li>
   {%- endif -%}
-  {%- if instagram_link != blank -%}
+  {%- if settings.social_links.instagram != blank -%}
+
+    {% case country %}
+    {% when "United States" %}
+      {%- assign instagram_link = settings.social_links.instagram.us %}
+    {% when "Chile" %}
+      {%- assign instagram_link = settings.social_links.instagram.cl %}
+    {% when "Spain" %}
+      {%- assign instagram_link = settings.social_links.instagram.es %}
+    {% else %}
+      {%- assign instagram_link = settings.social_links.instagram.us %}
+    {% endcase %}
     <li class="list-social__item">
       <a href="{{ instagram_link }}" class="link list-social__link">
         {%- render 'icon-instagram' -%}
