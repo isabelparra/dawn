@@ -12,8 +12,7 @@
       }
     },
     "contact-text": {
-      "settings": {
-      },
+      "settings": {},
       "blocks": {
         "heading_QLj7ph": {
           "settings": {
@@ -30,24 +29,18 @@
         "heading_QLj7ph",
         "text_contact-1"
       ]
-      
     },
     "form": {
-      "settings": {
-        
-      }
+      "settings": {}
     },
     "featured_product_ayDCVj": {
-      "blocks": {
-       
-      }
+      "blocks": {}
     },
     "product_carousel24": {
       "settings": {
         "selected_collection": "main-collection",
         "button_label": "Compra"
       }
-
     }
   },
   "order": [

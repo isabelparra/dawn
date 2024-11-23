@@ -67,8 +67,7 @@
         },
         "price_BY8eHH": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker_dGhNx6": {
           "type": "variant_picker",
@@ -81,8 +80,7 @@
         "quantity_selector_LEBr4V": {
           "type": "quantity_selector",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons_UJdxRW": {
           "type": "buy_buttons",
@@ -107,6 +105,7 @@
         "buy_buttons_UJdxRW",
         "share_xj6McD"
       ],
+      "disabled": true,
       "settings": {
         "product": "tree-cuff",
         "color_scheme": "",

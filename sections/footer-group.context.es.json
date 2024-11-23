@@ -5,8 +5,7 @@
   },
   "sections": {
     "newsletter_Fph9FE": {
-      "settings": {
-      },
+      "settings": {},
       "blocks": {
         "heading_mKrHJJ": {
           "settings": {
@@ -32,13 +31,11 @@
       }
     },
     "footer": {
-      "settings": {
-      },
+      "settings": {},
       "blocks": {
         "brand_information_h6yzeU": {
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "link_list_VcprGc": {
           "settings": {

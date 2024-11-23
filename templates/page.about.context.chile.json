@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "parent": "page.about.json",
   "context": {
@@ -36,7 +27,7 @@
       "blocks": {
         "text_iRPLBJ": {
           "settings": {
-            "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.</p>"
+            "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.<\/p>"
           }
         }
       }
@@ -51,7 +42,7 @@
         },
         "text_gFJH7K": {
           "settings": {
-            "text": "<p>Conoce a Francisco, nuestro dedicado Gerente de Desarrollo de Negocios en Growinnovate. Con una gran experiencia en la industria hortícola, desempeña un papel clave en la creación de alianzas con cultivadores de todo el mundo.</p>"
+            "text": "<p>Conoce a Francisco, nuestro dedicado Gerente de Desarrollo de Negocios en Growinnovate. Con una gran experiencia en la industria hortícola, desempeña un papel clave en la creación de alianzas con cultivadores de todo el mundo.<\/p>"
           }
         },
         "caption_Wdk99J": {
@@ -65,38 +56,8 @@
       "settings": {
         "marquee_text": "Cultivando un futuro más verde"
       },
-      "blocks": {
-      }
+      "blocks": {}
     },
-    // "rich_text_FDXhbU": {
-    //   "settings": {
-    //   },
-    //   "blocks": {
-    //     "text_9KzFa9": {
-    //       "settings": {
-    //         "text": "<p>Nuestro nuevo nombre comercial, Growinnovate, en conjunto con la dirección de nuestra marca, alínea nuestra posición en el mercado como el líder establecido de sustentabilidad y productos de calidad, que entregan un conocimiento y pasión inigualables. Las numerosas cualidades que han contribuido a nuestra fuerte reputación a nivel mundial, están ahora representadas en nuestra nueva identidad de marca y nombre.<\/p>"
-    //       }
-    //     }
-    //   }
-    // },
-    // "multicolumn_2_Q6HgYn": {
-    //   "settings": {
-    //   },
-    //   "blocks": {
-    //     "column_CQamcD": {
-    //       "settings": {
-    //         "title": "Las bolsas de cultivo de alta calidad y confiables en Chile, España, y Estados Unidos por casi 25 años",
-    //         "text": "<p>Recientemente realizamos una actualización de marca de GrowinBag a Growinnovate. Con una huella global, y un negocio en crecimiento, queremos unir nuestra presencia global en alianza con las cualidades inigualables por los que somos renombrados – innovación, sustentabilidad, calidad y servicio. Legó el momento para nosotros, siendo una empresa global próspera, de alinear nuestro nombre y logo con nuestra misión y visión futura. Esto nos llevó a la creación de nuestra nuevo nombre para la marca, Growinnovate, y una audaz nueva imagen.<\/p>",
-    //         "link_label": "Productos",
-    //         "link": "shopify:\/\/pages\/products"
-    //       }
-    //     },
-    //     "column_EpBrCJ": {
-    //       "settings": {
-    //       }
-    //     }
-    //   }
-    // },
     "marquee_section_dfehpi": {
       "settings": {
         "marquee_text": "Cultivando un futuro más verde"
@@ -108,7 +69,7 @@
       "blocks": {
         "text_ATBweJ": {
           "settings": {
-            "text": "<p>Nuestros productos original GrowinBags™ están diseñadas y fabricadas en Australia, para mejorar la salud de las plantas, aumentar la eficiencia del stock de plantas y minimizar el impacto en el medio ambiente. Estas son perfectas para climas adversos, y son 100% reciclables, haciéndolas perfectas para agricultura orgánica, y además pueden ser hechas completamente a medida en cualquier forma y tamaño.s and tree accessories, including tree collars, tree ties and tree guards.<br/><br/><strong>Si quiere saber más sobre nuestro equipo de expertos o productos lideres de mercado, contáctenos hoy!</strong></p>"
+            "text": "<p>Nuestros productos original GrowinBags™ están diseñadas y fabricadas en Australia, para mejorar la salud de las plantas, aumentar la eficiencia del stock de plantas y minimizar el impacto en el medio ambiente. Estas son perfectas para climas adversos, y son 100% reciclables, haciéndolas perfectas para agricultura orgánica, y además pueden ser hechas completamente a medida en cualquier forma y tamaño.s and tree accessories, including tree collars, tree ties and tree guards.<br\/><br\/><strong>Si quiere saber más sobre nuestro equipo de expertos o productos lideres de mercado, contáctenos hoy!<\/strong><\/p>"
           }
         },
         "button_jdnB4j": {

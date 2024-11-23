@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "about": {
@@ -31,9 +22,7 @@
       "block_order": [
         "heading_36Xj9j"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -43,25 +32,6 @@
         "padding_bottom": 40
       }
     },
-    // "image_banner_XPdwbT": {
-    //   "type": "image-banner",
-    //   "custom_css": [
-
-    //   ],
-    //   "settings": {
-    //     "image": "shopify:\/\/shop_images\/team-photo.jpg",
-    //     "image_overlay_opacity": 0,
-    //     "image_height": "small",
-    //     "desktop_content_position": "middle-center",
-    //     "show_text_box": true,
-    //     "desktop_content_alignment": "center",
-    //     "color_scheme": "",
-    //     "image_behavior": "none",
-    //     "mobile_content_alignment": "center",
-    //     "stack_images_on_mobile": true,
-    //     "show_text_below": true
-    //   }
-    // },
     "rich_text_7zyFnT": {
       "type": "rich-text",
       "blocks": {
@@ -84,13 +54,58 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_RfLRTQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8aQJap": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Team-1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_d3FW4p": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Team-2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_8aQJap",
+        "column_d3FW4p"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_meet-the-team": {
       "type": "image-with-text",
       "blocks": {
         "heading_c3Pdgp": {
           "type": "heading",
           "settings": {
-            "heading": "Meet the Team",
+            "heading": "",
             "heading_size": "h1"
           }
         },
@@ -200,87 +215,11 @@
     },
     "marquee_section_gttrxe": {
       "type": "marquee-section",
+      "disabled": true,
       "settings": {
         "marquee_text": "Growing a greener tomorrow"
       }
     },
-    // "rich_text_FDXhbU": {
-    //   "type": "rich-text",
-    //   "blocks": {
-    //     "text_9KzFa9": {
-    //       "type": "text",
-    //       "settings": {
-    //         "text": "<p>While our company name and brand has changed, our exceptional management team has not. You receive the same unrivalled knowledge, passion, and business acumen, built on a foundation of unwavering values and unrivalled commitment to customer service.<\/p>"
-    //       }
-    //     }
-    //   },
-    //   "block_order": [
-    //     "text_9KzFa9"
-    //   ],
-    //   "settings": {
-    //     "desktop_content_position": "center",
-    //     "content_alignment": "center",
-    //     "color_scheme": "",
-    //     "full_width": true,
-    //     "padding_top": 40,
-    //     "padding_bottom": 52
-    //   }
-    // },
-    // "multicolumn_2_Q6HgYn": {
-    //   "type": "multicolumn-2",
-    //   "blocks": {
-    //     "column_CQamcD": {
-    //       "type": "column",
-    //       "settings": {
-    //         "title": "GrowinBag™ – The number one choice for growers in Australia, the Middle East and globally",
-    //         "text": "<p>Previously known as Easy-Fill™, the new-look GrowinBag™ is the number one choice for growers throughout the Middle East region and Australia and has been for the last 25 years.<\/p><p>Our original GrowinBags™ are innovatively designed and manufactured to enhance plant health, boost the efficiency of plant stock and minimise the impact on the environment. They are perfect for harsh climates and are 100% recyclable, making them perfect for organic agriculture, plus they can be fully customised to any size or shape.<\/p><p><strong>To find out more about our market leading GrowinBag™, get in touch with us today!<\/strong><\/p>",
-    //         "link_label": "Products",
-    //         "link": "shopify:\/\/pages\/products"
-    //       }
-    //     },
-    //     "column_EpBrCJ": {
-    //       "type": "column",
-    //       "settings": {
-    //         "image": "shopify:\/\/shop_images\/about-photo-2.jpg",
-    //         "title": "",
-    //         "text": "",
-    //         "link_label": "",
-    //         "link": ""
-    //       }
-    //     },
-    //     "column_C8LVQ4": {
-    //       "type": "column",
-    //       "settings": {
-    //         "image": "shopify:\/\/shop_images\/section2.png",
-    //         "title": "",
-    //         "text": "",
-    //         "link_label": "",
-    //         "link": ""
-    //       }
-    //     }
-    //   },
-    //   "block_order": [
-    //     "column_CQamcD",
-    //     "column_EpBrCJ",
-    //     "column_C8LVQ4"
-    //   ],
-    //   "settings": {
-    //     "title": "",
-    //     "heading_size": "h1",
-    //     "image_width": "full",
-    //     "image_ratio": "adapt",
-    //     "columns_desktop": 2,
-    //     "column_alignment": "left",
-    //     "background_style": "none",
-    //     "button_label": "",
-    //     "button_link": "",
-    //     "color_scheme": "",
-    //     "columns_mobile": "1",
-    //     "swipe_on_mobile": false,
-    //     "padding_top": 36,
-    //     "padding_bottom": 36
-    //   }
-    // },
     "image_banner_kCcRYw": {
       "type": "image-banner",
       "settings": {
@@ -375,20 +314,17 @@
         "image_aJmQTe",
         "image_hE4fdj"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
     "about",
     "rich_text_XfXCx9",
-    // "image_banner_XPdwbT",
     "rich_text_7zyFnT",
+    "multicolumn_RfLRTQ",
     "image_meet-the-team",
     "image_with_text_UmBiM3",
     "marquee_section_gttrxe",
-    // "rich_text_FDXhbU",
-    // "multicolumn_2_Q6HgYn",
     "image_banner_kCcRYw",
     "marquee_section_dfehpi",
     "rich_text_Vb9bWh",
