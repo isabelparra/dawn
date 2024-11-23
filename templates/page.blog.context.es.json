@@ -1,0 +1,45 @@
+{
+  "parent": "page.blog.json",
+  "context": {
+    "market": "es"
+  },
+  "sections": {
+    "image_banner_YpcwpD": {
+      "settings": {},
+      "blocks": {
+        "text_UgM3gP": {
+          "settings": {
+            "text": "Mantente Informado",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading_rbdB4M": {
+          "settings": {
+            "heading": "GrowinBag™ Boletín Informativo"
+          }
+        }
+      }
+    },
+    "newsletter_NVUGPd": {
+      "settings": {},
+      "blocks": {
+        "heading_LbN7wM": {
+          "settings": {
+            "heading": "Únete a nuestra comunidad de cultivadores"
+          }
+        },
+        "paragraph_8iznEd": {
+          "settings": {
+            "text": "<p>Registrate y te mantendremos al día con las últimas noticias de GrowinBag™.<\/p>"
+          }
+        },
+        "email_form_UjcMQP": {
+          "settings": {
+            "first_name_label": "Nombre",
+            "last_name_label": "Apellido"
+          }
+        }
+      }
+    }
+  }
+}
