@@ -640,16 +640,25 @@
       .blog-articles__article .card-wrapper {
         /* padding: 0 40px; */
       }
+      
   }
 
   @media (min-width: 900px) {
-  
-      .blog-articles__article .card-wrapper {
-        /* width: 68%; */
- 
-      }
+    .blog-articles__article .card-wrapper {
+      /* width:79%; */
+
+    }
+    .main-blog {
+      width: 79%;
+    }
+      
   }     
   
   .blog-articles__article .card-wrapper {
     margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    .main-blog {
+      width: 60%;
+    }
   }
