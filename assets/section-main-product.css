@@ -1,6 +1,10 @@
 .product {
   margin: 0;
 }
+.related-products__heading {
+  font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 
 .product.grid {
   gap: 0;
