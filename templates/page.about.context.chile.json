@@ -32,24 +32,49 @@
         }
       }
     },
-    "image_with_text_UmBiM3": {
-      "settings": {},
+    "multicolumn_RfLRTQ": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_c3Pdgp": {
+        "column_8aQJap": {
+          "type": "column",
           "settings": {
-            "heading": "Destacado del Empleado"
+            "image": "shopify:\/\/shop_images\/Team-1.jpg",
+            "title": "Rick Parres",
+            "text": "<p>Dueño \/ Director<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_gFJH7K": {
+        "column_d3FW4p": {
+          "type": "column",
           "settings": {
-            "text": "<p>Conoce a Francisco, nuestro dedicado Gerente de Desarrollo de Negocios en Growinnovate. Con una gran experiencia en la industria hortícola, desempeña un papel clave en la creación de alianzas con cultivadores de todo el mundo.<\/p>"
-          }
-        },
-        "caption_Wdk99J": {
-          "settings": {
-            "caption": "Cultivando un futuro más verde"
+            "image": "shopify:\/\/shop_images\/Team-2.jpg",
+            "title": "Mauricio Petit- Laurent",
+            "text": "<p>Desarrollador de Negocios \/ Europa<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
+      },
+      "block_order": [
+        "column_8aQJap",
+        "column_d3FW4p"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "marquee_section_gttrxe": {
