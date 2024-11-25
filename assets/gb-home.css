@@ -153,11 +153,11 @@
 
 
 .gb-hp-slider-mobile {
-    background-color: #D9EC73;
+    /* background-color: #D9EC73; */
     max-width:100%;
     margin:0 20px;
     border-radius: 20px;
-    padding:50px 40px;
+
 }
 
 .gb-hp-slider-mobile-3 {
@@ -181,11 +181,7 @@
     padding-bottom: 20px;
   }
  
-  .gb-multicolumn-card_1 {
-    width: 90% !important;
-    height: auto !important;
-    
-  }
+  
   .slick-slide {
     padding: 4px;
     }

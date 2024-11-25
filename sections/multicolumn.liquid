@@ -81,10 +81,10 @@
                   {% assign spaced_image = true %}
                 {% endif %}
                 <div class="gb-col-1-wrapper multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div
+                  <div id="about-team-img"
                     class="gb-media-1 media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                      {% comment %} style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;" {% endcomment %}
                     {% endif %}
                   >
                     {%- liquid

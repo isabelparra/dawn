@@ -15,6 +15,13 @@ div.banner__media.media > img {
   height: auto;
   
 }
+@media screen and (max-width: 869px) {
+#about-team-img {
+    height: 550px;
+    
+    
+}
+}
 .multicolumn-card .content-container {
     background: transparent;
 
@@ -54,17 +61,28 @@ div.banner__media.media > img {
     font-size:28px;
     /* font-size: 1.75rem; */
     line-height: 120%;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 #gb-inline-richtext-2, .gb-multicol-p {
-    color: white;
-    text-align: left;
+    /* color: white; */
+    text-align: center;
 }
 
 
 #Slide-template--17660778119320__multicolumn_2_Q6HgYn-3 {
 
 } 
+.gb-col-1-wrapper.multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--full-width.multicolumn-card-spacing > div > img {
+    border-radius: 20px;
+}
+
+.gb-media-1 {
+  
+}
+.gb-media-1 img {
+    height: 700px;
+    width: auto;
+}
 
 @media (max-width: 869px) {
     .gb-hp-slider-mobile-2 ul li:nth-child(1){
@@ -82,6 +100,9 @@ div.banner__media.media > img {
     }
     .gb-hp-slider-mobile-2  {
         padding-bottom: calc(var(--section-space) - 70px);
+    }
+    #about-team-img {
+        padding-bottom: 0px !important;
     }
 }
 .banner__heading {
@@ -232,16 +253,18 @@ div.banner__media.media > img {
     }
      
     .multicolumn-list__item:nth-child(1) {
-        padding-top: calc(var(--section-space) - 70px);
-        padding-bottom: calc(var(--section-space) - 70px);
+        /* padding-top: calc(var(--section-space) - 70px);
+        padding-bottom: calc(var(--section-space) - 70px); */
     }
     .media--transparent {
         height: 100%;
     }
+   
     .multicolumn-list__item.center .media--adapt, .multicolumn-list__item .media--adapt .multicolumn-card__image {
         display: block;
         object-fit: cover;
         position: relative;
+       
     }
     .multicolumn-card {
         height: 100%;
@@ -269,7 +292,15 @@ div.banner__media.media > img {
     .image-with-text__text {
         font-size: 20px;
     }
-   
+    .gb-col-1-wrapper.multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--full-width.multicolumn-card-spacing > div > img {
+        max-height: 550px;
+    }
+    .gb-col-1-wrapper  {
+        height: 650px;
+    }
+   #about-team-img {
+    height: 550px;
+   }
 }
 
 @media screen and (min-width: 900px) { 
@@ -333,10 +364,10 @@ div.banner__media.media > img {
  }
  @media screen and (min-width: 1300px) {
     .multicolumn-list__item:nth-child(1) {
-        padding-left: var(--padding);
+        /* padding-left: var(--padding);
         padding-right: var(--padding);
         padding-top: var(--section-space);
-        padding-bottom: var(--section-space);
+        padding-bottom: var(--section-space); */
     }
  }
  @media screen and (min-width: 1400px) { 
