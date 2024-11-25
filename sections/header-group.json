@@ -31,6 +31,9 @@
       "type": "header",
       "custom_css": [],
       "settings": {
+        "phone_label_us": "(305) 710-9628",
+        "phone_label_chile": "+56 9 5713 2204",
+        "phone_label_spain": "+34 682 391 431",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
@@ -39,14 +42,11 @@
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
         "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "mobile_logo_position": "left",
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20,
-        "phone_label_us": "(305) 710-9628",
-        "phone_label_chile": "+56 9 5713 2204",
-        "phone_label_spain": "+34 682 391 431"
+        "padding_bottom": 20
       }
     }
   },

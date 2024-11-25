@@ -1,0 +1,18 @@
+{
+  "parent": "page.about.json",
+  "context": {
+    "market": "spain"
+  },
+  "sections": {
+    "multicolumn_RfLRTQ": {
+      "settings": {},
+      "blocks": {
+        "column_8aQJap": {
+          "settings": {
+            "text": "<p>Dueño \/ Director<\/p>"
+          }
+        }
+      }
+    }
+  }
+}
