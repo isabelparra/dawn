@@ -167,10 +167,16 @@
     border-radius: 20px;
     padding:55px 40px 0px 40px;
 }
+#about-team-img img {
+    position: relative !important;
+   
+}
 .gb-media-1 {
     /* width: 240px;
     height: 170px; */
+   
     margin: 0 auto;
+    margin-top: 30px;
     padding-bottom: 0px;
   }
   .gb-media-3 {
