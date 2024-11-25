@@ -21,6 +21,11 @@
 .product__tax {
   text-align: center;
 }
+@media screen and (max-width: 749px) {
+  .product__info-wrapper {
+    /* text-align: center; */
+  }
+}
 
 @media screen and (min-width: 750px) {
   .product__column-sticky {
