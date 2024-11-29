@@ -5,7 +5,9 @@
   font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;
   text-align: center;
 }
-
+.product-media-container.media-fit-cover {
+  border-radius: 20px;
+}
 .product.grid {
   gap: 0;
 }
@@ -20,6 +22,22 @@
 }
 .product__tax {
   text-align: center;
+}
+.summary__title {
+  display: block;
+  margin: 0 auto;
+}
+.summary__title .accordion__title {
+  font-family: "Ciutadella Medium", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+@media screen and (max-width: 749px) {
+.product__info-wrapper {
+  text-align: center;
+}
+.quantity {
+  margin: 0 auto;
+}
 }
 @media screen and (max-width: 749px) {
   .product__info-wrapper {

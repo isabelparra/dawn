@@ -10,7 +10,8 @@
         {% comment %} margin-bottom: 20px;  {% endcomment %}
     }
     .col-6 {
-        width:100%;
+        {% comment %} width:100%; {% endcomment %}
+        margin: 0 auto;
     }
     .gb-inline-richtext-4 {
         font-size:13px;
@@ -26,8 +27,9 @@
     .icons-mn-row {
         display: block;
 
-        /* margin: 0 0px; */
-        {% comment %} width:100%; {% endcomment %}
+        margin: 0 0px; 
+    }
+    .icons-mn-row .row {
         margin: 10px auto;
         text-align: center;
     }
@@ -68,12 +70,23 @@
         font-size: 16px;
     }
     .icons-mn-row {
-        {% comment %} width: 91%; {% endcomment %}
-        margin: 0 auto;
+       
     }
     .icon-row {
         min-width:357px;
     }
+   
+      {% comment %} .icon-row {
+        display: flex;                /* Use Flexbox for each icon-row */
+        align-items: center;          /* Center content vertically */
+        justify-content: center;      /* Optionally center content horizontally */
+        text-align: center;           /* Center text horizontally */
+        flex-direction: column;       /* Arrange image and text vertically */
+        gap: 10px;                     /* Add some space between the image and text */
+      } {% endcomment %}
+     
+     
+     
     }
     .icon-img-hp-div {
         width: 40px;
@@ -113,6 +126,7 @@
         .icon-row {
             min-width:450px;
         }
+       
     }
     @media (min-width: 1400px) {
         .gb-multicol-p, .gb-multicol-p-3, .gb-inline-richtext-4 {
@@ -136,7 +150,8 @@
             <header class="row header-row">
                 <h2 class="gb-hp-header-2">{{ section.settings.title }}</h2>
             </header>
-            <div class="row icons-mn-row">
+            <div class="icons-mn-row">
+            <div class="row ">
                 {% comment %} Column 1 {% endcomment %}
                 <div class="col-6">
                     {% for block in section.blocks -%}
@@ -164,6 +179,7 @@
                     {% endfor %}
                 </div>
             </div>
+        </div>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
 }
 
 .accordion .summary__title {
-  display: flex;
+  display: block;
   flex: 1;
 }
 

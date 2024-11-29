@@ -1427,6 +1427,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .share-button__button {
+
   font-size: 1.4rem;
   display: flex;
   align-items: center;
@@ -1434,7 +1435,9 @@ button.shopify-payment-button__button--unbranded {
   margin-left: 0;
   padding-left: 0;
   min-height: 4.4rem;
+  margin: 0 auto;
 }
+
 
 details[open] > .share-button__fallback {
   animation: animateMenuOpen var(--duration-default) ease;
@@ -2844,7 +2847,9 @@ details[open] > .header__submenu {
 
  
 }
-
+.gb-related-prods {
+  padding: 50px 40px;
+}
 .header__inline-menu::after {
   content: "";
   display: block;
@@ -2859,7 +2864,30 @@ details[open] > .header__submenu {
   width: 90%;
   margin:0 auto;
   max-width: 400px;
+  transition: width 0.5s ease; 
 
+}
+body.page-about .header__inline-menu::after {
+
+  background: linear-gradient(to right, #C0DF16 25%, #ccc 25%); /* Green on left, grey on right */
+}
+
+/* When on the Products page */
+body.page-products .header__inline-menu::after {
+
+  background: linear-gradient(to right, #C0DF16 50%, #ccc 50%);
+}
+
+/* When on the Blog page */
+body.page-blog .header__inline-menu::after {
+
+  background: linear-gradient(to right, #C0DF16 75%, #ccc 75%);
+}
+
+/* When on the Contact page */
+body.page-contact .header__inline-menu::after {
+  
+  background: linear-gradient(to right, #C0DF16 100%, #ccc 100%);
 }
 #HeaderMenu-about:hover, #HeaderMenu-products:hover, #HeaderMenu-blog:hover, #HeaderMenu-contact:hover {
   color: var(--highlight);

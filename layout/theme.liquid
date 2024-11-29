@@ -82,7 +82,29 @@
       script.src = src + '?v=' + new Date().getTime();
       document.head.appendChild(script);
     }
-  </script>    
+</script>  
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var currentPage = window.location.pathname; // Get current URL path
+    var bodyClass = '';
+  
+    // Match specific pages and set class accordingly
+    if (currentPage.includes('/pages/about')) {
+      bodyClass = 'page-about';
+    } else if (currentPage.includes('/pages/products')) {
+      bodyClass = 'page-products';
+    } else if (currentPage.includes('/blogs/news')) {
+      bodyClass = 'page-blog';
+    } else if (currentPage.includes('/pages/contact')) {
+      bodyClass = 'page-contact';
+    }
+  
+    // Add the body class based on current page
+    document.body.classList.add(bodyClass);
+  });
+  
+  
+</script>  
 
   
     {%- if settings.favicon != blank -%}

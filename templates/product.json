@@ -5,6 +5,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -36,8 +37,18 @@
             "show_gift_card_recipient": true
           }
         },
+        "collapsible_tab_AMLMPJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>{{ product.description }}<\/p>",
+            "page": ""
+          }
+        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "share": {
@@ -54,6 +65,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "collapsible_tab_AMLMPJ",
         "description",
         "share"
       ],

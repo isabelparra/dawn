@@ -233,6 +233,7 @@
 }
 .product__media img {
     border-radius: 20px;
+    --color-foreground:
 }
 .product__title {
     font-family: Ciutadella Medium, Arial, Helvetica, sans-serif;

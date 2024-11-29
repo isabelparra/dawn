@@ -2,16 +2,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "custom_liquid_U6LgAW": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "newsletter_Fph9FE": {
       "type": "newsletter-phone",
       "blocks": {
@@ -49,45 +39,6 @@
         "phone_74LVJD",
         "email_3Hk76a"
       ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_liquid_hEmjeA": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<section class='footer-1'><\/section>",
-        "color_scheme": "scheme-2",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "newsletter_g7QNXt": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_yMGVFB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get in touch today!",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_jdrcLE": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Contact our friendly team today to discuss a Growinnovate solution for your business.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yMGVFB",
-        "paragraph_jdrcLE"
-      ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-2",
         "full_width": true,
@@ -139,10 +90,7 @@
     }
   },
   "order": [
-    "custom_liquid_U6LgAW",
     "newsletter_Fph9FE",
-    "custom_liquid_hEmjeA",
-    "newsletter_g7QNXt",
     "footer"
   ]
 }

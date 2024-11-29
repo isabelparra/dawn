@@ -134,6 +134,15 @@
   width: 100%;
   flex-grow: 1;
   position: relative;
+  text-align: center;
+}
+.card__information, .card-information {
+  font-family: var(--font-one);
+  font-size: 13px;
+}
+.card__information > div > div {
+  font-family: var(--font-one);
+  font-size: 13px;
 }
 
 .card__content--auto-margins {
