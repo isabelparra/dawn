@@ -1,0 +1,53 @@
+{
+  "parent": "page.contact.json",
+  "context": {
+    "market": "de"
+  },
+  "sections": {
+    "contact": {
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "contact-text": {
+      "settings": {},
+      "blocks": {
+        "heading_QLj7ph": {
+          "settings": {
+            "heading": "Contacto"
+          }
+        },
+        "text_contact-1": {
+          "settings": {
+            "text": "<p>Diseñamos y fabricamos el GrowinBag™ original y ahora vendemos nuestra bolsa para macetas líder en el mercado en más de 20 países. <strong>Si desea obtener más información sobre nuestro equipo experto o productos líderes, ¡póngase en contacto hoy!<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QLj7ph",
+        "text_contact-1"
+      ]
+    },
+    "form": {
+      "settings": {}
+    },
+    "featured_product_ayDCVj": {
+      "blocks": {}
+    },
+    "product_carousel24": {
+      "settings": {
+        "selected_collection": "main-collection",
+        "button_label": "Compra"
+      }
+    }
+  },
+  "order": [
+    "contact",
+    "contact-text",
+    "form",
+    "featured_product_ayDCVj",
+    "product_carousel24"
+  ]
+}

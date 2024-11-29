@@ -97,7 +97,7 @@
                       required
                     >
                     <label class="field__label" for="NewsletterForm--{{ section.id }}--name">
-                      {{ 'settings.first_name_label' | escape }}
+                      {{ block.settings.first_name_label | escape }}
                     </label>
                   </div>
                   <div class="field">
@@ -122,7 +122,7 @@
                       required
                     >
                     <label class="field__label" for="NewsletterForm--{{ section.id }}--last_name">
-                      {{ 'settings.last_name_label' | escape }}
+                      {{ block.settings.last_name_label | escape }}
                     </label>
                   </div>
                   <div class="field">
@@ -147,7 +147,7 @@
                       required
                     >
                     <label class="field__label" for="NewsletterForm--{{ section.id }}--email">
-                      {{ 'settings.email_label' | escape }}
+                      {{ block.settings.email_label | escape }}
                     </label>
                   </div>
                   <div class="field">
@@ -169,7 +169,7 @@
                       <!-- Add more countries as needed -->
                     </select>
                     <label class="field__label" for="NewsletterForm--{{ section.id }}--country">
-                      {{ 'settings.country_label' | escape }}
+                      {{ block.settings.country_label | escape }}
                     </label>
                   </div>
                   <div class="field">

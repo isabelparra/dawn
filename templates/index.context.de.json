@@ -1,0 +1,122 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "de"
+  },
+  "sections": {
+    "rich_text_RmKrdd": {
+      "settings": {},
+      "blocks": {
+        "heading_MLxQbM": {
+          "settings": {
+            "heading": "Cultivando un futuro más verde"
+          }
+        },
+        "text_wQFBz8": {
+          "settings": {
+            "text": "<p>Una empresa familiar, líder a nivel global en suministros de horticultura.<br\/>Empoderamos a cultivos y huertos alrededor del mundo y sin excepción, innovando en soluciones para el manejo de plantas, que permiten mejorar la salud de las plantas y aumentar su productividad.<br\/>Nuestros productos hortícolas amigables con el medio ambiente y sustentables, contribuyen a un futuro más verde, al disminuir los residuos, minimizando el impacto ambiental e incrementando la captura de carbono.<\/p>"
+          }
+        },
+        "button_xxUeti": {
+          "settings": {
+            "button_label": "PRODUCTOS",
+            "button_label_2": "EMPRESA"
+          }
+        }
+      }
+    },
+    "multicolumn_LYfnHn": {
+      "settings": {},
+      "blocks": {
+        "column_dmFUy4": {
+          "settings": {
+            "title": "¡La opción #1 para bolsas de cultivo ecológicas y de alta calidad airededor del mundo!",
+            "text": "<p>Growinnovate se mantiene como la opción #1 para bolsas de cultivo ecológicas, de alta calidad, entregando soluciones innovadoras para la horticultura, que están diseñadas para mejorar la salud de las plantas, y aumentar su crecimiento durante todo el año.<br\/><br\/>Nuestros productos original GrowinBags™ están diseñadas y fabricadas en Australia, para mejorar la salud de las plantas, aumentar la eficiencia del stock de plantas y minimizar el impacto en el medio ambiente. Estas son perfectas para climas adversos, y son 100% reciclables, haciéndolas perfectas para agricultura orgánica, y además pueden ser hechas completamente a medida en cualquier forma y tamaño.<\/p>"
+          }
+        }
+      }
+    },
+    "custom-icons-hp1": {
+      "settings": {
+        "title": "Por qué elegir Bolsas de Cultivo GrowinBag™"
+      },
+      "blocks": {
+        "column1_row_1": {
+          "settings": {
+            "text": "Agricultura en ambiente controlado"
+          }
+        },
+        "column1_row_2": {
+          "settings": {
+            "text": "Raices sanas sin enroscamiento"
+          }
+        },
+        "column1_row_3": {
+          "settings": {
+            "text": "Control sanitario directo de sustrato"
+          }
+        },
+        "column1_row_4": {
+          "settings": {
+            "text": "Ahorro de agua"
+          }
+        },
+        "column1_row_5": {
+          "settings": {
+            "text": "Aumento del retorno a las inversiones"
+          }
+        },
+        "column2_row_1": {
+          "settings": {
+            "text": "Resiste a todos los climas"
+          }
+        },
+        "column2_row_2": {
+          "settings": {
+            "text": "100% proteccion UV, incluso en asas y costuras"
+          }
+        },
+        "column2_row_3": {
+          "settings": {
+            "text": "Fácil de mover y reubicar plantas"
+          }
+        },
+        "column2_row_4": {
+          "settings": {
+            "text": "Alta resistencia y durabilidad"
+          }
+        },
+        "column2_row_5": {
+          "settings": {
+            "text": "Agricultura organica"
+          }
+        }
+      }
+    },
+    "marquee-growin24": {
+      "settings": {
+        "marquee_text": "GrowinBag™ es la bolsa de cultivo elegida por los Agricultores y Viveristas de todo el mundo."
+      },
+      "blocks": {}
+    },
+    "slideshow_AJJ8wR": {
+      "settings": {},
+      "blocks": {
+        "slide_kYRpLN": {
+          "settings": {
+            "heading": "Cultivando un futuro más verde",
+            "subheading": "Más de 25 millones de bolsas de cultivo GrowinBag™ vendidas en todo el mundo",
+            "button_label": "Visita Nuestra Tienda"
+          }
+        },
+        "slide_BDiRWe": {
+          "settings": {
+            "heading": "Cultivando un futuro más verde",
+            "subheading": "Más de 25 millones de bolsas de cultivo GrowinBag™ vendidas en todo el mundo",
+            "button_label": "Empresa"
+          }
+        }
+      }
+    }
+  }
+}
