@@ -1439,7 +1439,7 @@
         "type": "text",
         "id": "social_links_instagram_us",
         "label": "Instagram (US)",
-        "default": "https://www.linkedin.com/company/growinbag/"
+        "default": "https://www.linkedin.com/company/growinbag-espa%C3%B1a/"
       }
     ]
   },
