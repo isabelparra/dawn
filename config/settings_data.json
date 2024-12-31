@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/GrowinBag_Logo_RGB.svg",
+    "logo": "shopify://shop_images/GrowinBag_Logo_RGB.svg",
     "logo_width": 100,
-    "favicon": "shopify:\/\/shop_images\/Symbol_RGB_PEAR.png",
+    "favicon": "shopify://shop_images/Symbol_RGB_PEAR.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -99,10 +108,10 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/growinbag\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/growinbag\/",
+    "social_facebook_link": "https://www.facebook.com/growinbag/",
+    "social_instagram_link": "https://www.instagram.com/growinbag/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -121,23 +130,23 @@
     "cart_color_scheme": "scheme-1",
     "social_links": {
       "facebook": {
-        "es": "https:\/\/www.facebook.com\/growinbageslatam\/",
-        "cl": "https:\/\/www.facebook.com\/growinbagchile\/",
-        "us": "https:\/\/www.facebook.com\/growinbag\/"
+        "es": "https://www.facebook.com/growinbageslatam/",
+        "cl": "https://www.facebook.com/growinbagchile/",
+        "us": "https://www.facebook.com/growinbag/"
       },
       "instagram": {
-        "es": "https:\/\/www.instagram.com\/growinbag_espana\/",
-        "cl": "https:\/\/www.instagram.com\/growinbag_chile\/",
-        "us": "https:\/\/www.instagram.com\/growinbag\/"
+        "es": "https://www.instagram.com/growinbag_espana/",
+        "cl": "https://www.instagram.com/growinbag_chile/",
+        "us": "https://www.instagram.com/growinbag/"
       },
       "linkedin": {
-        "es": "https:\/\/www.linkedin.com\/company\/growinbag-espa%C3%B1a",
-        "cl": "https:\/\/www.linkedin.com\/company\/growinbag-chile\/",
-        "us": "https:\/\/www.linkedin.com\/company\/growinbag\/"
+        "es": "https://www.linkedin.com/company/growinbag-espa%C3%B1a",
+        "cl": "https://www.linkedin.com/company/growinbag-chile/",
+        "us": "https://www.linkedin.com/company/growinbag/"
       }
     },
-    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/growinbag\/",
-    "logo_rev": "shopify:\/\/shop_images\/GrowinBag_Logo_RGB_Reversed.svg",
+    "social_linkedin_link": "https://www.linkedin.com/company/growinbag/",
+    "logo_rev": "shopify://shop_images/GrowinBag_Logo_RGB_Reversed.svg",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -378,7 +387,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_linkedin_link": "",
       "social_twitter_link": "",

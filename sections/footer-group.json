@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -15,7 +24,7 @@
         "paragraph_P7FzwL": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Contact our friendly team today to discuss a Growinnovate solution for your business.<\/p>"
+            "text": "<p>Contact our friendly team today to discuss a Growinnovate solution for your business.</p>"
           }
         },
         "phone_74LVJD": {
@@ -29,7 +38,7 @@
           "type": "email",
           "settings": {
             "label": "Email",
-            "email": "contact@growinnovate.com"
+            "email": "info@growinnovate.com"
           }
         }
       },
@@ -59,7 +68,7 @@
         "link_list_VcprGc": {
           "type": "link_list",
           "settings": {
-            "heading": "Growing <\/br> a greener <\/br> tomorrow",
+            "heading": "Growing </br> a greener </br> tomorrow",
             "menu": ""
           }
         }
